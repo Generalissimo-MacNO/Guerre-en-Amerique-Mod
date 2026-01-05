@@ -168,7 +168,53 @@ items = [
  ["arabian_horse_b","Kagoshima Horse", [("arabian_horse_b",0)], itp_merchandise|itp_type_horse, 0, 700,abundance(80)|hit_points(120)|body_armor(10)|difficulty(3)|horse_speed(43)|horse_maneuver(54)|horse_charge(16)|horse_scale(94),imodbits_horse_basic|imodbit_champion],
  ["hunter","Kiso Horse", [("hunting_horse",0),("hunting_horse",imodbits_horse_good)], itp_merchandise|itp_type_horse, 0, 810,abundance(60)|hit_points(160)|body_armor(18)|difficulty(3)|horse_speed(43)|horse_maneuver(44)|horse_charge(24)|horse_scale(98),imodbits_horse_basic|imodbit_champion, [], [fac_kingdom_5]],
 
- ["lyre",         "Koto", [("lyre",0)], itp_type_shield|itp_wooden_parry|itp_civilian, itcf_carry_bow_back,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),0 ],
+ 
+# Naval System - Ship Items (French and Indian War vessels)
+# Ships function as mounts but provide water travel bonuses
+
+["ship_bateau", "Bateau", [("boat_a", 0)], 
+ itp_type_horse|itp_merchandise|itp_civilian, 0, 150,
+ abundance(80)|body_armor(5)|difficulty(0)|horse_speed(35)|horse_maneuver(40)|horse_charge(5)|horse_scale(100),
+ imodbits_horse_basic],
+
+["ship_whaleboat", "Whaleboat", [("boat_b", 0)], 
+ itp_type_horse|itp_merchandise|itp_civilian, 0, 200,
+ abundance(70)|body_armor(3)|difficulty(0)|horse_speed(45)|horse_maneuver(50)|horse_charge(3)|horse_scale(95),
+ imodbits_horse_basic],
+
+["ship_schooner", "Schooner", [("ship_medium_a", 0)], 
+ itp_type_horse|itp_merchandise, 0, 800,
+ abundance(50)|body_armor(15)|difficulty(1)|horse_speed(42)|horse_maneuver(38)|horse_charge(10)|horse_scale(110),
+ imodbits_horse_basic],
+
+["ship_sloop", "Sloop", [("ship_medium_b", 0)], 
+ itp_type_horse|itp_merchandise, 0, 1200,
+ abundance(40)|body_armor(20)|difficulty(2)|horse_speed(40)|horse_maneuver(35)|horse_charge(15)|horse_scale(115),
+ imodbits_horse_basic],
+
+["ship_brigantine", "Brigantine", [("ship_large_a", 0)], 
+ itp_type_horse|itp_merchandise, 0, 2500,
+ abundance(20)|body_armor(30)|difficulty(3)|horse_speed(38)|horse_maneuver(30)|horse_charge(25)|horse_scale(125),
+ imodbits_horse_basic|imodbit_champion],
+
+["ship_xebec", "Xebec", [("ship_large_b", 0)], 
+ itp_type_horse|itp_merchandise, 0, 2000,
+ abundance(25)|body_armor(25)|difficulty(3)|horse_speed(45)|horse_maneuver(42)|horse_charge(20)|horse_scale(120),
+ imodbits_horse_basic|imodbit_champion],
+
+["ship_radeau", "Radeau", [("ship_special_a", 0)], 
+ itp_type_horse|itp_merchandise, 0, 1500,
+ abundance(30)|body_armor(35)|difficulty(2)|horse_speed(30)|horse_maneuver(25)|horse_charge(30)|horse_scale(130),
+ imodbits_horse_basic],
+
+["ship_tartane", "Tartane", [("ship_special_b", 0)], 
+ itp_type_horse|itp_merchandise, 0, 1800,
+ abundance(25)|body_armor(22)|difficulty(2)|horse_speed(43)|horse_maneuver(45)|horse_charge(18)|horse_scale(115),
+ imodbits_horse_basic],
+
+# End Naval System Ships
+
+["lyre",         "Koto", [("lyre",0)], itp_type_shield|itp_wooden_parry|itp_civilian, itcf_carry_bow_back,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),0 ],
  ["lute",         "Biwa", [("lute",0)], itp_type_shield|itp_wooden_parry|itp_civilian, itcf_carry_bow_back,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),0 ],
  
 #gekokujo begin

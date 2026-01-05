@@ -2408,3 +2408,26 @@ try:
 except:
     raise
 # modmerger_end
+
+
+####################################################
+# Naval System Constants
+####################################################
+
+# Water area boundaries (adjust based on your map)
+water_area_x_min = -100
+water_area_x_max = 100
+water_area_y_min = -100
+water_area_y_max = 100
+
+# Party slots for naval system
+slot_party_on_water = 50
+slot_party_embarked = 51
+slot_party_current_ship = 52
+slot_party_movement_speed = 53
+
+# Town slots
+slot_town_is_port = 100
+
+# Ship item ID ranges (will be set after compilation)
+# These will need to be updated with actual IDs from ID_items.py
