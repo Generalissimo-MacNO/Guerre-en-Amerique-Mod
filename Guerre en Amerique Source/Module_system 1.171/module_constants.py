@@ -2117,6 +2117,172 @@ dplmc_slot_troop_political_stance             = 164 #dplmc+ deprecated, see note
 dplmc_slot_troop_temp_slot                    = 164 #replaces dplmc_slot_troop_political_stance
 ##diplomacy end+
 dplmc_slot_troop_affiliated                   = 165 ##notes: 0 is default, 1 is asked; on newer games 3 is affiliated and 4 is betrayed
+
+########################################################
+##  NAVAL SYSTEM SLOTS (Slots 180-200)  ###############
+##  Added for Viking Conquest Naval System Integration
+########################################################
+
+# Core Naval Preferences (for lords/officers)
+slot_troop_preferred_ship_type    = 180  # Preferred ship type (1-8, 0=none/default)
+slot_troop_ship_quality_bonus     = 181  # Ship quality bonus percentage (0-25)
+slot_troop_max_ships_bonus        = 182  # Bonus to max ships in fleet (0-5)
+slot_troop_naval_specialization   = 183  # Specialization type (see naval_spec_* constants)
+
+# Naval Experience & Reputation
+slot_troop_naval_experience       = 184  # Naval experience points
+slot_troop_naval_victories        = 185  # Naval victories count
+slot_troop_naval_defeats          = 186  # Naval defeats count
+slot_troop_naval_reputation       = 187  # Naval reputation (-100 to 100)
+
+# Ship Customization Preferences
+slot_troop_preferred_ship_wood    = 188  # Preferred wood type (1-3)
+slot_troop_preferred_ship_sail    = 189  # Preferred sail design (1-9)
+slot_troop_preferred_ship_paint   = 190  # Preferred paint/finish (0-8)
+
+# Naval Tactics & Abilities
+slot_troop_naval_tactics_bonus    = 191  # Bonus to naval tactics
+slot_troop_boarding_bonus         = 192  # Bonus to boarding actions
+slot_troop_gunnery_bonus          = 193  # Bonus to ship gunnery (future use)
+
+# Reserve slots for future expansion
+slot_troop_naval_reserved_1       = 194
+slot_troop_naval_reserved_2       = 195
+slot_troop_naval_reserved_3       = 196
+slot_troop_naval_reserved_4       = 197
+slot_troop_naval_reserved_5       = 198
+slot_troop_naval_reserved_6       = 199
+slot_troop_naval_reserved_7       = 200
+
+########################################################
+##  NAVAL SPECIALIZATION TYPES  #######################
+########################################################
+
+naval_spec_none         = 0  # No specialization (uses default assignment)
+naval_spec_fleet        = 1  # Fleet command (large warships, multiple ships)
+naval_spec_river        = 2  # River warfare (bateaux, canoes, portaging)
+naval_spec_lake         = 3  # Lake warfare (sloops, brigs, fast vessels)
+naval_spec_coastal      = 4  # Coastal patrol (medium vessels)
+naval_spec_merchant     = 5  # Merchant/supply ships (cargo vessels)
+
+########################################################
+##  SHIP TYPE CONSTANTS  ###############################
+##  Adapted from Viking Conquest for F&I War Era
+########################################################
+
+# Ship Types (1-8)
+ship_type_ship_of_line   = 1  # Large warship (90 crew, 16 speed) - Was: Busse
+ship_type_frigate        = 2  # Fast warship (55 crew, 20 speed) - Was: Skei
+ship_type_sloop          = 3  # Medium vessel (30 crew, 12 speed) - Was: Karvi
+ship_type_brig           = 4  # Small warship (16 crew, 14 speed) - Was: Snekkja
+ship_type_merchant_ship  = 5  # Cargo vessel (20 crew, 10 speed) - Was: Knorr
+ship_type_longboat       = 6  # Small boat (8 crew, 8 speed) - Was: Byrding
+ship_type_canoe          = 7  # Portage-able (2-6 crew, 10 speed) - NEW
+ship_type_bateau         = 8  # Portage-able (15-30 crew, 8 speed) - NEW
+
+########################################################
+##  PARTY SHIP SLOTS (301-341)  ########################
+##  Ship ownership and properties for parties
+########################################################
+
+# Shipyard System (298-300)
+slot_party_shipyard_ship_type = 298  # Ship being built
+slot_party_shipyard_ship_prop = 299  # Ship properties
+slot_party_shipyard_ship_time = 300  # Construction time remaining
+
+# Ship Type Slots (301-310)
+slot_party_1_ship_type  = 301
+slot_party_2_ship_type  = 302
+slot_party_3_ship_type  = 303
+slot_party_4_ship_type  = 304
+slot_party_5_ship_type  = 305
+slot_party_6_ship_type  = 306
+slot_party_7_ship_type  = 307
+slot_party_8_ship_type  = 308  # Also marks alien ships begin
+slot_party_9_ship_type  = 309
+slot_party_10_ship_type = 310
+
+# Ship Name Slots (311-320)
+slot_party_1_ship_name  = 311
+slot_party_2_ship_name  = 312
+slot_party_3_ship_name  = 313
+slot_party_4_ship_name  = 314
+slot_party_5_ship_name  = 315
+slot_party_6_ship_name  = 316
+slot_party_7_ship_name  = 317
+slot_party_8_ship_name  = 318
+slot_party_9_ship_name  = 319
+slot_party_10_ship_name = 320
+
+# Ship Quality Slots (321-330) - Condition percentage
+slot_party_1_ship_quality  = 321
+slot_party_2_ship_quality  = 322
+slot_party_3_ship_quality  = 323
+slot_party_4_ship_quality  = 324
+slot_party_5_ship_quality  = 325
+slot_party_6_ship_quality  = 326
+slot_party_7_ship_quality  = 327
+slot_party_8_ship_quality  = 328
+slot_party_9_ship_quality  = 329
+slot_party_10_ship_quality = 330
+
+# Ship Properties Slots (331-340) - Encoded customization data
+slot_party_1_ship_propertys  = 331
+slot_party_2_ship_propertys  = 332
+slot_party_3_ship_propertys  = 333
+slot_party_4_ship_propertys  = 334
+slot_party_5_ship_propertys  = 335
+slot_party_6_ship_propertys  = 336
+slot_party_7_ship_propertys  = 337
+slot_party_8_ship_propertys  = 338
+slot_party_9_ship_propertys  = 339
+slot_party_10_ship_propertys = 340
+
+# End marker
+slot_party_alien_ships_propertys_end = 341
+
+# Helper constants for ship slot ranges
+slot_party_ship_type_end = slot_party_1_ship_name
+
+slot_party_player_ships_type_begin = slot_party_1_ship_type
+slot_party_player_ships_type_end   = slot_party_8_ship_type
+slot_party_alien_ships_type_begin  = slot_party_8_ship_type
+slot_party_alien_ships_type_end    = slot_party_1_ship_name
+
+slot_party_player_ships_name_begin = slot_party_1_ship_name
+slot_party_player_ships_name_end   = slot_party_8_ship_name
+slot_party_alien_ships_name_begin  = slot_party_8_ship_name
+slot_party_alien_ships_name_end    = slot_party_1_ship_quality
+
+slot_party_player_ships_quality_begin = slot_party_1_ship_quality
+slot_party_player_ships_quality_end   = slot_party_8_ship_quality
+slot_party_alien_ships_quality_begin  = slot_party_8_ship_quality
+slot_party_alien_ships_quality_end    = slot_party_1_ship_propertys
+
+slot_party_player_ships_propertys_begin = slot_party_1_ship_propertys
+slot_party_player_ships_propertys_end   = slot_party_8_ship_propertys
+slot_party_alien_ships_propertys_begin  = slot_party_8_ship_propertys
+
+# AI State Backup (reuses ship property slots when party is on land)
+slot_party_ai_state_backup    = slot_party_1_ship_propertys  # 331
+slot_party_ai_object_backup   = slot_party_2_ship_propertys  # 332
+slot_party_ai_behavior_backup = slot_party_3_ship_propertys  # 333
+slot_party_ai_embarking_port  = slot_party_4_ship_propertys  # 334
+
+########################################################
+##  WOOD TYPE CONSTANTS  ###############################
+########################################################
+
+wood_type_pine = 1  # Basic wood
+wood_type_oak  = 2  # Good wood
+wood_type_teak = 3  # Best wood (if available in F&I War era)
+
+########################################################
+##  PLAYER SHIP SLOTS (Multiplayer)  ###################
+########################################################
+
+slot_player_ship      = 57  # Current ship in multiplayer
+slot_player_last_ship = 58  # Last ship used
 dplmc_slot_party_mission_diplomacy            = 300
 dplmc_slot_center_taxation                    = 400
 ##diplomacy start+ additional center slots
