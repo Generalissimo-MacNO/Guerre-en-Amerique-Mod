@@ -4970,6 +4970,18 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
  ("gekokujo_fort_companion_promote", "{playername} your endeavors are mine, the course of my life has taken a far grander course all thanks to you, my liege {playername}, glory be to you!"),
  #guerre en amerique microfactions! end 
+
+ # Naval System - Ship Type Names
+ ("str_ship_of_line", "Ship of the Line"),
+ ("str_frigate", "Frigate"),
+ ("str_sloop", "Sloop"),
+ ("str_brig", "Brig"),
+ ("str_merchant_ship", "Merchant Ship"),
+ ("str_longboat", "Longboat"),
+ ("str_canoe", "Canoe"),
+ ("str_bateau", "Bateau"),
+ ("str_unknown_ship", "Unknown Ship"),
+
 ]
 # modmerger_start version=201 type=2
 try:

@@ -69257,6 +69257,320 @@ Born at {s43}^Contact in {s44} of the {s45}.^\
 ## Jrider -
 #gekokujo 3.0 foraging skill end
 
+
+########################################################
+##  NAVAL SYSTEM SCRIPTS  ##############################
+##  Adapted from Viking Conquest for F&I War
+########################################################
+
+  # script_get_ship_properties
+  # Returns ship properties based on ship type
+  # Input: :ship_type (1-8)
+  # Output: reg1=speed, reg2=x_rotation, reg3=y_rotation, reg4=distance_to_front, reg5=radius, reg6=max_crew, reg7=name_string
+  ("get_ship_properties",
+    [
+      (store_script_param, ":ship_type", 1),
+      
+      (try_begin),
+        # Ship of the Line (was Busse)
+        (eq, ":ship_type", ship_type_ship_of_line),
+        (assign, reg1, 16),    # max_speed
+        (assign, reg2, -12),   # max_x_rotation (negative)
+        (assign, reg3, 5),     # max_y_rotation
+        (assign, reg4, 1940),  # distance_to_front
+        (assign, reg5, 375),   # radius
+        (assign, reg6, 90),    # max_crew
+        (assign, reg7, "str_ship_of_line"),
+        
+      (else_try),
+        # Frigate (was Skei)
+        (eq, ":ship_type", ship_type_frigate),
+        (assign, reg1, 20),    # max_speed
+        (assign, reg2, -17),   # max_x_rotation
+        (assign, reg3, 4),     # max_y_rotation
+        (assign, reg4, 2050),  # distance_to_front
+        (assign, reg5, 170),   # radius
+        (assign, reg6, 55),    # max_crew
+        (assign, reg7, "str_frigate"),
+        
+      (else_try),
+        # Sloop (was Karvi)
+        (eq, ":ship_type", ship_type_sloop),
+        (assign, reg1, 12),    # max_speed
+        (assign, reg2, -12),   # max_x_rotation
+        (assign, reg3, 5),     # max_y_rotation
+        (assign, reg4, 1150),  # distance_to_front
+        (assign, reg5, 260),   # radius
+        (assign, reg6, 30),    # max_crew
+        (assign, reg7, "str_sloop"),
+        
+      (else_try),
+        # Brig (was Snekkja)
+        (eq, ":ship_type", ship_type_brig),
+        (assign, reg1, 14),    # max_speed
+        (assign, reg2, -12),   # max_x_rotation
+        (assign, reg3, 5),     # max_y_rotation
+        (assign, reg4, 1180),  # distance_to_front
+        (assign, reg5, 165),   # radius
+        (assign, reg6, 16),    # max_crew
+        (assign, reg7, "str_brig"),
+        
+      (else_try),
+        # Merchant Ship (was Knorr)
+        (eq, ":ship_type", ship_type_merchant_ship),
+        (assign, reg1, 10),    # max_speed
+        (assign, reg2, -7),    # max_x_rotation
+        (assign, reg3, 2),     # max_y_rotation
+        (assign, reg4, 760),   # distance_to_front
+        (assign, reg5, 238),   # radius
+        (assign, reg6, 20),    # max_crew
+        (assign, reg7, "str_merchant_ship"),
+        
+      (else_try),
+        # Longboat (was Byrding)
+        (eq, ":ship_type", ship_type_longboat),
+        (assign, reg1, 8),     # max_speed
+        (assign, reg2, -7),    # max_x_rotation
+        (assign, reg3, 2),     # max_y_rotation
+        (assign, reg4, 790),   # distance_to_front
+        (assign, reg5, 190),   # radius
+        (assign, reg6, 8),     # max_crew
+        (assign, reg7, "str_longboat"),
+        
+      (else_try),
+        # Canoe (NEW - portage-able)
+        (eq, ":ship_type", ship_type_canoe),
+        (assign, reg1, 10),    # max_speed (fast, light)
+        (assign, reg2, -5),    # max_x_rotation
+        (assign, reg3, 2),     # max_y_rotation
+        (assign, reg4, 400),   # distance_to_front (small)
+        (assign, reg5, 80),    # radius (very small)
+        (assign, reg6, 6),     # max_crew (2-6 people)
+        (assign, reg7, "str_canoe"),
+        
+      (else_try),
+        # Bateau (NEW - portage-able with difficulty)
+        (eq, ":ship_type", ship_type_bateau),
+        (assign, reg1, 8),     # max_speed
+        (assign, reg2, -7),    # max_x_rotation
+        (assign, reg3, 2),     # max_y_rotation
+        (assign, reg4, 900),   # distance_to_front
+        (assign, reg5, 200),   # radius
+        (assign, reg6, 25),    # max_crew (15-30 people)
+        (assign, reg7, "str_bateau"),
+        
+      (else_try),
+        # Unknown ship type
+        (display_message, "@ERROR: Unknown ship type!"),
+        (assign, reg1, 10),
+        (assign, reg2, -7),
+        (assign, reg3, 2),
+        (assign, reg4, 500),
+        (assign, reg5, 150),
+        (assign, reg6, 10),
+        (assign, reg7, "str_unknown_ship"),
+      (end_try),
+    ]
+  ),
+
+  # script_get_lord_preferred_ship
+  # NEW SCRIPT - Checks if a lord has a preferred ship type
+  # Input: :party_no
+  # Output: reg0=ship_type (0=none), reg1=quality_bonus, reg2=max_ships_bonus, reg3=specialization
+  ("get_lord_preferred_ship",
+    [
+      (store_script_param, ":party_no", 1),
+      
+      # Initialize outputs to 0 (no preference)
+      (assign, reg0, 0),
+      (assign, reg1, 0),
+      (assign, reg2, 0),
+      (assign, reg3, 0),
+      
+      # Get party leader
+      (party_get_slot, ":party_leader", ":party_no", slot_party_leader),
+      
+      # Check if leader exists and has preferences
+      (try_begin),
+        (gt, ":party_leader", 0),
+        
+        # Get preferred ship type
+        (troop_get_slot, ":preferred_ship", ":party_leader", slot_troop_preferred_ship_type),
+        
+        # Only proceed if a preference is set (> 0)
+        (try_begin),
+          (gt, ":preferred_ship", 0),
+          (is_between, ":preferred_ship", 1, 9),  # Valid ship type (1-8)
+          
+          # Get all naval preferences
+          (assign, reg0, ":preferred_ship"),
+          (troop_get_slot, reg1, ":party_leader", slot_troop_ship_quality_bonus),
+          (troop_get_slot, reg2, ":party_leader", slot_troop_max_ships_bonus),
+          (troop_get_slot, reg3, ":party_leader", slot_troop_naval_specialization),
+          
+          # Validate and cap bonuses
+          (try_begin),
+            (lt, reg1, 0),
+            (assign, reg1, 0),
+          (else_try),
+            (gt, reg1, 25),
+            (assign, reg1, 25),
+          (end_try),
+          
+          (try_begin),
+            (lt, reg2, 0),
+            (assign, reg2, 0),
+          (else_try),
+            (gt, reg2, 5),
+            (assign, reg2, 5),
+          (end_try),
+        (end_try),
+      (end_try),
+    ]
+  ),
+
+  # script_calculate_ship_value
+  # Calculates the value of a ship based on type, condition, and wood
+  # Input: :ship_type, :ship_condition, :wood_type
+  # Output: reg0 = ship value in denars
+  ("calculate_ship_value",
+    [
+      (store_script_param, ":ship_type", 1),
+      (store_script_param, ":ship_condition", 2),
+      (store_script_param, ":wood_type", 3),
+      
+      # Get ship properties
+      (call_script, "script_get_ship_properties", ":ship_type"),
+      (assign, ":max_speed", reg1),
+      (assign, ":max_crew", reg6),
+      
+      # Calculate base value
+      (store_mul, ":speed_value", ":max_speed", ":ship_condition"),
+      (store_mul, ":crew_value", ":max_crew", 100),
+      (store_add, ":ship_value", ":speed_value", ":crew_value"),
+      (val_mul, ":ship_value", 4),
+      
+      # Apply wood type multiplier
+      (try_begin),
+        (eq, ":wood_type", wood_type_oak),
+        (val_mul, ":ship_value", 115),
+        (val_div, ":ship_value", 100),
+      (else_try),
+        (eq, ":wood_type", wood_type_teak),
+        (val_mul, ":ship_value", 130),
+        (val_div, ":ship_value", 100),
+      (end_try),
+      
+      # Final balancing
+      (val_mul, ":ship_value", 90),
+      (val_div, ":ship_value", 100),
+      
+      (assign, reg0, ":ship_value"),
+    ]
+  ),
+
+  # script_party_get_ideal_ship_for_party_size
+  # Determines ideal ship type based on party size (default assignment)
+  # Input: :party_size
+  # Output: reg0 = ship_type
+  ("party_get_ideal_ship_for_party_size",
+    [
+      (store_script_param, ":party_size", 1),
+      
+      (try_begin),
+        (gt, ":party_size", 110),
+        (assign, reg0, ship_type_ship_of_line),
+      (else_try),
+        (gt, ":party_size", 78),
+        (assign, reg0, ship_type_frigate),
+      (else_try),
+        (gt, ":party_size", 54),
+        (assign, reg0, ship_type_sloop),
+      (else_try),
+        (gt, ":party_size", 14),
+        (assign, reg0, ship_type_brig),
+      (else_try),
+        (gt, ":party_size", 0),
+        (assign, reg0, ship_type_longboat),
+      (else_try),
+        (assign, reg0, 0),  # No ship
+      (end_try),
+    ]
+  ),
+
+  # script_encode_ship_properties
+  # Encodes ship customization into a single value
+  # Input: :wood_type, :sail_design, :paint_finish, :dragon_head, :cargo
+  # Output: reg0 = encoded value
+  ("encode_ship_properties",
+    [
+      (store_script_param, ":wood", 1),
+      (store_script_param, ":sail", 2),
+      (store_script_param, ":finish", 3),
+      (store_script_param, ":dragon", 4),
+      (store_script_param, ":cargo", 5),
+      
+      # Encode: wood(2 bits) + sail(4 bits) + finish(4 bits) + dragon(2 bits) + cargo(1 bit)
+      (assign, ":encoded", 0),
+      
+      # Wood (bits 0-1)
+      (val_add, ":encoded", ":wood"),
+      
+      # Sail (bits 2-5)
+      (store_mul, ":sail_shifted", ":sail", 4),
+      (val_add, ":encoded", ":sail_shifted"),
+      
+      # Finish (bits 6-9)
+      (store_mul, ":finish_shifted", ":finish", 64),
+      (val_add, ":encoded", ":finish_shifted"),
+      
+      # Dragon (bits 10-11)
+      (store_mul, ":dragon_shifted", ":dragon", 1024),
+      (val_add, ":encoded", ":dragon_shifted"),
+      
+      # Cargo (bit 12)
+      (store_mul, ":cargo_shifted", ":cargo", 4096),
+      (val_add, ":encoded", ":cargo_shifted"),
+      
+      (assign, reg0, ":encoded"),
+    ]
+  ),
+
+  # script_decode_ship_properties
+  # Decodes ship customization from encoded value
+  # Input: :encoded_value
+  # Output: reg1=wood, reg2=sail, reg3=finish, reg4=dragon, reg5=cargo
+  ("decode_ship_properties",
+    [
+      (store_script_param, ":encoded", 1),
+      
+      # Wood (bits 0-1)
+      (store_mod, ":wood", ":encoded", 4),
+      (assign, reg1, ":wood"),
+      
+      # Sail (bits 2-5)
+      (store_div, ":temp", ":encoded", 4),
+      (store_mod, ":sail", ":temp", 16),
+      (assign, reg2, ":sail"),
+      
+      # Finish (bits 6-9)
+      (store_div, ":temp", ":encoded", 64),
+      (store_mod, ":finish", ":temp", 16),
+      (assign, reg3, ":finish"),
+      
+      # Dragon (bits 10-11)
+      (store_div, ":temp", ":encoded", 1024),
+      (store_mod, ":dragon", ":temp", 4),
+      (assign, reg4, ":dragon"),
+      
+      # Cargo (bit 12)
+      (store_div, ":temp", ":encoded", 4096),
+      (store_mod, ":cargo", ":temp", 2),
+      (assign, reg5, ":cargo"),
+    ]
+  ),
+
+
 ]
 # modmerger_start version=201 type=2
 try:
