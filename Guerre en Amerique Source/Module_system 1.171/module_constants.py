@@ -202,6 +202,19 @@ slot_faction_ai_last_decisive_event     = 98 #capture a fortress or declaration 
 
 slot_faction_morale_of_player_troops    = 99
 
+# Confederacy system slots (for Haudenosaunee and similar factions)
+slot_faction_is_confederacy = 100
+slot_faction_council_member_1 = 101  # Mohawk
+slot_faction_council_member_2 = 102  # Oneida
+slot_faction_council_member_3 = 103  # Onondaga
+slot_faction_council_member_4 = 104  # Cayuga
+slot_faction_council_member_5 = 105  # Seneca
+slot_faction_council_member_6 = 106  # Tuscarora
+slot_faction_current_speaker = 107   # Rotating diplomatic speaker
+slot_faction_speaker_rotation_time = 108
+slot_faction_last_vote_time = 109
+slot_faction_last_vote_result = 110
+
 #gekokujo 2.1a space out the slots properly argh
 ##diplomacy
 #slot_faction_truce_days_with_factions_begin 			= 120
@@ -2117,6 +2130,13 @@ dplmc_slot_troop_political_stance             = 164 #dplmc+ deprecated, see note
 dplmc_slot_troop_temp_slot                    = 164 #replaces dplmc_slot_troop_political_stance
 ##diplomacy end+
 dplmc_slot_troop_affiliated                   = 165 ##notes: 0 is default, 1 is asked; on newer games 3 is affiliated and 4 is betrayed
+
+# Confederacy system troop slots
+slot_troop_is_council_member = 200  # 1 if troop is a council member
+slot_troop_council_nation = 201     # Which nation they represent (1-6)
+slot_troop_voting_weight = 202      # Always 1 for simple majority
+slot_troop_last_vote = 203          # How they voted on last issue (1=yes, 0=no)
+slot_troop_vote_reason = 204        # String explaining their vote
 dplmc_slot_party_mission_diplomacy            = 300
 dplmc_slot_center_taxation                    = 400
 ##diplomacy start+ additional center slots
@@ -2386,6 +2406,15 @@ def _validate_constants(verbose=False):
             raise Exception("ERROR, condition %s <= %s failed [not true that %s <= %s]" % (from_key, to_key, str(from_value), str(to_value)))
         elif verbose:
             print "%s <= %s [%s <= %s]" % (from_key, to_key, str(from_value), str(to_value))
+
+# Decision types that require council vote
+decision_type_declare_war = 1
+decision_type_make_peace = 2
+decision_type_appoint_marshal = 3
+decision_type_grant_fief = 4
+decision_type_accept_player_service = 5
+decision_type_join_player_kingdom = 6
+decision_type_strategic_decision = 7
 
 #Automatically run this on module import, so errors are detected
 #during building.

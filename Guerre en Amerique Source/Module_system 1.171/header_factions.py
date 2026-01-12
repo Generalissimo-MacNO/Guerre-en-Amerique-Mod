@@ -8,6 +8,7 @@
 from header_common import *
 
 ff_always_hide_label = 0x00000001
+ff_confederacy = 0x00000002  # Marks faction as using council voting system
 ff_max_rating_bits = 8
 ff_max_rating_mask = 0x0000ff00
 

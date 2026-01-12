@@ -60,7 +60,7 @@ factions = [
   ("kingdom_1",   "British America",		0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.50),("shinano_rebels", -0.01)], [], 0x993333), #British America 100
   ("kingdom_2",   "Nouvelle-France",	    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", +0.50),("shinano_rebels", -0.50)], [], 0x003168), #New France 100
   ("kingdom_3",   "Nueva España",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xFFD700), #New Spain 100
-  ("kingdom_4",   "Haudenosaunee",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_7", +0.9)], [], 0x8502F7), #Iroquois 85
+  ("kingdom_4",   "Haudenosaunee",		    ff_confederacy, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_7", +0.9)], [], 0x8502F7), #Iroquois 85
   ("kingdom_5",   "Ani-Yvwiya",  	        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xF28305), #Cherokee 75
   ("kingdom_6",   "Wabana'ki Mawuhkacik",  	0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x28694B), #Wabanaki 85
   ("kingdom_7",   "Kanien'keha:ka",	        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_4", +0.9)], [], 0x5e3000), #Mohawk 85

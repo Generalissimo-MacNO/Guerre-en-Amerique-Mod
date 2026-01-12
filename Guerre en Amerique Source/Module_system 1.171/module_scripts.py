@@ -462,8 +462,8 @@ scripts = [
 	  (troop_set_slot, "trp_kingdom_3_lord", slot_troop_renown, 0),
 
       (faction_set_slot, "fac_kingdom_4",  slot_faction_culture, "fac_culture_4"),
-      (faction_set_slot, "fac_kingdom_4",  slot_faction_leader, "trp_kingdom_4_lord"),
-	  (troop_set_slot, "trp_kingdom_4_lord", slot_troop_renown, 0),
+      # Initialize Haudenosaunee Confederacy
+      (call_script, "script_initialize_haudenosaunee_council"),
 
       (faction_set_slot, "fac_kingdom_5",  slot_faction_culture, "fac_culture_5"),
       (faction_set_slot, "fac_kingdom_5",  slot_faction_leader, "trp_kingdom_5_lord"),
@@ -69255,6 +69255,60 @@ Born at {s43}^Contact in {s44} of the {s45}.^\
         (try_end),
    ]),
 ## Jrider -
+
+# Haudenosaunee Confederacy Initialization Script
+  ("initialize_haudenosaunee_council", [
+    # Set faction as confederacy
+    (faction_set_slot, "fac_kingdom_4", slot_faction_is_confederacy, 1),
+    
+    # Set virtual council as faction leader
+    (faction_set_slot, "fac_kingdom_4", slot_faction_leader, "trp_haudenosaunee_council"),
+    
+    # Register six nation sachems
+    (faction_set_slot, "fac_kingdom_4", slot_faction_council_member_1, "trp_sachem_mohawk"),
+    (faction_set_slot, "fac_kingdom_4", slot_faction_council_member_2, "trp_sachem_oneida"),
+    (faction_set_slot, "fac_kingdom_4", slot_faction_council_member_3, "trp_sachem_onondaga"),
+    (faction_set_slot, "fac_kingdom_4", slot_faction_council_member_4, "trp_sachem_cayuga"),
+    (faction_set_slot, "fac_kingdom_4", slot_faction_council_member_5, "trp_sachem_seneca"),
+    (faction_set_slot, "fac_kingdom_4", slot_faction_council_member_6, "trp_sachem_tuscarora"),
+    
+    # Set initial speaker (Onondaga traditionally are firekeepers)
+    (faction_set_slot, "fac_kingdom_4", slot_faction_current_speaker, "trp_sachem_onondaga"),
+    (store_current_hours, ":current_hours"),
+    (faction_set_slot, "fac_kingdom_4", slot_faction_speaker_rotation_time, ":current_hours"),
+    
+    # Mark all sachems as council members with their nation numbers
+    (troop_set_slot, "trp_sachem_mohawk", slot_troop_is_council_member, 1),
+    (troop_set_slot, "trp_sachem_mohawk", slot_troop_council_nation, 1),
+    (troop_set_slot, "trp_sachem_mohawk", slot_troop_voting_weight, 1),
+    (troop_set_slot, "trp_sachem_mohawk", slot_troop_renown, 0),
+    
+    (troop_set_slot, "trp_sachem_oneida", slot_troop_is_council_member, 1),
+    (troop_set_slot, "trp_sachem_oneida", slot_troop_council_nation, 2),
+    (troop_set_slot, "trp_sachem_oneida", slot_troop_voting_weight, 1),
+    (troop_set_slot, "trp_sachem_oneida", slot_troop_renown, 0),
+    
+    (troop_set_slot, "trp_sachem_onondaga", slot_troop_is_council_member, 1),
+    (troop_set_slot, "trp_sachem_onondaga", slot_troop_council_nation, 3),
+    (troop_set_slot, "trp_sachem_onondaga", slot_troop_voting_weight, 1),
+    (troop_set_slot, "trp_sachem_onondaga", slot_troop_renown, 0),
+    
+    (troop_set_slot, "trp_sachem_cayuga", slot_troop_is_council_member, 1),
+    (troop_set_slot, "trp_sachem_cayuga", slot_troop_council_nation, 4),
+    (troop_set_slot, "trp_sachem_cayuga", slot_troop_voting_weight, 1),
+    (troop_set_slot, "trp_sachem_cayuga", slot_troop_renown, 0),
+    
+    (troop_set_slot, "trp_sachem_seneca", slot_troop_is_council_member, 1),
+    (troop_set_slot, "trp_sachem_seneca", slot_troop_council_nation, 5),
+    (troop_set_slot, "trp_sachem_seneca", slot_troop_voting_weight, 1),
+    (troop_set_slot, "trp_sachem_seneca", slot_troop_renown, 0),
+    
+    (troop_set_slot, "trp_sachem_tuscarora", slot_troop_is_council_member, 1),
+    (troop_set_slot, "trp_sachem_tuscarora", slot_troop_council_nation, 6),
+    (troop_set_slot, "trp_sachem_tuscarora", slot_troop_voting_weight, 1),
+    (troop_set_slot, "trp_sachem_tuscarora", slot_troop_renown, 0),
+  ]),
+
 #gekokujo 3.0 foraging skill end
 
 ]
