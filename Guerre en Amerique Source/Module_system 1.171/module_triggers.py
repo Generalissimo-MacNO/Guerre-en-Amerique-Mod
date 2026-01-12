@@ -972,6 +972,66 @@ triggers = [
 
 ##diplomacy end
 
+
+# Haudenosaunee Confederacy - Check for Dead Council Members
+  (1, 0, 0, # Check frequently
+  [
+    (faction_slot_eq, "fac_kingdom_4", slot_faction_is_confederacy, 1),
+  ],
+  [
+    # Check each council member
+    (try_for_range, ":slot", slot_faction_council_member_1, slot_faction_council_member_6 + 1),
+        (faction_get_slot, ":sachem", "fac_kingdom_4", ":slot"),
+        (ge, ":sachem", 0),
+        
+        # Check if sachem is dead
+        (try_begin),
+            (neg|troop_is_alive, ":sachem"),
+            # Handle succession
+            (call_script, "script_handle_sachem_death", ":sachem"),
+        (try_end),
+    (try_end),
+  ]),
+
+
+# Haudenosaunee Confederacy - Speaker Rotation
+  (24, 0, 0, # Check daily
+  [
+    (faction_slot_eq, "fac_kingdom_4", slot_faction_is_confederacy, 1),
+  ],
+  [
+    (store_current_hours, ":current_hours"),
+    (faction_get_slot, ":last_rotation", "fac_kingdom_4", slot_faction_speaker_rotation_time),
+    (store_sub, ":hours_since", ":current_hours", ":last_rotation"),
+    
+    # Rotate every 60 days (1440 hours)
+    (try_begin),
+        (ge, ":hours_since", 1440),
+        
+        # Get current speaker
+        (faction_get_slot, ":current_speaker", "fac_kingdom_4", slot_faction_current_speaker),
+        
+        # Find next living council member
+        (call_script, "script_get_next_council_speaker", "fac_kingdom_4", ":current_speaker"),
+        (assign, ":next_speaker", reg0),
+        
+        # Rotate
+        (try_begin),
+            (ge, ":next_speaker", 0),
+            (faction_set_slot, "fac_kingdom_4", slot_faction_current_speaker, ":next_speaker"),
+            (faction_set_slot, "fac_kingdom_4", slot_faction_speaker_rotation_time, ":current_hours"),
+            
+            # Notify player if they're allied with Haudenosaunee
+            (try_begin),
+                (this_or_next|eq, "$players_kingdom", "fac_kingdom_4"),
+                (faction_slot_eq, "fac_kingdom_4", slot_faction_player_alarm, 0),
+                (str_store_troop_name, s1, ":next_speaker"),
+                (display_message, "@{s1} is now the Speaker of the Grand Council.", 0x65C18C),
+            (try_end),
+        (try_end),
+    (try_end),
+  ]),
+
 #Guerre en Amerique bayonet
 
 

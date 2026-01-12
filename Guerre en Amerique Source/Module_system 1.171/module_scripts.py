@@ -69256,6 +69256,284 @@ Born at {s43}^Contact in {s44} of the {s45}.^\
    ]),
 ## Jrider -
 
+# Haudenosaunee Confederacy Voting Scripts
+
+  # Main council voting script
+  # INPUT: arg1 = faction_no, arg2 = decision_type, arg3 = decision_target
+  # OUTPUT: reg0 = result (1=passed, 0=failed), reg1 = votes_for, reg2 = votes_against
+  ("council_vote_on_decision", [
+    (store_script_param, ":faction_no", 1),
+    (store_script_param, ":decision_type", 2),
+    (store_script_param, ":decision_target", 3),
+    
+    # Initialize vote counters
+    (assign, ":votes_for", 0),
+    (assign, ":votes_against", 0),
+    (assign, ":total_votes", 0),
+    
+    # Vote from each council member
+    (try_for_range, ":slot", slot_faction_council_member_1, slot_faction_council_member_6 + 1),
+        (faction_get_slot, ":sachem", ":faction_no", ":slot"),
+        (ge, ":sachem", 0),
+        (troop_is_alive, ":sachem"),
+        
+        # Calculate this sachem's vote
+        (call_script, "script_sachem_calculate_vote", ":sachem", ":decision_type", ":decision_target"),
+        (assign, ":vote", reg0),
+        
+        # Store vote
+        (troop_set_slot, ":sachem", slot_troop_last_vote, ":vote"),
+        
+        # Tally
+        (val_add, ":total_votes", 1),
+        (try_begin),
+            (eq, ":vote", 1),
+            (val_add, ":votes_for", 1),
+        (else_try),
+            (val_add, ":votes_against", 1),
+        (try_end),
+    (try_end),
+    
+    # Determine result (need 4/6 = simple majority)
+    (assign, ":result", 0),
+    (try_begin),
+        (ge, ":votes_for", 4),
+        (assign, ":result", 1),
+    (try_end),
+    
+    # Store results
+    (faction_set_slot, ":faction_no", slot_faction_last_vote_result, ":result"),
+    (store_current_hours, ":current_hours"),
+    (faction_set_slot, ":faction_no", slot_faction_last_vote_time, ":current_hours"),
+    
+    # Return result
+    (assign, reg0, ":result"),
+    (assign, reg1, ":votes_for"),
+    (assign, reg2, ":votes_against"),
+  ]),
+
+  # Calculate individual sachem's vote
+  # INPUT: arg1 = sachem_troop, arg2 = decision_type, arg3 = decision_target
+  # OUTPUT: reg0 = vote (1=yes, 0=no)
+  ("sachem_calculate_vote", [
+    (store_script_param, ":sachem", 1),
+    (store_script_param, ":decision_type", 2),
+    (store_script_param, ":decision_target", 3),
+    
+    # Base vote tendency (50/50)
+    (assign, ":vote_score", 50),
+    
+    # Factor 1: Personality traits
+    (try_begin),
+        (troop_slot_ge, ":sachem", slot_troop_personalityclash_state, 0),
+        (troop_get_slot, ":personality", ":sachem", slot_troop_personalityclash_state),
+        
+        # Martial personality more likely to vote for war
+        (try_begin),
+            (eq, ":decision_type", decision_type_declare_war),
+            (lt, ":personality", 25),
+            (val_add, ":vote_score", 20),
+        (else_try),
+            (eq, ":decision_type", decision_type_declare_war),
+            (gt, ":personality", 75),
+            (val_add, ":vote_score", -20),
+        (try_end),
+    (try_end),
+    
+    # Factor 2: Relationship with player
+    (try_begin),
+        (eq, ":decision_type", decision_type_accept_player_service),
+        (troop_get_slot, ":relation", ":sachem", slot_troop_player_relation),
+        (val_div, ":relation", 5),
+        (val_add, ":vote_score", ":relation"),
+    (try_end),
+    
+    # Factor 3: Faction relations
+    (try_begin),
+        (this_or_next|eq, ":decision_type", decision_type_declare_war),
+        (eq, ":decision_type", decision_type_make_peace),
+        (is_between, ":decision_target", kingdoms_begin, kingdoms_end),
+        (store_relation, ":faction_relation", "fac_kingdom_4", ":decision_target"),
+        (val_mul, ":faction_relation", 100),
+        (try_begin),
+            (eq, ":decision_type", decision_type_declare_war),
+            (val_mul, ":faction_relation", -1),
+            (val_div, ":faction_relation", 3),
+            (val_add, ":vote_score", ":faction_relation"),
+        (else_try),
+            (eq, ":decision_type", decision_type_make_peace),
+            (val_div, ":faction_relation", 3),
+            (val_add, ":vote_score", ":faction_relation"),
+        (try_end),
+    (try_end),
+    
+    # Factor 4: Random element
+    (store_random_in_range, ":random", -15, 16),
+    (val_add, ":vote_score", ":random"),
+    
+    # Convert score to yes/no vote
+    (assign, ":vote", 0),
+    (try_begin),
+        (ge, ":vote_score", 50),
+        (assign, ":vote", 1),
+    (try_end),
+    
+    # Return vote
+    (assign, reg0, ":vote"),
+  ]),
+
+  # Display council vote results
+  # INPUT: arg1 = decision_type, arg2 = votes_for, arg3 = votes_against
+  ("display_council_vote_results", [
+    (store_script_param, ":decision_type", 1),
+    (store_script_param, ":votes_for", 2),
+    (store_script_param, ":votes_against", 3),
+    
+    (assign, reg1, ":votes_for"),
+    (assign, reg2, ":votes_against"),
+    
+    # Get decision type string
+    (try_begin),
+        (eq, ":decision_type", decision_type_declare_war),
+        (str_store_string, s1, "@declare war"),
+    (else_try),
+        (eq, ":decision_type", decision_type_make_peace),
+        (str_store_string, s1, "@make peace"),
+    (else_try),
+        (eq, ":decision_type", decision_type_appoint_marshal),
+        (str_store_string, s1, "@appoint a War Chief"),
+    (else_try),
+        (eq, ":decision_type", decision_type_accept_player_service),
+        (str_store_string, s1, "@accept your service"),
+    (else_try),
+        (str_store_string, s1, "@make this decision"),
+    (try_end),
+    
+    # Display result
+    (try_begin),
+        (ge, ":votes_for", 4),
+        (display_message, "@The Grand Council has voted to {s1}. ({reg1} in favor, {reg2} against)", 0x65C18C),
+    (else_try),
+        (display_message, "@The Grand Council has voted against {s1}. ({reg1} in favor, {reg2} against)", 0xFF6B6B),
+    (try_end),
+  ]),
+
+
+
+  # Get next council speaker
+  # INPUT: arg1 = faction_no, arg2 = current_speaker
+  # OUTPUT: reg0 = next_speaker
+  ("get_next_council_speaker", [
+    (store_script_param, ":faction_no", 1),
+    (store_script_param, ":current_speaker", 2),
+    
+    # Get current speaker's nation number
+    (troop_get_slot, ":current_nation", ":current_speaker", slot_troop_council_nation),
+    
+    # Find next nation in sequence
+    (assign, ":next_nation", ":current_nation"),
+    (val_add, ":next_nation", 1),
+    (try_begin),
+        (gt, ":next_nation", 6),
+        (assign, ":next_nation", 1),
+    (try_end),
+    
+    # Find sachem of next nation
+    (assign, ":next_speaker", -1),
+    (try_for_range, ":attempt", 0, 6),
+        (try_for_range, ":slot", slot_faction_council_member_1, slot_faction_council_member_6 + 1),
+            (faction_get_slot, ":sachem", ":faction_no", ":slot"),
+            (ge, ":sachem", 0),
+            (troop_is_alive, ":sachem"),
+            (troop_slot_eq, ":sachem", slot_troop_council_nation, ":next_nation"),
+            
+            # Found next speaker
+            (assign, ":next_speaker", ":sachem"),
+            (assign, ":attempt", 6),
+            (break_loop),
+        (try_end),
+        
+        # If not found, try next nation
+        (lt, ":next_speaker", 0),
+        (val_add, ":next_nation", 1),
+        (try_begin),
+            (gt, ":next_nation", 6),
+            (assign, ":next_nation", 1),
+        (try_end),
+    (try_end),
+    
+    # Return next speaker
+    (assign, reg0, ":next_speaker"),
+  ]),
+
+
+  # Handle sachem death and succession
+  # INPUT: arg1 = dead_sachem
+  ("handle_sachem_death", [
+    (store_script_param, ":dead_sachem", 1),
+    
+    # Check if this was a council member
+    (try_begin),
+        (troop_slot_eq, ":dead_sachem", slot_troop_is_council_member, 1),
+        
+        # Get their nation
+        (troop_get_slot, ":nation", ":dead_sachem", slot_troop_council_nation),
+        
+        # Find replacement from same faction
+        (assign, ":replacement", -1),
+        (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+            (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+            (store_troop_faction, ":troop_faction", ":troop_no"),
+            (eq, ":troop_faction", "fac_kingdom_4"),
+            (neq, ":troop_no", ":dead_sachem"),
+            (troop_is_alive, ":troop_no"),
+            (neg|troop_slot_eq, ":troop_no", slot_troop_is_council_member, 1),
+            
+            # Found potential replacement
+            (assign, ":replacement", ":troop_no"),
+            (break_loop),
+        (try_end),
+        
+        # Appoint replacement
+        (try_begin),
+            (ge, ":replacement", 0),
+            
+            # Update council membership
+            (troop_set_slot, ":replacement", slot_troop_is_council_member, 1),
+            (troop_set_slot, ":replacement", slot_troop_council_nation, ":nation"),
+            (troop_set_slot, ":replacement", slot_troop_voting_weight, 1),
+            
+            # Update faction slot
+            (try_for_range, ":slot", slot_faction_council_member_1, slot_faction_council_member_6 + 1),
+                (faction_get_slot, ":sachem", "fac_kingdom_4", ":slot"),
+                (eq, ":sachem", ":dead_sachem"),
+                (faction_set_slot, "fac_kingdom_4", ":slot", ":replacement"),
+                (break_loop),
+            (try_end),
+            
+            # Notify player
+            (str_store_troop_name, s1, ":dead_sachem"),
+            (str_store_troop_name, s2, ":replacement"),
+            (display_message, "@{s1} has passed. {s2} has been chosen by the clan mothers to take their place on the Grand Council.", 0xFFD700),
+            
+            # Check if dead sachem was speaker
+            (faction_get_slot, ":current_speaker", "fac_kingdom_4", slot_faction_current_speaker),
+            (try_begin),
+                (eq, ":current_speaker", ":dead_sachem"),
+                # Immediately rotate to next speaker
+                (call_script, "script_get_next_council_speaker", "fac_kingdom_4", ":dead_sachem"),
+                (assign, ":next_speaker", reg0),
+                (try_begin),
+                    (ge, ":next_speaker", 0),
+                    (faction_set_slot, "fac_kingdom_4", slot_faction_current_speaker, ":next_speaker"),
+                    (str_store_troop_name, s3, ":next_speaker"),
+                    (display_message, "@{s3} has assumed the role of Speaker.", 0xFFD700),
+                (try_end),
+            (try_end),
+        (try_end),
+    (try_end),
+  ]),
+
 # Haudenosaunee Confederacy Initialization Script
   ("initialize_haudenosaunee_council", [
     # Set faction as confederacy
