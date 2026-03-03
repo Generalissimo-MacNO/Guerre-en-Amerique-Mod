@@ -120,7 +120,12 @@ parties = [
 #Wabanaki 6
   ("town_22","Odanak", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-146.43,-235.95),[],270),                       
 #Mohawk 7
-  ("town_23","Nowdaga", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-87.54,-180.58),[],240),                        
+  # town_23 — Sept Nations du Canada capital
+  # Kahnawake (Sault St. Louis) — the principal village of the Kahnawake Mohawk,
+  # located on the south shore of the St. Lawrence near Montréal.
+  # This is the political heart of the Seven Nations of Canada confederacy.
+  # Coordinates placed on the south shore of the St. Lawrence, west of Montréal.
+  ("town_23","Kahnawake", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-104.50,-221.50),[],240),                        
 #Huron 8
   ("town_24","Sunyendeand", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(45.57,-147.54),[],120),              
 #Lenape 9
@@ -142,6 +147,25 @@ parties = [
   ("town_33","Chokkilissa", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(172.06,-31.86),[],225),             
 #Creek 17
   ("town_34","Coweta", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(99.6,4.41),[],315),
+#Catawba 18
+  # town_35 — Katawba (Catawba Nation) capital
+  # Nassaw — the principal town of the Catawba Nation on the Catawba River
+  # in the Carolina Piedmont, near modern-day Rock Hill, South Carolina.
+  # The Catawba are British-allied scouts and warriors in the southeast.
+  ("town_35","Nassaw", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(38.50,-38.00),[],180),
+#Illinois 19
+  # town_36 — Inoka (Illinois Confederacy) capital
+  # Kaskaskia — the principal French-allied Illinois town on the Mississippi,
+  # near the confluence of the Kaskaskia and Mississippi rivers in the
+  # Illinois Country. A key node in French communications between
+  # Louisiana and the Great Lakes.
+  ("town_36","Kaskaskia", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(183.00,-68.00),[],270),
+#Mississauga 20
+  # town_37 — Mississauga capital
+  # Mississauga — the principal village of the Mississauga Ojibwe on the
+  # north shore of Lake Ontario, near the mouth of the Credit River.
+  # A buffer nation between the Iroquois and the French St. Lawrence valley.
+  ("town_37","Mississauga", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-28.00,-196.00),[],90),
 ################SPACER#######################################
 #FACTION ORDER Forts/Castles
 #British 1
