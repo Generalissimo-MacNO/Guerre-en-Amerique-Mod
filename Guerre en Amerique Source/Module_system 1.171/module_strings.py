@@ -2481,7 +2481,7 @@ strings = [
   ("kingdom_4_adjective",                     "Iroquois"),
   ("kingdom_5_adjective",                     "Shawnee"),
   ("kingdom_6_adjective",                     "Wabanaki"),
-  ("kingdom_7_adjective",                     "Ojibwe"),
+  ("kingdom_7_adjective",                     "Seven Nations"),
   ("kingdom_8_adjective",                     "Cherokee"),
   ("kingdom_9_adjective",                     "Creek"),
   ("kingdom_10_adjective",                     "Catawba"),

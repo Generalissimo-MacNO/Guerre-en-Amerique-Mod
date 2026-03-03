@@ -120,7 +120,7 @@ parties = [
 #Wabanaki 6
   ("town_22","Odanak", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-146.43,-235.95),[],270),                       
 #Mohawk 7
-  ("town_23","Nowdaga", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-87.54,-180.58),[],240),                        
+  ("town_23","Kahnawake", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-87.54,-180.58),[],240),                                                
 #Huron 8
   ("town_24","Sunyendeand", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(45.57,-147.54),[],120),              
 #Lenape 9
@@ -223,8 +223,8 @@ parties = [
   ("castle_71","Sipekni'katik",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-283.94,-216.75),[],260),   
   ("castle_72","Wolinak",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-160.34,-244.55),[],120),            
 #Mohawk 7
-  ("castle_73","Canohogo",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-98.41,-197.67),[],260),
-  ("castle_74","Kahnawake",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-92.19,-208.38),[],55),         
+  ("castle_73","Akwesasne",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-98.41,-197.67),[],260),
+  ("castle_74","Kanesatake",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-92.19,-208.38),[],55),         
 #Huron 8
   ("castle_75","Lorette",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-164.35,-256.89),[],120),          
 #Lenape 9
@@ -427,13 +427,13 @@ parties = [
 ("village_149","Madawaska",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-192.25,-224.53),[], 100),     
 ("village_150","Alenape Meneha",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-202.68,-207.33),[], 100),
 #Mohawk 7
-("village_151","Kanien'keha:ka",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-93.6,-199.34),[], 150),
-("village_152","Tarajorees",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.65,-179.6),[], 200),    
-("village_153","Canajoharie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.72,-181.72),[], 40),
-("village_154","Ganienkeh",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-106.65,-201.86),[], 120),    
+("village_151","Caughnawaga",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-93.6,-199.34),[], 150),
+("village_152","Sault-Saint-Louis",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.65,-179.6),[], 200),    
+("village_153","Lac-des-Deux-Montagnes",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.72,-181.72),[], 40),
+("village_154","Nipissing Village",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-106.65,-201.86),[], 120),    
 ("village_155","Ahkwesahsne",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.87,-194.92),[], 200),   
-("village_156","Kanesatake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-89.19,-212.09),[], 200),    
-("village_157","Atheclaghque",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.42,-179.27),[], 200),  
+("village_156","Algonquin Village",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-89.19,-212.09),[], 200),    
+("village_157","Saint-Régis",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.42,-179.27),[], 200),  
 #Huron 8
 ("village_158","Ancienne Lorette",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-161.89,-258.53),[], 200), 
 ("village_159","Magagua",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(57.93,-165.17),[], 305),         
@@ -521,11 +521,11 @@ parties = [
 ("village_232","Okfuskee",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(105,-3),[], 135),
 
 #nonexistant villages
-("village_a","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(233.91,-303.32),[], 135),       
-("village_b","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(180.57,-262.31),[], 135),       
-("village_c","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(85.12,-217.36),[], 135),      
-("village_d","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(112.68,-163.92),[], 135),      
-("village_e","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(97.6,-133.12),[], 135),       
+("village_a","Bécancour",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-155.0,-248.0),[], 135),       
+("village_b","Pierreville",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-150.0,-238.0),[], 135),       
+("village_c","Pointe-du-Lac",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-138.0,-242.0),[], 135),      
+("village_d","Wendake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-168.0,-260.0),[], 135),      
+("village_e","Kahnawake Flats",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-84.0,-183.0),[], 135),       
 ("village_f","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(188.59,-244.24),[], 135),     
 ("village_g","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.42,-118.04),[], 135),      
 ("village_h","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.97,-118.91),[], 135),      

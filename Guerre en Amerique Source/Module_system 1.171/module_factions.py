@@ -60,10 +60,10 @@ factions = [
   ("kingdom_1",   "British America",		0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.50),("shinano_rebels", -0.01)], [], 0x993333), #British America 100
   ("kingdom_2",   "Nouvelle-France",	    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", +0.50),("shinano_rebels", -0.50)], [], 0x003168), #New France 100
   ("kingdom_3",   "Nueva España",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xFFD700), #New Spain 100
-  ("kingdom_4",   "Haudenosaunee",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_7", +0.9)], [], 0x8502F7), #Iroquois 85
+  ("kingdom_4",   "Haudenosaunee",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_7", +0.3)], [], 0x8502F7), #Iroquois 85 - reduced alliance with Seven Nations (now French-allied)
   ("kingdom_5",   "Ani-Yvwiya",  	        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xF28305), #Cherokee 75
   ("kingdom_6",   "Wabana'ki Mawuhkacik",  	0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x28694B), #Wabanaki 85
-  ("kingdom_7",   "Kanien'keha:ka",	        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_4", +0.9)], [], 0x5e3000), #Mohawk 85
+  ("kingdom_7",   "Sept Nations du Canada",	0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_2", +0.85),("kingdom_4", +0.3),("kingdom_6", +0.5),("kingdom_8", +0.5),("kingdom_1", -0.7)], [], 0x4B0082), #Seven Nations of Canada - French-allied St. Lawrence confederacy 1758
   ("kingdom_8",   "Wyandot",		        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xa6d5ff), #Huron 75
   ("kingdom_9",   "Lenapehoking",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xe0ba81), #Lenape 65
   ("kingdom_10",  "Myaamia",		        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xffff80), #Miami 60

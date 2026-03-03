@@ -688,9 +688,9 @@ scripts = [
 (party_set_slot, "p_village_76", slot_village_bound_center, "p_castle_38"), #Fort Sainte-Claire - Port-au-Prince
 (party_set_slot, "p_village_86", slot_village_bound_center, "p_castle_44"), #Fort Tombecbee - Baton Rouge
 (party_set_slot, "p_village_65", slot_village_bound_center, "p_castle_35"), #Fort Menagoueche- Pointe Sainte-Anne
-(party_set_slot, "p_village_110", slot_village_bound_center, "p_castle_31"), #Fort Levis - Oswegatchie
+(party_set_slot, "p_village_110", slot_village_bound_center, "p_castle_73"), #Akwesasne - Oswegatchie (Seven Nations)
 (party_set_slot, "p_village_113", slot_village_bound_center, "p_castle_30"), #Fort Frontenac - Cataraqui
-(party_set_slot, "p_village_109", slot_village_bound_center, "p_castle_46"), #Fort Toronto - La Presentation
+(party_set_slot, "p_village_109", slot_village_bound_center, "p_castle_73"), #Akwesasne - La Presentation (Seven Nations - Oswegatchie)
 (party_set_slot, "p_village_67", slot_village_bound_center, "p_castle_33"), #Fort Ile aux Noix - Saint-Paul-de-l'Ile-aux-Noix
 (party_set_slot, "p_village_74", slot_village_bound_center, "p_castle_32"), #Fort Carillon - Basseville
 (party_set_slot, "p_village_66", slot_village_bound_center, "p_castle_34"), #Fort Saint-Jean - Saint-Jean-sur-Richelieu
@@ -762,21 +762,26 @@ scripts = [
 (party_set_slot, "p_village_144", slot_village_bound_center, "p_castle_69"), #Medoktak - Aukpaque
 (party_set_slot, "p_village_146", slot_village_bound_center, "p_castle_69"), #Medoktak - Passamaquoddy
 (party_set_slot, "p_village_147", slot_village_bound_center, "p_castle_71"), #Sipekni'katik - Pijelooeekak
-(party_set_slot, "p_village_149", slot_village_bound_center, "p_castle_72"), #Wolinak - Madawaska
+(party_set_slot, "p_village_149", slot_village_bound_center, "p_castle_71"), #Sipekni'katik - Madawaska (Wabanaki)
 
-(party_set_slot, "p_village_143", slot_village_bound_center, "p_town_22"), #Odanak - Nanrantsouak
-(party_set_slot, "p_village_150", slot_village_bound_center, "p_town_22"), #Odanak - Alenape Meneha
-(party_set_slot, "p_village_148", slot_village_bound_center, "p_town_22"), #Odanak - Sokoki
+(party_set_slot, "p_village_143", slot_village_bound_center, "p_castle_69"), #Medoktak - Nanrantsouak (Wabanaki)
+(party_set_slot, "p_village_150", slot_village_bound_center, "p_castle_70"), #Mazipskoik - Alenape Meneha (Wabanaki)
+(party_set_slot, "p_village_148", slot_village_bound_center, "p_castle_71"), #Sipekni'katik - Sokoki (Wabanaki)
 
 #Mohawk 7-----------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_151", slot_village_bound_center, "p_castle_73"), #Canohogo - Kanien'keha:ka
-(party_set_slot, "p_village_154", slot_village_bound_center, "p_castle_73"), #Canohogo - Ganienkeh
-(party_set_slot, "p_village_155", slot_village_bound_center, "p_castle_74"), #Kahnawake - Ahkwesahsne
-(party_set_slot, "p_village_156", slot_village_bound_center, "p_castle_74"), #Kahnawake - Kanesatake
+(party_set_slot, "p_village_151", slot_village_bound_center, "p_castle_73"), #Akwesasne - Caughnawaga
+(party_set_slot, "p_village_154", slot_village_bound_center, "p_castle_73"), #Akwesasne - Nipissing Village
+(party_set_slot, "p_village_155", slot_village_bound_center, "p_castle_74"), #Kanesatake - Ahkwesahsne
+(party_set_slot, "p_village_156", slot_village_bound_center, "p_castle_74"), #Kanesatake - Algonquin Village
 
-(party_set_slot, "p_village_152", slot_village_bound_center, "p_town_23"), #Nowdaga - Tarajorees
-(party_set_slot, "p_village_153", slot_village_bound_center, "p_town_23"), #Nowdaga - Canajoharie
-(party_set_slot, "p_village_157", slot_village_bound_center, "p_town_23"), #Nowdaga - Atheclaghque
+(party_set_slot, "p_village_152", slot_village_bound_center, "p_town_23"), #Kahnawake - Sault-Saint-Louis
+(party_set_slot, "p_village_153", slot_village_bound_center, "p_town_23"), #Kahnawake - Lac-des-Deux-Montagnes
+(party_set_slot, "p_village_157", slot_village_bound_center, "p_town_23"), #Kahnawake - Saint-Regis
+(party_set_slot, "p_village_a", slot_village_bound_center, "p_castle_72"), #Wolinak - Becancour
+(party_set_slot, "p_village_b", slot_village_bound_center, "p_town_22"), #Odanak - Pierreville
+(party_set_slot, "p_village_c", slot_village_bound_center, "p_town_22"), #Odanak - Pointe-du-Lac
+(party_set_slot, "p_village_d", slot_village_bound_center, "p_castle_75"), #Lorette - Wendake
+(party_set_slot, "p_village_e", slot_village_bound_center, "p_town_23"), #Kahnawake - Kahnawake Flats
 #Huron 8----------------------------------------------------------------------------------------------
 (party_set_slot, "p_village_158", slot_village_bound_center, "p_castle_75"), #Lorette - Ancienne Lorette
 
@@ -871,11 +876,6 @@ scripts = [
 (party_set_slot, "p_village_232", slot_village_bound_center, "p_town_34"), #Coweta -Okfuskee
 #---------------------------------------------------------------------------------------------------
 #Test for castles without villages
-(party_set_slot, "p_village_a", slot_village_bound_center, "p_castle_49"), #Fort Bourbon
-(party_set_slot, "p_village_b", slot_village_bound_center, "p_castle_47"), #Fort Kaministiquia
-(party_set_slot, "p_village_c", slot_village_bound_center, "p_castle_40"), #Fort Michillimackinac
-(party_set_slot, "p_village_d", slot_village_bound_center, "p_castle_41"), #Fort Miami
-(party_set_slot, "p_village_e", slot_village_bound_center, "p_castle_42"), #Fort des Miamis
 (party_set_slot, "p_village_f", slot_village_bound_center, "p_castle_45"), #Fort La Pointe
 (party_set_slot, "p_village_g", slot_village_bound_center, "p_castle_26"), #Fort Duquesne
 (party_set_slot, "p_village_h", slot_village_bound_center, "p_castle_11"), #Fort Ligonier
@@ -1392,21 +1392,21 @@ scripts = [
 (call_script, "script_give_center_to_faction_aux", "p_castle_67", "fac_kingdom_5"), # Hiwasee
 (call_script, "script_give_center_to_faction_aux", "p_castle_68", "fac_kingdom_5"), # Chatuga
 #Wabanaki 6
-      (call_script, "script_give_center_to_faction_aux", "p_town_22", "fac_kingdom_6"), #Odanak-TOWN/TOWN/TOWN
+      (call_script, "script_give_center_to_faction_aux", "p_town_22", "fac_kingdom_7"), #Odanak-TOWN/TOWN/TOWN (Seven Nations)
       
 (call_script, "script_give_center_to_faction_aux", "p_castle_69", "fac_kingdom_6"), # Medoktak
 (call_script, "script_give_center_to_faction_aux", "p_castle_70", "fac_kingdom_6"), # Mazipskoik
 (call_script, "script_give_center_to_faction_aux", "p_castle_71", "fac_kingdom_6"), # Sipekni'katik
-(call_script, "script_give_center_to_faction_aux", "p_castle_72", "fac_kingdom_6"), # Wolinak
+(call_script, "script_give_center_to_faction_aux", "p_castle_72", "fac_kingdom_7"), # Wolinak (Seven Nations - Abenaki of Becancour)
 #Mohawk 7
-      (call_script, "script_give_center_to_faction_aux", "p_town_23", "fac_kingdom_7"), #Nowdaga-TOWN/TOWN/TOWN
+      (call_script, "script_give_center_to_faction_aux", "p_town_23", "fac_kingdom_7"), #Kahnawake-TOWN/TOWN/TOWN (Seven Nations central fire)
       
 (call_script, "script_give_center_to_faction_aux", "p_castle_73", "fac_kingdom_7"), # Canohogo
 (call_script, "script_give_center_to_faction_aux", "p_castle_74", "fac_kingdom_7"), # Kahnawake
 #Huron 8
       (call_script, "script_give_center_to_faction_aux", "p_town_24", "fac_kingdom_8"), #Sunyendeand-TOWN/TOWN/TOWN
       
-(call_script, "script_give_center_to_faction_aux", "p_castle_75", "fac_kingdom_8"), # Lorette
+(call_script, "script_give_center_to_faction_aux", "p_castle_75", "fac_kingdom_7"), # Lorette (Seven Nations - Huron-Wendat)
 #Lenape 9
       (call_script, "script_give_center_to_faction_aux", "p_town_25", "fac_kingdom_9"), #Wyolutimunk-TOWN/TOWN/TOWN
       (call_script, "script_give_center_to_faction_aux", "p_town_26", "fac_kingdom_9"), #Goschachgunk-TOWN/TOWN/TOWN
@@ -1564,15 +1564,15 @@ scripts = [
 (call_script, "script_give_center_to_lord", "p_castle_68", "trp_kingdom_5_lord", 0), # Chatuga
 ##   WABANAKI    #############     WABANAKI     ################      WABANAKI       ##################     WABANAKI    #######
 #Wabanaki 6
-(call_script, "script_give_center_to_lord", "p_town_22", "trp_kingdom_6_lord", 0), #Odanak -> 
+(call_script, "script_give_center_to_lord", "p_town_22", "trp_kingdom_7_lord", 0), #Odanak -> Seven Nations lord
 # Wabanaki 6
 (call_script, "script_give_center_to_lord", "p_castle_69", "trp_kingdom_6_lord", 0), # Medoktak
 (call_script, "script_give_center_to_lord", "p_castle_70", "trp_kingdom_6_lord", 0), # Mazipskoik
 (call_script, "script_give_center_to_lord", "p_castle_71", "trp_kingdom_6_lord", 0), # Sipekni'katik
-(call_script, "script_give_center_to_lord", "p_castle_72", "trp_kingdom_6_lord", 0), # Wolinak 
+(call_script, "script_give_center_to_lord", "p_castle_72", "trp_kingdom_7_lord", 0), # Wolinak -> Seven Nations lord
 ##   MOHAWK    #############     MOHAWK     ################      MOHAWK       ##################     MOHAWK    #######
 #Mohawk 7
-(call_script, "script_give_center_to_lord", "p_town_23", "trp_kingdom_7_lord", 0), #Nowdaga
+(call_script, "script_give_center_to_lord", "p_town_23", "trp_kingdom_7_lord", 0), #Kahnawake
 # Mohawk 7
 (call_script, "script_give_center_to_lord", "p_castle_73", "trp_kingdom_7_lord", 0), # Canohogo
 (call_script, "script_give_center_to_lord", "p_castle_74", "trp_kingdom_7_lord", 0), # Kahnawake
@@ -1580,7 +1580,7 @@ scripts = [
 #Huron 8
 (call_script, "script_give_center_to_lord", "p_town_24", "trp_kingdom_8_lord", 0), #Sunyendeand
 # Huron 8
-(call_script, "script_give_center_to_lord", "p_castle_75", "trp_kingdom_8_lord", 0), # Lorette
+(call_script, "script_give_center_to_lord", "p_castle_75", "trp_kingdom_7_lord", 0), # Lorette -> Seven Nations lord
 ##   LENAPE    #############     LENAPE     ################      LENAPE       ##################     LENAPE    #######
 #Lenape 9
 (call_script, "script_give_center_to_lord", "p_town_25", "trp_kingdom_9_lord", 0), #Wyolutimunk
@@ -1943,6 +1943,7 @@ scripts = [
       (call_script, "script_dplmc_start_alliance_between_kingdoms", "fac_kingdom_1", "fac_kingdom_5", 0), #British - Cherokee
 
 	  (call_script, "script_dplmc_start_alliance_between_kingdoms", "fac_kingdom_2", "fac_kingdom_6", 0), #France - Wabanaki
+	  (call_script, "script_dplmc_start_alliance_between_kingdoms", "fac_kingdom_2", "fac_kingdom_7", 0), #France - Seven Nations (Sept Nations du Canada)
 	  (call_script, "script_dplmc_start_alliance_between_kingdoms", "fac_kingdom_2", "fac_kingdom_8", 0), #France - Huron
       (call_script, "script_dplmc_start_alliance_between_kingdoms", "fac_kingdom_2", "fac_kingdom_12", 0), #France - Odawa
       (call_script, "script_dplmc_start_alliance_between_kingdoms", "fac_kingdom_2", "fac_kingdom_13", 0), #France - Ojibwe
@@ -7681,7 +7682,7 @@ scripts = [
       (call_script, "script_set_trade_route_between_centers", "p_town_9", "p_town_19"), #Québec - Onondaga
       (call_script, "script_set_trade_route_between_centers", "p_town_9", "p_town_21"), #Québec - Mikmaq
       (call_script, "script_set_trade_route_between_centers", "p_town_9", "p_town_22"), #Québec - Abenaki
-      (call_script, "script_set_trade_route_between_centers", "p_town_9", "p_town_23"), #Québec - Shaugawaumikang
+      (call_script, "script_set_trade_route_between_centers", "p_town_9", "p_town_23"), #Québec - Kahnawake
       (call_script, "script_set_trade_route_between_centers", "p_town_9", "p_town_24"), #Québec - Mississauga
 	  
 	  #MONTREAL - 11 routes
@@ -7693,14 +7694,14 @@ scripts = [
       (call_script, "script_set_trade_route_between_centers", "p_town_10", "p_town_20"), #Montréal - Shenango
       (call_script, "script_set_trade_route_between_centers", "p_town_10", "p_town_21"), #Montréal - Mikmaq
       (call_script, "script_set_trade_route_between_centers", "p_town_10", "p_town_22"), #Montréal - Abenaki
-      (call_script, "script_set_trade_route_between_centers", "p_town_10", "p_town_23"), #Montréal - Shaugawaumikang
+      (call_script, "script_set_trade_route_between_centers", "p_town_10", "p_town_23"), #Montréal - Kahnawake
       (call_script, "script_set_trade_route_between_centers", "p_town_10", "p_town_24"), #Montréal - Mississauga
       
 	  #CAHOKIA - 5 routes
 	  #Montréal
 	  (call_script, "script_set_trade_route_between_centers", "p_town_11", "p_town_12"), #Cahokia - New Orleans
       (call_script, "script_set_trade_route_between_centers", "p_town_11", "p_town_20"), #Cahokia - Shenango
-      (call_script, "script_set_trade_route_between_centers", "p_town_11", "p_town_23"), #Cahokia - Shaugawaumikang
+      (call_script, "script_set_trade_route_between_centers", "p_town_11", "p_town_23"), #Cahokia - Kahnawake
       (call_script, "script_set_trade_route_between_centers", "p_town_11", "p_town_24"), #Cahokia - Mississauga
 	  
 	  #NEW ORLEANS - 12 routes
@@ -7773,13 +7774,13 @@ scripts = [
 	  
 	  #ABENAKI - 6 routes
 	  #Québec, Montréal, Onondaga, Mikmaq
-	  (call_script, "script_set_trade_route_between_centers", "p_town_22", "p_town_23"), #Abenaki - Shaugawaumikang
+	  (call_script, "script_set_trade_route_between_centers", "p_town_22", "p_town_23"), #Odanak - Kahnawake
 	  (call_script, "script_set_trade_route_between_centers", "p_town_22", "p_town_24"), #Abenaki - Mississauga
 	  
 	  #SHAUGAWAUMIKANG - 9 routes
 	  #Québec, Montréal, Cahokia, Onondaga, Shenango, Mikmaq, Abenaki
-	  (call_script, "script_set_trade_route_between_centers", "p_town_23", "p_town_24"), #Shaugawaumikang - Mississauga
-      (call_script, "script_set_trade_route_between_centers", "p_town_23", "p_town_25"), #Shaugawaumikang - Chota
+	  (call_script, "script_set_trade_route_between_centers", "p_town_23", "p_town_24"), #Kahnawake - Sunyendeand
+      (call_script, "script_set_trade_route_between_centers", "p_town_23", "p_town_25"), #Kahnawake - Wyolutimunk
 	  
 	  #MISSISSAUGA - 10 routes
 	  #Québec, Montréal, Cahokia, Onondaga, Shenango, Mikmaq, Abenaki, Shaugawaumikang
