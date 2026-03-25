@@ -1402,11 +1402,15 @@ scripts = [
 (call_script, "script_give_center_to_faction_aux", "p_castle_70", "fac_kingdom_6"), # Mazipskoik
 (call_script, "script_give_center_to_faction_aux", "p_castle_71", "fac_kingdom_6"), # Sipekni'katik
 (call_script, "script_give_center_to_faction_aux", "p_castle_72", "fac_kingdom_6"), # Wolinak
-#Mohawk 7
+#7 Nations 7
       (call_script, "script_give_center_to_faction_aux", "p_town_23", "fac_kingdom_7"), #Nowdaga-TOWN/TOWN/TOWN
       
 (call_script, "script_give_center_to_faction_aux", "p_castle_73", "fac_kingdom_7"), # Canohogo
-(call_script, "script_give_center_to_faction_aux", "p_castle_74", "fac_kingdom_7"), # Kahnawake
+(call_script, "script_give_center_to_faction_aux", "p_castle_74", "fac_kingdom_7"), # Kahnawake (Fortified)
+(call_script, "script_give_center_to_faction_aux", "p_castle_93", "fac_kingdom_7"), # La Presentation
+(call_script, "script_give_center_to_faction_aux", "p_castle_94", "fac_kingdom_7"), # Mississauga
+(call_script, "script_give_center_to_faction_aux", "p_castle_95", "fac_kingdom_7"), # Kanesatake
+(call_script, "script_give_center_to_faction_aux", "p_castle_96", "fac_kingdom_7"), # Ahkwesasne
 #Huron 8
       (call_script, "script_give_center_to_faction_aux", "p_town_24", "fac_kingdom_8"), #Sunyendeand-TOWN/TOWN/TOWN
       
@@ -1575,11 +1579,15 @@ scripts = [
 (call_script, "script_give_center_to_lord", "p_castle_71", "trp_kingdom_6_lord", 0), # Sipekni'katik
 (call_script, "script_give_center_to_lord", "p_castle_72", "trp_kingdom_6_lord", 0), # Wolinak 
 ##   MOHAWK    #############     MOHAWK     ################      MOHAWK       ##################     MOHAWK    #######
-#Mohawk 7
+#7 Nations 7
 (call_script, "script_give_center_to_lord", "p_town_23", "trp_kingdom_7_lord", 0), #Nowdaga
-# Mohawk 7
+# 7 Nations 7
 (call_script, "script_give_center_to_lord", "p_castle_73", "trp_kingdom_7_lord", 0), # Canohogo
-(call_script, "script_give_center_to_lord", "p_castle_74", "trp_kingdom_7_lord", 0), # Kahnawake
+(call_script, "script_give_center_to_lord", "p_castle_74", "trp_kingdom_7_lord", 0), # Kahnawake (Fortified)
+(call_script, "script_give_center_to_lord", "p_castle_93", "trp_kingdom_7_lord", 0), # La Presentation
+(call_script, "script_give_center_to_lord", "p_castle_94", "trp_kingdom_7_lord", 0), # Mississauga
+(call_script, "script_give_center_to_lord", "p_castle_95", "trp_kingdom_7_lord", 0), # Kanesatake
+(call_script, "script_give_center_to_lord", "p_castle_96", "trp_kingdom_7_lord", 0), # Ahkwesasne
 ##   HURON    #############     HURON     ################      HURON       ##################     HURON    #######
 #Huron 8
 (call_script, "script_give_center_to_lord", "p_town_24", "trp_kingdom_8_lord", 0), #Sunyendeand
