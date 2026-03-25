@@ -688,9 +688,8 @@ scripts = [
 (party_set_slot, "p_village_76", slot_village_bound_center, "p_castle_38"), #Fort Sainte-Claire - Port-au-Prince
 (party_set_slot, "p_village_86", slot_village_bound_center, "p_castle_44"), #Fort Tombecbee - Baton Rouge
 (party_set_slot, "p_village_65", slot_village_bound_center, "p_castle_35"), #Fort Menagoueche- Pointe Sainte-Anne
-(party_set_slot, "p_village_110", slot_village_bound_center, "p_castle_31"), #Fort Levis - Oswegatchie
+(party_set_slot, "p_village_110", slot_village_bound_center, "p_castle_93"), #La Presentation - Oswegatachie
 (party_set_slot, "p_village_113", slot_village_bound_center, "p_castle_30"), #Fort Frontenac - Cataraqui
-(party_set_slot, "p_village_109", slot_village_bound_center, "p_castle_46"), #Fort Toronto - La Presentation
 (party_set_slot, "p_village_67", slot_village_bound_center, "p_castle_33"), #Fort Ile aux Noix - Saint-Paul-de-l'Ile-aux-Noix
 (party_set_slot, "p_village_74", slot_village_bound_center, "p_castle_32"), #Fort Carillon - Basseville
 (party_set_slot, "p_village_66", slot_village_bound_center, "p_castle_34"), #Fort Saint-Jean - Saint-Jean-sur-Richelieu
@@ -768,15 +767,20 @@ scripts = [
 (party_set_slot, "p_village_150", slot_village_bound_center, "p_town_22"), #Odanak - Alenape Meneha
 (party_set_slot, "p_village_148", slot_village_bound_center, "p_town_22"), #Odanak - Sokoki
 
-#Mohawk 7-----------------------------------------------------------------------------------------------
+#7 Nations 7--------------------------------------------------------------------------------------------
 (party_set_slot, "p_village_151", slot_village_bound_center, "p_castle_73"), #Canohogo - Kanien'keha:ka
 (party_set_slot, "p_village_154", slot_village_bound_center, "p_castle_73"), #Canohogo - Ganienkeh
-(party_set_slot, "p_village_155", slot_village_bound_center, "p_castle_74"), #Kahnawake - Ahkwesahsne
-(party_set_slot, "p_village_156", slot_village_bound_center, "p_castle_74"), #Kahnawake - Kanesatake
 
 (party_set_slot, "p_village_152", slot_village_bound_center, "p_town_23"), #Nowdaga - Tarajorees
 (party_set_slot, "p_village_153", slot_village_bound_center, "p_town_23"), #Nowdaga - Canajoharie
 (party_set_slot, "p_village_157", slot_village_bound_center, "p_town_23"), #Nowdaga - Atheclaghque
+#7 Nations (Confederacy) - new village bindings
+(party_set_slot, "p_village_233", slot_village_bound_center, "p_town_23"),  #Kahnawake - Tyendinaga
+(party_set_slot, "p_village_236", slot_village_bound_center, "p_town_23"),  #Kahnawake - Becancour
+(party_set_slot, "p_village_234", slot_village_bound_center, "p_castle_95"), #Kanesatake - Oka
+(party_set_slot, "p_village_237", slot_village_bound_center, "p_castle_95"), #Kanesatake - Jeune Lorette
+(party_set_slot, "p_village_238", slot_village_bound_center, "p_castle_95"), #Kanesatake - Wendake
+(party_set_slot, "p_village_235", slot_village_bound_center, "p_castle_96"), #Ahkwesasne - Kanatakon
 #Huron 8----------------------------------------------------------------------------------------------
 (party_set_slot, "p_village_158", slot_village_bound_center, "p_castle_75"), #Lorette - Ancienne Lorette
 
@@ -834,7 +838,7 @@ scripts = [
 (party_set_slot, "p_village_202", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Zaaga'iganing
 (party_set_slot, "p_village_203", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Sagenong
 
-(party_set_slot, "p_village_204", slot_village_bound_center, "p_castle_81"), #Missinnihe - Cobechenonk
+(party_set_slot, "p_village_204", slot_village_bound_center, "p_castle_94"), #Mississauga - Cobechenonk
 (party_set_slot, "p_village_205", slot_village_bound_center, "p_castle_81"), #Missinnihe - Mekisewancenonk
 #Potawatomi 14-------------------------------------------------------------------------------------
 (party_set_slot, "p_village_208", slot_village_bound_center, "p_town_31"), #Aniquiba - Zhegagoynak
