@@ -688,9 +688,8 @@ scripts = [
 (party_set_slot, "p_village_76", slot_village_bound_center, "p_castle_38"), #Fort Sainte-Claire - Port-au-Prince
 (party_set_slot, "p_village_86", slot_village_bound_center, "p_castle_44"), #Fort Tombecbee - Baton Rouge
 (party_set_slot, "p_village_65", slot_village_bound_center, "p_castle_35"), #Fort Menagoueche- Pointe Sainte-Anne
-(party_set_slot, "p_village_110", slot_village_bound_center, "p_castle_31"), #Fort Levis - Oswegatchie
+(party_set_slot, "p_village_110", slot_village_bound_center, "p_castle_93"), #La Presentation - Oswegatachie
 (party_set_slot, "p_village_113", slot_village_bound_center, "p_castle_30"), #Fort Frontenac - Cataraqui
-(party_set_slot, "p_village_109", slot_village_bound_center, "p_castle_46"), #Fort Toronto - La Presentation
 (party_set_slot, "p_village_67", slot_village_bound_center, "p_castle_33"), #Fort Ile aux Noix - Saint-Paul-de-l'Ile-aux-Noix
 (party_set_slot, "p_village_74", slot_village_bound_center, "p_castle_32"), #Fort Carillon - Basseville
 (party_set_slot, "p_village_66", slot_village_bound_center, "p_castle_34"), #Fort Saint-Jean - Saint-Jean-sur-Richelieu
@@ -768,15 +767,20 @@ scripts = [
 (party_set_slot, "p_village_150", slot_village_bound_center, "p_town_22"), #Odanak - Alenape Meneha
 (party_set_slot, "p_village_148", slot_village_bound_center, "p_town_22"), #Odanak - Sokoki
 
-#Mohawk 7-----------------------------------------------------------------------------------------------
+#7 Nations 7--------------------------------------------------------------------------------------------
 (party_set_slot, "p_village_151", slot_village_bound_center, "p_castle_73"), #Canohogo - Kanien'keha:ka
 (party_set_slot, "p_village_154", slot_village_bound_center, "p_castle_73"), #Canohogo - Ganienkeh
-(party_set_slot, "p_village_155", slot_village_bound_center, "p_castle_74"), #Kahnawake - Ahkwesahsne
-(party_set_slot, "p_village_156", slot_village_bound_center, "p_castle_74"), #Kahnawake - Kanesatake
 
 (party_set_slot, "p_village_152", slot_village_bound_center, "p_town_23"), #Nowdaga - Tarajorees
 (party_set_slot, "p_village_153", slot_village_bound_center, "p_town_23"), #Nowdaga - Canajoharie
 (party_set_slot, "p_village_157", slot_village_bound_center, "p_town_23"), #Nowdaga - Atheclaghque
+#7 Nations (Confederacy) - new village bindings
+(party_set_slot, "p_village_233", slot_village_bound_center, "p_town_23"),  #Kahnawake - Tyendinaga
+(party_set_slot, "p_village_236", slot_village_bound_center, "p_town_23"),  #Kahnawake - Becancour
+(party_set_slot, "p_village_234", slot_village_bound_center, "p_castle_95"), #Kanesatake - Oka
+(party_set_slot, "p_village_237", slot_village_bound_center, "p_castle_95"), #Kanesatake - Jeune Lorette
+(party_set_slot, "p_village_238", slot_village_bound_center, "p_castle_95"), #Kanesatake - Wendake
+(party_set_slot, "p_village_235", slot_village_bound_center, "p_castle_96"), #Ahkwesasne - Kanatakon
 #Huron 8----------------------------------------------------------------------------------------------
 (party_set_slot, "p_village_158", slot_village_bound_center, "p_castle_75"), #Lorette - Ancienne Lorette
 
@@ -834,7 +838,7 @@ scripts = [
 (party_set_slot, "p_village_202", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Zaaga'iganing
 (party_set_slot, "p_village_203", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Sagenong
 
-(party_set_slot, "p_village_204", slot_village_bound_center, "p_castle_81"), #Missinnihe - Cobechenonk
+(party_set_slot, "p_village_204", slot_village_bound_center, "p_castle_94"), #Mississauga - Cobechenonk
 (party_set_slot, "p_village_205", slot_village_bound_center, "p_castle_81"), #Missinnihe - Mekisewancenonk
 #Potawatomi 14-------------------------------------------------------------------------------------
 (party_set_slot, "p_village_208", slot_village_bound_center, "p_town_31"), #Aniquiba - Zhegagoynak
@@ -1398,11 +1402,15 @@ scripts = [
 (call_script, "script_give_center_to_faction_aux", "p_castle_70", "fac_kingdom_6"), # Mazipskoik
 (call_script, "script_give_center_to_faction_aux", "p_castle_71", "fac_kingdom_6"), # Sipekni'katik
 (call_script, "script_give_center_to_faction_aux", "p_castle_72", "fac_kingdom_6"), # Wolinak
-#Mohawk 7
+#7 Nations 7
       (call_script, "script_give_center_to_faction_aux", "p_town_23", "fac_kingdom_7"), #Nowdaga-TOWN/TOWN/TOWN
       
 (call_script, "script_give_center_to_faction_aux", "p_castle_73", "fac_kingdom_7"), # Canohogo
-(call_script, "script_give_center_to_faction_aux", "p_castle_74", "fac_kingdom_7"), # Kahnawake
+(call_script, "script_give_center_to_faction_aux", "p_castle_74", "fac_kingdom_7"), # Kahnawake (Fortified)
+(call_script, "script_give_center_to_faction_aux", "p_castle_93", "fac_kingdom_7"), # La Presentation
+(call_script, "script_give_center_to_faction_aux", "p_castle_94", "fac_kingdom_7"), # Mississauga
+(call_script, "script_give_center_to_faction_aux", "p_castle_95", "fac_kingdom_7"), # Kanesatake
+(call_script, "script_give_center_to_faction_aux", "p_castle_96", "fac_kingdom_7"), # Ahkwesasne
 #Huron 8
       (call_script, "script_give_center_to_faction_aux", "p_town_24", "fac_kingdom_8"), #Sunyendeand-TOWN/TOWN/TOWN
       
@@ -1571,11 +1579,15 @@ scripts = [
 (call_script, "script_give_center_to_lord", "p_castle_71", "trp_kingdom_6_lord", 0), # Sipekni'katik
 (call_script, "script_give_center_to_lord", "p_castle_72", "trp_kingdom_6_lord", 0), # Wolinak 
 ##   MOHAWK    #############     MOHAWK     ################      MOHAWK       ##################     MOHAWK    #######
-#Mohawk 7
+#7 Nations 7
 (call_script, "script_give_center_to_lord", "p_town_23", "trp_kingdom_7_lord", 0), #Nowdaga
-# Mohawk 7
+# 7 Nations 7
 (call_script, "script_give_center_to_lord", "p_castle_73", "trp_kingdom_7_lord", 0), # Canohogo
-(call_script, "script_give_center_to_lord", "p_castle_74", "trp_kingdom_7_lord", 0), # Kahnawake
+(call_script, "script_give_center_to_lord", "p_castle_74", "trp_kingdom_7_lord", 0), # Kahnawake (Fortified)
+(call_script, "script_give_center_to_lord", "p_castle_93", "trp_kingdom_7_lord", 0), # La Presentation
+(call_script, "script_give_center_to_lord", "p_castle_94", "trp_kingdom_7_lord", 0), # Mississauga
+(call_script, "script_give_center_to_lord", "p_castle_95", "trp_kingdom_7_lord", 0), # Kanesatake
+(call_script, "script_give_center_to_lord", "p_castle_96", "trp_kingdom_7_lord", 0), # Ahkwesasne
 ##   HURON    #############     HURON     ################      HURON       ##################     HURON    #######
 #Huron 8
 (call_script, "script_give_center_to_lord", "p_town_24", "trp_kingdom_8_lord", 0), #Sunyendeand
