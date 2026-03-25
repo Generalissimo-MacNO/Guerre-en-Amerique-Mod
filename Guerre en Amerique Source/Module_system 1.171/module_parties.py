@@ -92,54 +92,54 @@ parties = [
   ("zendar","Zendar",pf_disabled|icon_village_a|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(697.78,-1690.26),[]), #[swycartographr] prev. coords: (280, -310) #[swycartographr] prev. coords: (104.43, -322.29)
 #FACTION ORDER Towns/Cities
 #British 1
-  ("town_1","Halifax", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(337.94,465.46),[], 170),                       #[swycartographr] prev. coords: (-270, -199.24) #[swycartographr] prev. coords: (626.23, 862.02)
-  ("town_2","Boston", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-158.2,-161.29),[], 290),                          
-  ("town_3","Newport", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-148.5,-148.41),[], 120),
-  ("town_4","New York", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-105.82,-140.44),[], 170),             
-  ("town_5","Philadelphia", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(120.51,199.77),[], 80),               #[swycartographr] prev. coords: (-79.53, -117.76) #[swycartographr] prev. coords: (220.94, 367.29)
-  ("town_6","Charlestowne", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1.05,3.11),[], 90),                          
-  ("town_7","Nassau", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.23,182.97),[],165),                          #[swycartographr] prev. coords: (-41.85, 136.18)
-  ("town_8","Kingston", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.07,259.53),[],195),  
+  ("town_1","Halifax", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(595.69,821.92),[], 170),                       #[swycartographr] prev. coords: (-270, -199.24) #[swycartographr] prev. coords: (626.23, 862.02) #[swycartographr] prev. coords: (337.94, 465.46)
+  ("town_2","Boston", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(399.88,560.95),[], 290),                           #[swycartographr] prev. coords: (-158.2, -161.29)
+  ("town_3","Newport", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(399.82,530.99),[], 120),                   #[swycartographr] prev. coords: (-148.5, -148.41)
+  ("town_4","New York", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(281.85,447.19),[], 170),                  #[swycartographr] prev. coords: (-105.82, -140.44)
+  ("town_5","Philadelphia", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(228.73,373.39),[], 80),               #[swycartographr] prev. coords: (-79.53, -117.76) #[swycartographr] prev. coords: (220.94, 367.29) #[swycartographr] prev. coords: (120.51, 199.77)
+  ("town_6","Charlestowne", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(173.32,-51.16),[], 90),                           #[swycartographr] prev. coords: (1.05, 3.11)
+  ("town_7","Nassau", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(342.97,-553.35),[],165),                          #[swycartographr] prev. coords: (-41.85, 136.18) #[swycartographr] prev. coords: (-56.23, 182.97)
+  ("town_8","Kingston", icon_british_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(459.61,-935.49),[],195),                  #[swycartographr] prev. coords: (-51.07, 259.53)
 #French 2
-  ("town_9","Louisbourg", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-336.21,-223.4),[],225),  
-  ("town_10","Québec", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-171,-260.21),[], 155),
-  ("town_11","Montréal", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(90.52,385.04),[], 240),                 #[swycartographr] prev. coords: (-98.63, -217.92) #[swycartographr] prev. coords: (180.44, 653.34)
-  ("town_12","New Orleans", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-195.63,-207.17),[], 240),             #[swycartographr] prev. coords: (167.48, 63.26)
-  ("town_13","Cap-Français", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(381.92,-419.22),[],165),             #[swycartographr] prev. coords: (-126, 224)
-  ("town_14","Saint Pierre", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-322.63,315.81),[], 310),
+  ("town_9","Louisbourg", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(695.56,949.73),[],225),                  #[swycartographr] prev. coords: (-336.21, -223.4)
+  ("town_10","Québec", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(273.99,838.02),[], 155),                   #[swycartographr] prev. coords: (-171, -260.21) #[swycartographr] prev. coords: (293.06, 835.85)
+  ("town_11","Montréal", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(181.86,711.08),[], 240),                 #[swycartographr] prev. coords: (-98.63, -217.92) #[swycartographr] prev. coords: (180.44, 653.34) #[swycartographr] prev. coords: (90.52, 385.04)
+  ("town_12","New Orleans", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-338.23,-399.43),[], 240),             #[swycartographr] prev. coords: (167.48, 63.26) #[swycartographr] prev. coords: (-195.63, -207.17)
+  ("town_13","Cap-Français", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(679.87,-742.21),[],165),             #[swycartographr] prev. coords: (-126, 224) #[swycartographr] prev. coords: (381.92, -419.22)
+  ("town_14","Saint Pierre", icon_french_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1421.89,-831.1),[], 310),             #[swycartographr] prev. coords: (-322.63, 315.81)
 #Spanish 3
-  ("town_15","St. Augustine", icon_spanish_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.12,46.9),[], 150),
-  ("town_16","Havana", icon_spanish_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(65.47,152.73),[],75),                      #[swycartographr] prev. coords: (41, 170)
-  ("town_17","Santo Domingo", icon_spanish_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-169,253),[],270),
+  ("town_15","St. Augustine", icon_spanish_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(87.25,-275.05),[], 150),            #[swycartographr] prev. coords: (27.12, 46.9)
+  ("town_16","Havana", icon_spanish_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(104.16,-709.39),[],75),                      #[swycartographr] prev. coords: (41, 170) #[swycartographr] prev. coords: (65.47, 152.73)
+  ("town_17","Santo Domingo", icon_spanish_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(890.53,-762.02),[],270),            #[swycartographr] prev. coords: (-169, 253)
   ("town_18","Veracruz", icon_spanish_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(267.11,245.95),[], 60),    
   ("town_19","Ciudad de Mexico", icon_spanish_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(264.29,280.54),[], 135),       
 #Iroquois 4
-  ("town_20","Onondaga", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(69.02,297.49),[], 135),                   #[swycartographr] prev. coords: (-63.58, -178.92)
+  ("town_20","Onondaga", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(135.93,532.95),[], 135),                   #[swycartographr] prev. coords: (-63.58, -178.92) #[swycartographr] prev. coords: (69.02, 297.49)
 #Cherokee 5
-  ("town_21","Chota", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(87.09,-43.59),[],120),                       #[swycartographr] prev. coords: (98.93, -51.41)
+  ("town_21","Chota", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-101.78,-2.85),[],120),                       #[swycartographr] prev. coords: (98.93, -51.41) #[swycartographr] prev. coords: (87.09, -43.59)
 #Wabanaki 6
-  ("town_22","Odanak", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-146.43,-235.95),[],270),                       
+  ("town_22","Odanak", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(280.86,806.72),[],270),                        #[swycartographr] prev. coords: (-146.43, -235.95)
 #7 Nations 7
-  ("town_23","Kahnawake", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-87.54,-180.58),[],240),                        
+  ("town_23","Kahnawake", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(189.18,688.61),[],240),                         #[swycartographr] prev. coords: (-87.54, -180.58)
 #Huron 8
   ("town_24","Sunyendeand", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-117.22,372.88),[],120),               #[swycartographr] prev. coords: (45.57, -147.54)
 #Lenape 9
   ("town_25","Wyolutimunk", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-71.26,-158.59),[],225),                         
-  ("town_26","Goschachgunk", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(17.23,-130.05),[],225),                        
+  ("town_26","Goschachgunk", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.24,283.76),[],225),                         #[swycartographr] prev. coords: (17.23, -130.05)
 #Miami 10
-  ("town_27","Kiikayonki", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(99.87,-127.71),[],343),                         
+  ("town_27","Kiikayonki", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-263.23,285.14),[],343),                          #[swycartographr] prev. coords: (99.87, -127.71)
 #Shawnee 11 
-  ("town_28","Sonnontio", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.02,-95.58),[],225),                  
+  ("town_28","Sonnontio", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.03,254.35),[],225),                   #[swycartographr] prev. coords: (43.02, -95.58)
 #Odawa 12
   ("town_29","Waawiyaatanong", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-136.04,419.71),[],281),                    #[swycartographr] prev. coords: (54.94, -163.04)
 #Ojibwe 13
-  ("town_30","Zhaagawaamikong", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(70.01,-241.71),[],225),          
+  ("town_30","Zhaagawaamikong", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-533.84,650.77),[],225),           #[swycartographr] prev. coords: (70.01, -241.71)
 #Potawatomi 14
   ("town_31","Aniquiba", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-282.12,366.85),[],135),                      #[swycartographr] prev. coords: (57.28, -188.26)
 #Choctaw 15
-  ("town_32","Oklahannali", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(168.87,-0.11),[],225),  
+  ("town_32","Oklahannali", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-442.59,-216.13),[],225),              #[swycartographr] prev. coords: (168.87, -0.11)
 #Chickasaw 16
-  ("town_33","Chokkilissa", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(172.06,-31.86),[],225),             
+  ("town_33","Chokkilissa", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-489.96,-140.58),[],225),              #[swycartographr] prev. coords: (172.06, -31.86)
 #Creek 17
   ("town_34","Coweta", icon_native_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[],315),
 ################SPACER#######################################
@@ -305,7 +305,7 @@ parties = [
 ("village_37","Raystown",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-21.53,-124.36),[], 170),      
 ("village_38","Long Canes",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(48.07,-27.61),[], 170),           
 ("village_39","Lunenburg",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-270.37,-194.83),[], 170),        #[swycartographr] prev. coords: (-265.23, -195.85)
-("village_40","Iredell",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(5.94,-60.13),[], 100),
+("village_40","Iredell",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.28,-54.97),[], 100),            #[swycartographr] prev. coords: (5.94, -60.13)
 ("village_41","Augusta",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(39,-13),[], 200),
 ("village_42","Cumberland",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.62,-101.88),[], 200),    
 ("village_43","Sunbury",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.84,-138.08),[], 200),     
@@ -313,8 +313,8 @@ parties = [
 ("village_45","Long Island",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81,167),[], 35),
 ("village_46","Turks and Caicos",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-138.13,188.24),[], 60), #[swycartographr] prev. coords: (-138, 192)
 ("village_47","Andros",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-37.79,180.26),[], 20),               #[swycartographr] prev. coords: (-33.78, 145.83)
-("village_48","Spanish Town",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47,261.13),[], 240),         
-("village_49","Montego Bay",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.95,253.74),[], 50),         #[swycartographr] prev. coords: (-34.81, 250.52)
+("village_48","Spanish Town",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(452.69,-939.68),[], 240),          #[swycartographr] prev. coords: (-47, 261.13)
+("village_49","Montego Bay",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(392.48,-926.74),[], 50),         #[swycartographr] prev. coords: (-34.81, 250.52) #[swycartographr] prev. coords: (-35.95, 253.74)
 ("village_50","Annapolis Royal",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-242.69,-199.63),[], 90),           #[swycartographr] prev. coords: (-244.85, -200.82)
 ("village_51","Canso",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-316.08,-212.66),[], 180),  
 ("village_52","Belize",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(140.49,268.21),[], 0),
@@ -466,8 +466,8 @@ parties = [
 #Shawnee 11 
 ("village_184","Kuskusky",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.09,-137.29),[], 120),      
 ("village_185","Nonhelemah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.01,-114.58),[], 100),           
-("village_186","Kispoko",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.43,-105.44),[], 110),              
-("village_187","Shannoah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.03,-105.76),[], 120),         
+("village_186","Kispoko",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(37.94,-107.67),[], 110),               #[swycartographr] prev. coords: (43.43, -105.44)
+("village_187","Shannoah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(59.73,-100.41),[], 120),          #[swycartographr] prev. coords: (56.03, -105.76)
 ("village_188","Shinoudaista",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(31.11,-105.3),[], 100),         
 ("village_189","Eskippakithiki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.71,-68.39),[], 110),      
 ("village_190","Chilliocothe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(41.9,-109.63),[], 120),        
@@ -538,18 +538,18 @@ parties = [
 ("village_o","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.32,-157.97),[], 135),        
 ("village_p","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-112.86,-205.89),[], 135),     
 ("village_q","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.86,-91.67),[], 135),       
-("village_r","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(288.59,-423.39),[], 135),       #[swycartographr] prev. coords: (349.96, -349.26) #[swycartographr] prev. coords: (345.23, -425.22)
+("village_r","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(155.8,-422.55),[], 135),       #[swycartographr] prev. coords: (349.96, -349.26) #[swycartographr] prev. coords: (345.23, -425.22) #[swycartographr] prev. coords: (288.59, -423.39)
 ("village_s","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(126.98,11.99),[], 135),      
 
 ###################################
  
   #Guerre en Amerique microfactions! start
   #Guerre en Amerique forts
-  ("fort_1","Moose Factory",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-153.26,592.6),[],165), #Hudson Bay Company  #[swycartographr] prev. coords: (18.78, -330.01) #[swycartographr] prev. coords: (-579.83, 1258.58)
+  ("fort_1","Moose Factory",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-157.37,987.97),[],165), #Hudson Bay Company  #[swycartographr] prev. coords: (18.78, -330.01) #[swycartographr] prev. coords: (-579.83, 1258.58) #[swycartographr] prev. coords: (-153.26, 592.6)
   ("fort_2","Philipsburg",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-288.56,256.54),[],165), #Dutch 
   ("fort_3","Fort La Reine",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(72.09,-290.24),[],165), #Coureurs des Bois  #[swycartographr] prev. coords: (238.19, -281.42)
   ("fort_4","Boston Common",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-158.89,-159.44),[],165), #Sons of Liberty 
-  ("fort_5","Limbé",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(255.07,-425.46),[],165), #Maroons  #[swycartographr] prev. coords: (747.91, -756.72)
+  ("fort_5","Limbé",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(732.14,-747.41),[],165), #Maroons  #[swycartographr] prev. coords: (747.91, -756.72) #[swycartographr] prev. coords: (255.07, -425.46)
   ("fort_6","Misipawistik",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(113.91,-326.39),[],165), #Cree  #[swycartographr] prev. coords: (215.14, -325.19)
   ("fort_7","Kitcispirini",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-58.93,-219.34),[],165), #Algonkin 
   ("fort_8","Whahktukuk",icon_mansion|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-114.41,-163.39),[],165), #Mohican 
