@@ -387,6 +387,7 @@ parties = [
 ("village_106","Natchitoches",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(160.93,-33.15),[], 170),      #Native #[swycartographr] prev. coords: (221.51, -1.5)
 ("village_107","Natchez",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(197.31,2.69),[], 170),           #Native
 ("village_108","Kaskaskia",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.38,-46.61),[], 100),       #Native  #[swycartographr] prev. coords: (186.97, -64.71) #[swycartographr] prev. coords: (168.01, -49.33)
+("village_109","unused",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[], 100),                         #placeholder - was La Presentation (now castle_93)
 #7 Nations 7 (village_110 placed here due to numeric ordering)
 ("village_110","Oswegatachie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.16,-202.84),[], 170),    #7 Nations
 ("village_111","Mandan",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(69.66,-279.01),[], 170),         #Native #[swycartographr] prev. coords: (256.97, -261.92)
