@@ -653,11 +653,11 @@ scripts = [
 (party_set_slot, "p_village_11", slot_village_bound_center, "p_castle_4"), #Fort Edward, NY - Bennington
 (party_set_slot, "p_village_12", slot_village_bound_center, "p_castle_4"), #Fort Edward, NY - Albany
 (party_set_slot, "p_village_30", slot_village_bound_center, "p_castle_15"), #Falmouth Fort - Falmouth
-(party_set_slot, "p_village_69", slot_village_bound_center, "p_castle_3"), #Fort Edward, NS - Grand Pre -Acadian
-(party_set_slot, "p_village_72", slot_village_bound_center, "p_castle_18"), #Fort Gaspareaux - Cobeguit -Acadian
-(party_set_slot, "p_village_80", slot_village_bound_center, "p_castle_19"), #Fort Beausejour - Beaubassin -Acadian 
+(party_set_slot, "p_village_70", slot_village_bound_center, "p_castle_3"), #Fort Edward, NS - Grand Pre -Acadian
+(party_set_slot, "p_village_73", slot_village_bound_center, "p_castle_18"), #Fort Gaspareaux - Cobeguit -Acadian
+(party_set_slot, "p_village_81", slot_village_bound_center, "p_castle_19"), #Fort Beausejour - Beaubassin -Acadian 
 (party_set_slot, "p_village_43", slot_village_bound_center, "p_castle_7"), #Fort Augusta, PA - Sunbury
-(party_set_slot, "p_village_105", slot_village_bound_center, "p_castle_7"), #Fort Augusta, PA - Gnaddenhutten
+(party_set_slot, "p_village_56", slot_village_bound_center, "p_castle_7"), #Fort Augusta, PA - Gnaddenhutten
 (party_set_slot, "p_village_9", slot_village_bound_center, "p_castle_17"), #Fort Number Four - Lyman
 (party_set_slot, "p_village_50", slot_village_bound_center, "p_castle_16"), #Fort Anne - Annapolis Royal
 (party_set_slot, "p_village_37", slot_village_bound_center, "p_castle_10"), #Fort Bedford - Raystown
@@ -667,208 +667,214 @@ scripts = [
 (party_set_slot, "p_village_40", slot_village_bound_center, "p_castle_2"), #Fort Dobbs - Iredell
 (party_set_slot, "p_village_41", slot_village_bound_center, "p_castle_1"), #Fort Augusta, GA - Augusta
 #French 2-----------------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_82", slot_village_bound_center, "p_town_9"), #Louisbourg - Niganiche
-(party_set_slot, "p_village_81", slot_village_bound_center, "p_town_9"), #Louisbourg - Porte-la-Joye
-(party_set_slot, "p_village_70", slot_village_bound_center, "p_town_9"), #Louisbourg - Miramichy
-(party_set_slot, "p_village_59", slot_village_bound_center, "p_town_10"), #Québec - Tadoussac
-(party_set_slot, "p_village_60", slot_village_bound_center, "p_town_10"), #Québec - Aubigny
-(party_set_slot, "p_village_73", slot_village_bound_center, "p_town_10"), #Québec - Trois-Rivières
-(party_set_slot, "p_village_71", slot_village_bound_center, "p_town_11"), #Montréal - Saint-Hyacinthe
-(party_set_slot, "p_village_68", slot_village_bound_center, "p_town_11"), #Montréal - Longueuil
-(party_set_slot, "p_village_56", slot_village_bound_center, "p_town_12"), #New Orleans - La Balize
-(party_set_slot, "p_village_87", slot_village_bound_center, "p_town_12"), #New Orleans - Cote des Allemands
-(party_set_slot, "p_village_77", slot_village_bound_center, "p_town_13"), #Cap Français - Môle-Saint-Nicolas
-(party_set_slot, "p_village_78", slot_village_bound_center, "p_town_14"), #Saint Pierre - Pointe-a-Pitre
-(party_set_slot, "p_village_79", slot_village_bound_center, "p_town_14"), #Saint Pierre - Roseau
+(party_set_slot, "p_village_83", slot_village_bound_center, "p_town_9"), #Louisbourg - Niganiche
+(party_set_slot, "p_village_82", slot_village_bound_center, "p_town_9"), #Louisbourg - Porte-la-Joye
+(party_set_slot, "p_village_71", slot_village_bound_center, "p_town_9"), #Louisbourg - Miramichy
+(party_set_slot, "p_village_60", slot_village_bound_center, "p_town_10"), #Québec - Tadoussac
+(party_set_slot, "p_village_61", slot_village_bound_center, "p_town_10"), #Québec - Aubigny
+(party_set_slot, "p_village_74", slot_village_bound_center, "p_town_10"), #Québec - Trois-Rivières
+(party_set_slot, "p_village_72", slot_village_bound_center, "p_town_11"), #Montréal - Saint-Hyacinthe
+(party_set_slot, "p_village_69", slot_village_bound_center, "p_town_11"), #Montréal - Longueuil
+(party_set_slot, "p_village_57", slot_village_bound_center, "p_town_12"), #New Orleans - La Balize
+(party_set_slot, "p_village_88", slot_village_bound_center, "p_town_12"), #New Orleans - Cote des Allemands
+(party_set_slot, "p_village_78", slot_village_bound_center, "p_town_13"), #Cap Français - Môle-Saint-Nicolas
+(party_set_slot, "p_village_79", slot_village_bound_center, "p_town_14"), #Saint Pierre - Pointe-a-Pitre
+(party_set_slot, "p_village_80", slot_village_bound_center, "p_town_14"), #Saint Pierre - Roseau
 
-(party_set_slot, "p_village_83", slot_village_bound_center, "p_castle_36"), #Fort Louisbourg - Port Toulouse
-(party_set_slot, "p_village_84", slot_village_bound_center, "p_castle_37"), #Fort Conde - Biloxi
-(party_set_slot, "p_village_85", slot_village_bound_center, "p_castle_37"), #Fort Conde - Mobile
-(party_set_slot, "p_village_75", slot_village_bound_center, "p_castle_38"), #Fort Sainte-Claire - Les Cayes
-(party_set_slot, "p_village_76", slot_village_bound_center, "p_castle_38"), #Fort Sainte-Claire - Port-au-Prince
-(party_set_slot, "p_village_86", slot_village_bound_center, "p_castle_44"), #Fort Tombecbee - Baton Rouge
-(party_set_slot, "p_village_65", slot_village_bound_center, "p_castle_35"), #Fort Menagoueche- Pointe Sainte-Anne
-(party_set_slot, "p_village_110", slot_village_bound_center, "p_castle_31"), #Fort Levis - Oswegatchie
-(party_set_slot, "p_village_113", slot_village_bound_center, "p_castle_30"), #Fort Frontenac - Cataraqui
-(party_set_slot, "p_village_109", slot_village_bound_center, "p_castle_46"), #Fort Toronto - La Presentation
-(party_set_slot, "p_village_67", slot_village_bound_center, "p_castle_33"), #Fort Ile aux Noix - Saint-Paul-de-l'Ile-aux-Noix
-(party_set_slot, "p_village_74", slot_village_bound_center, "p_castle_32"), #Fort Carillon - Basseville
-(party_set_slot, "p_village_66", slot_village_bound_center, "p_castle_34"), #Fort Saint-Jean - Saint-Jean-sur-Richelieu
-(party_set_slot, "p_village_112", slot_village_bound_center, "p_castle_27"), #Fort Machault - Venango
-(party_set_slot, "p_village_106", slot_village_bound_center, "p_castle_21"), #Fort Saint-Jean-Baptiste - Natchitoches
-(party_set_slot, "p_village_107", slot_village_bound_center, "p_castle_20"), #Fort Rosalie - Natchez
-(party_set_slot, "p_village_63", slot_village_bound_center, "p_castle_23"), #Fort Vincennes - Terre Haute
-(party_set_slot, "p_village_111", slot_village_bound_center, "p_castle_48"), #Fort Saint Charles - Mandan
-(party_set_slot, "p_village_58", slot_village_bound_center, "p_castle_22"), #Fort Saint-Louis - Bonne Terre
-(party_set_slot, "p_village_61", slot_village_bound_center, "p_castle_22"), #Fort Saint-Louis - Prairie du Pont
-(party_set_slot, "p_village_64", slot_village_bound_center, "p_castle_22"), #Fort Saint-Louis - Cahokia
-(party_set_slot, "p_village_57", slot_village_bound_center, "p_castle_24"), #Fort de Chartres - Cap Girardeau
-(party_set_slot, "p_village_62", slot_village_bound_center, "p_castle_24"), #Fort de Chartres - St. Philippe
-(party_set_slot, "p_village_108", slot_village_bound_center, "p_castle_24"), #Fort de Chartres - Kaskaskia
+(party_set_slot, "p_village_84", slot_village_bound_center, "p_castle_36"), #Fort Louisbourg - Port Toulouse
+(party_set_slot, "p_village_85", slot_village_bound_center, "p_castle_37"), #Fort Conde - Biloxi
+(party_set_slot, "p_village_86", slot_village_bound_center, "p_castle_37"), #Fort Conde - Mobile
+(party_set_slot, "p_village_76", slot_village_bound_center, "p_castle_38"), #Fort Sainte-Claire - Les Cayes
+(party_set_slot, "p_village_77", slot_village_bound_center, "p_castle_38"), #Fort Sainte-Claire - Port-au-Prince
+(party_set_slot, "p_village_87", slot_village_bound_center, "p_castle_44"), #Fort Tombecbee - Baton Rouge
+(party_set_slot, "p_village_66", slot_village_bound_center, "p_castle_35"), #Fort Menagoueche- Pointe Sainte-Anne
+(party_set_slot, "p_village_156", slot_village_bound_center, "p_castle_93"), #La Presentation - Oswegatachie
+(party_set_slot, "p_village_94", slot_village_bound_center, "p_castle_30"), #Fort Frontenac - Cataraqui
+(party_set_slot, "p_village_68", slot_village_bound_center, "p_castle_33"), #Fort Ile aux Noix - Saint-Paul-de-l'Ile-aux-Noix
+(party_set_slot, "p_village_75", slot_village_bound_center, "p_castle_32"), #Fort Carillon - Basseville
+(party_set_slot, "p_village_67", slot_village_bound_center, "p_castle_34"), #Fort Saint-Jean - Saint-Jean-sur-Richelieu
+(party_set_slot, "p_village_93", slot_village_bound_center, "p_castle_27"), #Fort Machault - Venango
+(party_set_slot, "p_village_89", slot_village_bound_center, "p_castle_21"), #Fort Saint-Jean-Baptiste - Natchitoches
+(party_set_slot, "p_village_90", slot_village_bound_center, "p_castle_20"), #Fort Rosalie - Natchez
+(party_set_slot, "p_village_64", slot_village_bound_center, "p_castle_23"), #Fort Vincennes - Terre Haute
+(party_set_slot, "p_village_92", slot_village_bound_center, "p_castle_48"), #Fort Saint Charles - Mandan
+(party_set_slot, "p_village_59", slot_village_bound_center, "p_castle_22"), #Fort Saint-Louis - Bonne Terre
+(party_set_slot, "p_village_62", slot_village_bound_center, "p_castle_22"), #Fort Saint-Louis - Prairie du Pont
+(party_set_slot, "p_village_65", slot_village_bound_center, "p_castle_22"), #Fort Saint-Louis - Cahokia
+(party_set_slot, "p_village_58", slot_village_bound_center, "p_castle_24"), #Fort de Chartres - Cap Girardeau
+(party_set_slot, "p_village_63", slot_village_bound_center, "p_castle_24"), #Fort de Chartres - St. Philippe
+(party_set_slot, "p_village_91", slot_village_bound_center, "p_castle_24"), #Fort de Chartres - Kaskaskia
 #Spanish 3------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_115", slot_village_bound_center, "p_town_15"), #St. Augustine - Calusa
-(party_set_slot, "p_village_116", slot_village_bound_center, "p_town_15"), #St. Augustine - Tocobaga
-(party_set_slot, "p_village_88", slot_village_bound_center, "p_town_16"), #Havana - Puerto Principe
-(party_set_slot, "p_village_100", slot_village_bound_center, "p_town_16"), #Havana - Trinidad
-(party_set_slot, "p_village_103", slot_village_bound_center, "p_town_17"), #Santo Domingo - Santiago de los Caballeros
-(party_set_slot, "p_village_95", slot_village_bound_center, "p_town_18"), #Veracruz - Campeche
-(party_set_slot, "p_village_96", slot_village_bound_center, "p_town_18"), #Veracruz - Merida
-(party_set_slot, "p_village_91", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Panuco
-(party_set_slot, "p_village_92", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Puebla
-(party_set_slot, "p_village_94", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Ciudad Real
-(party_set_slot, "p_village_97", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Puerto Cortes
-(party_set_slot, "p_village_98", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Trujillo
+(party_set_slot, "p_village_113", slot_village_bound_center, "p_town_15"), #St. Augustine - Calusa
+(party_set_slot, "p_village_114", slot_village_bound_center, "p_town_15"), #St. Augustine - Tocobaga
+(party_set_slot, "p_village_95", slot_village_bound_center, "p_town_16"), #Havana - Puerto Principe
+(party_set_slot, "p_village_107", slot_village_bound_center, "p_town_16"), #Havana - Trinidad
+(party_set_slot, "p_village_110", slot_village_bound_center, "p_town_17"), #Santo Domingo - Santiago de los Caballeros
+(party_set_slot, "p_village_102", slot_village_bound_center, "p_town_18"), #Veracruz - Campeche
+(party_set_slot, "p_village_103", slot_village_bound_center, "p_town_18"), #Veracruz - Merida
+(party_set_slot, "p_village_98", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Panuco
+(party_set_slot, "p_village_99", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Puebla
+(party_set_slot, "p_village_101", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Ciudad Real
+(party_set_slot, "p_village_104", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Puerto Cortes
+(party_set_slot, "p_village_105", slot_village_bound_center, "p_town_19"), #Ciudad de Mexico - Trujillo
 
-(party_set_slot, "p_village_93", slot_village_bound_center, "p_castle_57"), #San Diego - Oaxaca
-(party_set_slot, "p_village_90", slot_village_bound_center, "p_castle_56"), #San Juan de Ulúa - Tampico
-(party_set_slot, "p_village_99", slot_village_bound_center, "p_castle_59"), #Castillo de San Pedro de la Roca - Bayamo
-(party_set_slot, "p_village_101", slot_village_bound_center, "p_castle_59"), #Castillo de San Pedro de la Roca - Santiago de Cuba
-(party_set_slot, "p_village_89", slot_village_bound_center, "p_castle_55"), #San Antonio - Santa Rosa
-(party_set_slot, "p_village_102", slot_village_bound_center, "p_castle_60"), #Fortaleza San Felipe - Puerto Plata
-(party_set_slot, "p_village_104", slot_village_bound_center, "p_castle_58"), #Castillo San Felipe del Morro - San Juan
-(party_set_slot, "p_village_114", slot_village_bound_center, "p_castle_54"), #San Mateo - Timicua
-(party_set_slot, "p_village_117", slot_village_bound_center, "p_castle_52"), #San Marcos - Apalachee
-(party_set_slot, "p_village_118", slot_village_bound_center, "p_castle_53"), #Pensacola - Panzacola
+(party_set_slot, "p_village_100", slot_village_bound_center, "p_castle_57"), #San Diego - Oaxaca
+(party_set_slot, "p_village_97", slot_village_bound_center, "p_castle_56"), #San Juan de Ulúa - Tampico
+(party_set_slot, "p_village_106", slot_village_bound_center, "p_castle_59"), #Castillo de San Pedro de la Roca - Bayamo
+(party_set_slot, "p_village_108", slot_village_bound_center, "p_castle_59"), #Castillo de San Pedro de la Roca - Santiago de Cuba
+(party_set_slot, "p_village_96", slot_village_bound_center, "p_castle_55"), #San Antonio - Santa Rosa
+(party_set_slot, "p_village_109", slot_village_bound_center, "p_castle_60"), #Fortaleza San Felipe - Puerto Plata
+(party_set_slot, "p_village_111", slot_village_bound_center, "p_castle_58"), #Castillo San Felipe del Morro - San Juan
+(party_set_slot, "p_village_112", slot_village_bound_center, "p_castle_54"), #San Mateo - Timicua
+(party_set_slot, "p_village_115", slot_village_bound_center, "p_castle_52"), #San Marcos - Apalachee
+(party_set_slot, "p_village_116", slot_village_bound_center, "p_castle_53"), #Pensacola - Panzacola
 #Iroquois 4-----------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_119", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Erie
-(party_set_slot, "p_village_120", slot_village_bound_center, "p_castle_61"), #Chenussio - Canawaugus
-(party_set_slot, "p_village_121", slot_village_bound_center, "p_castle_61"), #Chenussio - Ganondagan
-(party_set_slot, "p_village_122", slot_village_bound_center, "p_castle_62"), #Goiogouen - Cayuga
-(party_set_slot, "p_village_123", slot_village_bound_center, "p_castle_61"), #Chenussio - Susquehanna
-(party_set_slot, "p_village_125", slot_village_bound_center, "p_castle_63"), #Kanonwalohale - Oneida
-(party_set_slot, "p_village_127", slot_village_bound_center, "p_castle_63"), #Kanonwalohale - Oriskany
-(party_set_slot, "p_village_128", slot_village_bound_center, "p_castle_62"), #Goiogouen - Onnontare
-(party_set_slot, "p_village_129", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Koshaksink
-(party_set_slot, "p_village_130", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Ononowaga Cochake
-(party_set_slot, "p_village_131", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Ononowaga Kuskusky
-(party_set_slot, "p_village_132", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Oweso'gawenoeh
+(party_set_slot, "p_village_117", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Erie
+(party_set_slot, "p_village_118", slot_village_bound_center, "p_castle_61"), #Chenussio - Canawaugus
+(party_set_slot, "p_village_119", slot_village_bound_center, "p_castle_61"), #Chenussio - Ganondagan
+(party_set_slot, "p_village_120", slot_village_bound_center, "p_castle_62"), #Goiogouen - Cayuga
+(party_set_slot, "p_village_121", slot_village_bound_center, "p_castle_61"), #Chenussio - Susquehanna
+(party_set_slot, "p_village_123", slot_village_bound_center, "p_castle_63"), #Kanonwalohale - Oneida
+(party_set_slot, "p_village_125", slot_village_bound_center, "p_castle_63"), #Kanonwalohale - Oriskany
+(party_set_slot, "p_village_126", slot_village_bound_center, "p_castle_62"), #Goiogouen - Onnontare
+(party_set_slot, "p_village_127", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Koshaksink
+(party_set_slot, "p_village_128", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Ononowaga Cochake
+(party_set_slot, "p_village_129", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Ononowaga Kuskusky
+(party_set_slot, "p_village_130", slot_village_bound_center, "p_castle_64"), #Yoghroonwago - Oweso'gawenoeh
 
-(party_set_slot, "p_village_124", slot_village_bound_center, "p_town_20"), #Onondaga - Tuscarora
-(party_set_slot, "p_village_126", slot_village_bound_center, "p_town_20"), #Onondaga - Canadasegy
+(party_set_slot, "p_village_122", slot_village_bound_center, "p_town_20"), #Onondaga - Tuscarora
+(party_set_slot, "p_village_124", slot_village_bound_center, "p_town_20"), #Onondaga - Canadasegy
 #Cherokee 5----------------------------------------------------------------------------------------
-(party_set_slot, "p_village_133", slot_village_bound_center, "p_castle_65"), #Stecoa - Nununyi
-(party_set_slot, "p_village_134", slot_village_bound_center, "p_castle_65"), #Stecoa - Tuckaseegee
-(party_set_slot, "p_village_135", slot_village_bound_center, "p_castle_66"), #Cowee - Etchoe
-(party_set_slot, "p_village_136", slot_village_bound_center, "p_castle_66"), #Cowee - Estatoe
-(party_set_slot, "p_village_137", slot_village_bound_center, "p_castle_67"), #Hiwasee - Cattoogachaye
-(party_set_slot, "p_village_138", slot_village_bound_center, "p_castle_67"), #Hiwasee - Aquonatuste
-(party_set_slot, "p_village_140", slot_village_bound_center, "p_castle_68"), #Chatuga - Mialoquo
+(party_set_slot, "p_village_131", slot_village_bound_center, "p_castle_65"), #Stecoa - Nununyi
+(party_set_slot, "p_village_132", slot_village_bound_center, "p_castle_65"), #Stecoa - Tuckaseegee
+(party_set_slot, "p_village_133", slot_village_bound_center, "p_castle_66"), #Cowee - Etchoe
+(party_set_slot, "p_village_134", slot_village_bound_center, "p_castle_66"), #Cowee - Estatoe
+(party_set_slot, "p_village_135", slot_village_bound_center, "p_castle_67"), #Hiwasee - Cattoogachaye
+(party_set_slot, "p_village_136", slot_village_bound_center, "p_castle_67"), #Hiwasee - Aquonatuste
+(party_set_slot, "p_village_138", slot_village_bound_center, "p_castle_68"), #Chatuga - Mialoquo
 
-(party_set_slot, "p_village_139", slot_village_bound_center, "p_town_21"), #Chota - Little Tellico
-(party_set_slot, "p_village_141", slot_village_bound_center, "p_town_21"), #Chota - Citico
+(party_set_slot, "p_village_137", slot_village_bound_center, "p_town_21"), #Chota - Little Tellico
+(party_set_slot, "p_village_139", slot_village_bound_center, "p_town_21"), #Chota - Citico
 #Wabanaki 6--------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_142", slot_village_bound_center, "p_castle_70"), #Mazipskoik - Woronoke
-(party_set_slot, "p_village_145", slot_village_bound_center, "p_castle_71"), #Sipekni'katik - Shubenacadie
-(party_set_slot, "p_village_144", slot_village_bound_center, "p_castle_69"), #Medoktak - Aukpaque
-(party_set_slot, "p_village_146", slot_village_bound_center, "p_castle_69"), #Medoktak - Passamaquoddy
-(party_set_slot, "p_village_147", slot_village_bound_center, "p_castle_71"), #Sipekni'katik - Pijelooeekak
-(party_set_slot, "p_village_149", slot_village_bound_center, "p_castle_72"), #Wolinak - Madawaska
+(party_set_slot, "p_village_140", slot_village_bound_center, "p_castle_70"), #Mazipskoik - Woronoke
+(party_set_slot, "p_village_143", slot_village_bound_center, "p_castle_71"), #Sipekni'katik - Shubenacadie
+(party_set_slot, "p_village_142", slot_village_bound_center, "p_castle_69"), #Medoktak - Aukpaque
+(party_set_slot, "p_village_144", slot_village_bound_center, "p_castle_69"), #Medoktak - Passamaquoddy
+(party_set_slot, "p_village_145", slot_village_bound_center, "p_castle_71"), #Sipekni'katik - Pijelooeekak
+(party_set_slot, "p_village_147", slot_village_bound_center, "p_castle_72"), #Wolinak - Madawaska
 
-(party_set_slot, "p_village_143", slot_village_bound_center, "p_town_22"), #Odanak - Nanrantsouak
-(party_set_slot, "p_village_150", slot_village_bound_center, "p_town_22"), #Odanak - Alenape Meneha
-(party_set_slot, "p_village_148", slot_village_bound_center, "p_town_22"), #Odanak - Sokoki
+(party_set_slot, "p_village_141", slot_village_bound_center, "p_town_22"), #Odanak - Nanrantsouak
+(party_set_slot, "p_village_148", slot_village_bound_center, "p_town_22"), #Odanak - Alenape Meneha
+(party_set_slot, "p_village_146", slot_village_bound_center, "p_town_22"), #Odanak - Sokoki
 
-#Mohawk 7-----------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_151", slot_village_bound_center, "p_castle_73"), #Canohogo - Kanien'keha:ka
-(party_set_slot, "p_village_154", slot_village_bound_center, "p_castle_73"), #Canohogo - Ganienkeh
-(party_set_slot, "p_village_155", slot_village_bound_center, "p_castle_74"), #Kahnawake - Ahkwesahsne
-(party_set_slot, "p_village_156", slot_village_bound_center, "p_castle_74"), #Kahnawake - Kanesatake
+#7 Nations 7-------------------------------------------------------------------------------------------
+(party_set_slot, "p_village_149", slot_village_bound_center, "p_castle_73"), #Canohogo - Kanien'keha:ka
+(party_set_slot, "p_village_152", slot_village_bound_center, "p_castle_73"), #Canohogo - Ganienkeh
+(party_set_slot, "p_village_153", slot_village_bound_center, "p_castle_96"), #Ahkwesasne - Ahkwesahsne
+(party_set_slot, "p_village_154", slot_village_bound_center, "p_castle_95"), #Kanesatake - Kanesatake village
 
-(party_set_slot, "p_village_152", slot_village_bound_center, "p_town_23"), #Nowdaga - Tarajorees
-(party_set_slot, "p_village_153", slot_village_bound_center, "p_town_23"), #Nowdaga - Canajoharie
-(party_set_slot, "p_village_157", slot_village_bound_center, "p_town_23"), #Nowdaga - Atheclaghque
+(party_set_slot, "p_village_150", slot_village_bound_center, "p_town_23"), #Nowdaga - Tarajorees
+(party_set_slot, "p_village_151", slot_village_bound_center, "p_town_23"), #Nowdaga - Canajoharie
+(party_set_slot, "p_village_155", slot_village_bound_center, "p_town_23"),  #Kahnawake - Atheclaghque
+#7 Nations (Confederacy) - new village bindings
+(party_set_slot, "p_village_158", slot_village_bound_center, "p_town_23"),   #Kahnawake - Tyendinaga
+(party_set_slot, "p_village_161", slot_village_bound_center, "p_town_23"),    #Kahnawake - Becancour
+(party_set_slot, "p_village_159", slot_village_bound_center, "p_castle_95"),        #Kanesatake - Oka
+(party_set_slot, "p_village_162", slot_village_bound_center, "p_castle_95"),   #Kanesatake - Jeune Lorette
+(party_set_slot, "p_village_163", slot_village_bound_center, "p_castle_95"),    #Kanesatake - Wendake
+(party_set_slot, "p_village_160", slot_village_bound_center, "p_castle_96"),  #Ahkwesasne - Kanatakon
 #Huron 8----------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_158", slot_village_bound_center, "p_castle_75"), #Lorette - Ancienne Lorette
+(party_set_slot, "p_village_164", slot_village_bound_center, "p_castle_75"), #Lorette - Ancienne Lorette
 
-(party_set_slot, "p_village_159", slot_village_bound_center, "p_town_24"), #Sunyendeand - Magagua
-(party_set_slot, "p_village_160", slot_village_bound_center, "p_town_24"), #Sunyendeand - Anderdon
-(party_set_slot, "p_village_161", slot_village_bound_center, "p_town_24"), #Sunyendeand - Junundat
-(party_set_slot, "p_village_162", slot_village_bound_center, "p_town_24"), #Sunyendeand - Jejakweyandat
-(party_set_slot, "p_village_163", slot_village_bound_center, "p_town_24"), #Sunyendeand - Jejakwe
-(party_set_slot, "p_village_164", slot_village_bound_center, "p_town_24"), #Sunyendeand - Ouadot Muskingum
-(party_set_slot, "p_village_165", slot_village_bound_center, "p_town_24"), #Sunyendeand - Conchake
-(party_set_slot, "p_village_166", slot_village_bound_center, "p_town_24"), #Sunyendeand - Kuskuskyandat
+(party_set_slot, "p_village_165", slot_village_bound_center, "p_town_24"), #Sunyendeand - Magagua
+(party_set_slot, "p_village_166", slot_village_bound_center, "p_town_24"), #Sunyendeand - Anderdon
+(party_set_slot, "p_village_167", slot_village_bound_center, "p_town_24"), #Sunyendeand - Junundat
+(party_set_slot, "p_village_168", slot_village_bound_center, "p_town_24"), #Sunyendeand - Jejakweyandat
+(party_set_slot, "p_village_169", slot_village_bound_center, "p_town_24"), #Sunyendeand - Jejakwe
+(party_set_slot, "p_village_170", slot_village_bound_center, "p_town_24"), #Sunyendeand - Ouadot Muskingum
+(party_set_slot, "p_village_171", slot_village_bound_center, "p_town_24"), #Sunyendeand - Conchake
+(party_set_slot, "p_village_172", slot_village_bound_center, "p_town_24"), #Sunyendeand - Kuskuskyandat
 #Lenape 9-------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_167", slot_village_bound_center, "p_town_25"), #Wyolutimunk - Chugnut
-(party_set_slot, "p_village_168", slot_village_bound_center, "p_town_25"), #Wyolutimunk - Owego
-(party_set_slot, "p_village_169", slot_village_bound_center, "p_town_25"), #Wyolutimunk - Sheshequenink
+(party_set_slot, "p_village_173", slot_village_bound_center, "p_town_25"), #Wyolutimunk - Chugnut
+(party_set_slot, "p_village_174", slot_village_bound_center, "p_town_25"), #Wyolutimunk - Owego
+(party_set_slot, "p_village_175", slot_village_bound_center, "p_town_25"), #Wyolutimunk - Sheshequenink
 
-(party_set_slot, "p_village_170", slot_village_bound_center, "p_town_26"), #Goschachgunk - Indaochaic
-(party_set_slot, "p_village_171", slot_village_bound_center, "p_town_26"), #Goschachgunk - Muhheconneokink
-(party_set_slot, "p_village_172", slot_village_bound_center, "p_town_26"), #Goschachgunk - Sawcunk
-(party_set_slot, "p_village_173", slot_village_bound_center, "p_town_26"), #Goschachgunk - Gekelmukpechunk
-(party_set_slot, "p_village_174", slot_village_bound_center, "p_castle_76"), #Maughwawame - Wappocomo
-(party_set_slot, "p_village_175", slot_village_bound_center, "p_town_26"), #Goschachgunk - Kuskuskink
+(party_set_slot, "p_village_176", slot_village_bound_center, "p_town_26"), #Goschachgunk - Indaochaic
+(party_set_slot, "p_village_177", slot_village_bound_center, "p_town_26"), #Goschachgunk - Muhheconneokink
+(party_set_slot, "p_village_178", slot_village_bound_center, "p_town_26"), #Goschachgunk - Sawcunk
+(party_set_slot, "p_village_179", slot_village_bound_center, "p_town_26"), #Goschachgunk - Gekelmukpechunk
+(party_set_slot, "p_village_180", slot_village_bound_center, "p_castle_76"), #Maughwawame - Wappocomo
+(party_set_slot, "p_village_181", slot_village_bound_center, "p_town_26"), #Goschachgunk - Kuskuskink
 #Miami 10-----------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_176", slot_village_bound_center, "p_town_27"), #Kiikayonki - Saakiiweeyonki
-(party_set_slot, "p_village_177", slot_village_bound_center, "p_town_27"), #Kiikayonki - Mihsiiwiateehi
-(party_set_slot, "p_village_178", slot_village_bound_center, "p_town_27"), #Kiikayonki - Kineepikomeehkwa
-(party_set_slot, "p_village_179", slot_village_bound_center, "p_town_27"), #Kiikayonki - Kiteepihkwana
-(party_set_slot, "p_village_180", slot_village_bound_center, "p_town_27"), #Kiikayonki - Waayaahtanonki
-(party_set_slot, "p_village_181", slot_village_bound_center, "p_town_27"), #Kiikayonki - Peeyankihsionki
-(party_set_slot, "p_village_182", slot_village_bound_center, "p_town_27"), #Kiikayonki - Aciipihkahkionki
-(party_set_slot, "p_village_183", slot_village_bound_center, "p_town_27"), #Kiikayonki - Pinkwaawilenionki
+(party_set_slot, "p_village_182", slot_village_bound_center, "p_town_27"), #Kiikayonki - Saakiiweeyonki
+(party_set_slot, "p_village_183", slot_village_bound_center, "p_town_27"), #Kiikayonki - Mihsiiwiateehi
+(party_set_slot, "p_village_184", slot_village_bound_center, "p_town_27"), #Kiikayonki - Kineepikomeehkwa
+(party_set_slot, "p_village_185", slot_village_bound_center, "p_town_27"), #Kiikayonki - Kiteepihkwana
+(party_set_slot, "p_village_186", slot_village_bound_center, "p_town_27"), #Kiikayonki - Waayaahtanonki
+(party_set_slot, "p_village_187", slot_village_bound_center, "p_town_27"), #Kiikayonki - Peeyankihsionki
+(party_set_slot, "p_village_188", slot_village_bound_center, "p_town_27"), #Kiikayonki - Aciipihkahkionki
+(party_set_slot, "p_village_189", slot_village_bound_center, "p_town_27"), #Kiikayonki - Pinkwaawilenionki
 #Shawnee 11--------------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_184", slot_village_bound_center, "p_castle_77"), #Shenango - Kuskusky
-(party_set_slot, "p_village_185", slot_village_bound_center, "p_castle_78"), #Moguck - Nonhelemah
-(party_set_slot, "p_village_189", slot_village_bound_center, "p_castle_79"), #Kentukee - Eskippakithiki
-(party_set_slot, "p_village_190", slot_village_bound_center, "p_castle_78"), #Moguck - Chilliocothe
+(party_set_slot, "p_village_190", slot_village_bound_center, "p_castle_77"), #Shenango - Kuskusky
+(party_set_slot, "p_village_191", slot_village_bound_center, "p_castle_78"), #Moguck - Nonhelemah
+(party_set_slot, "p_village_195", slot_village_bound_center, "p_castle_79"), #Kentukee - Eskippakithiki
+(party_set_slot, "p_village_196", slot_village_bound_center, "p_castle_78"), #Moguck - Chilliocothe
 
-(party_set_slot, "p_village_186", slot_village_bound_center, "p_town_28"), #Sonnontio - Kispoko
-(party_set_slot, "p_village_187", slot_village_bound_center, "p_town_28"), #Sonnontio - Shannoah
-(party_set_slot, "p_village_188", slot_village_bound_center, "p_town_28"), #Sonnontio - Shinoudaista
+(party_set_slot, "p_village_192", slot_village_bound_center, "p_town_28"), #Sonnontio - Kispoko
+(party_set_slot, "p_village_193", slot_village_bound_center, "p_town_28"), #Sonnontio - Shannoah
+(party_set_slot, "p_village_194", slot_village_bound_center, "p_town_28"), #Sonnontio - Shinoudaista
 #Odawa 12--------------------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_194", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Wabigungweshcupago
-(party_set_slot, "p_village_195", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Shingobeeng
-(party_set_slot, "p_village_196", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Owashtanong
-(party_set_slot, "p_village_197", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Maamii
-(party_set_slot, "p_village_198", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Ogantz
+(party_set_slot, "p_village_200", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Wabigungweshcupago
+(party_set_slot, "p_village_201", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Shingobeeng
+(party_set_slot, "p_village_202", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Owashtanong
+(party_set_slot, "p_village_203", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Maamii
+(party_set_slot, "p_village_204", slot_village_bound_center, "p_town_29"), #Waawiyaatanong - Ogantz
 
-(party_set_slot, "p_village_191", slot_village_bound_center, "p_castle_80"), #Waganagisi - Manidoowaling
-(party_set_slot, "p_village_192", slot_village_bound_center, "p_castle_80"), #Waganagisi - Ahnumawautinkumig
-(party_set_slot, "p_village_193", slot_village_bound_center, "p_castle_80"), #Waganagisi - Ahptunwating
+(party_set_slot, "p_village_197", slot_village_bound_center, "p_castle_80"), #Waganagisi - Manidoowaling
+(party_set_slot, "p_village_198", slot_village_bound_center, "p_castle_80"), #Waganagisi - Ahnumawautinkumig
+(party_set_slot, "p_village_199", slot_village_bound_center, "p_castle_80"), #Waganagisi - Ahptunwating
 #Ojibwe 13----------------------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_199", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Gichiziibiwininiwag
-(party_set_slot, "p_village_200", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Gichigamiing
-(party_set_slot, "p_village_201", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Baawiting
-(party_set_slot, "p_village_202", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Zaaga'iganing
-(party_set_slot, "p_village_203", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Sagenong
+(party_set_slot, "p_village_205", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Gichiziibiwininiwag
+(party_set_slot, "p_village_206", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Gichigamiing
+(party_set_slot, "p_village_207", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Baawiting
+(party_set_slot, "p_village_208", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Zaaga'iganing
+(party_set_slot, "p_village_209", slot_village_bound_center, "p_town_30"), #Zhaagawaamikong - Sagenong
 
-(party_set_slot, "p_village_204", slot_village_bound_center, "p_castle_81"), #Missinnihe - Cobechenonk
-(party_set_slot, "p_village_205", slot_village_bound_center, "p_castle_81"), #Missinnihe - Mekisewancenonk
+(party_set_slot, "p_village_157", slot_village_bound_center, "p_castle_94"), #Mississauga - Cobechenonk
+(party_set_slot, "p_village_210", slot_village_bound_center, "p_castle_81"), #Missinnihe - Mekisewancenonk
 #Potawatomi 14-------------------------------------------------------------------------------------
-(party_set_slot, "p_village_208", slot_village_bound_center, "p_town_31"), #Aniquiba - Zhegagoynak
-(party_set_slot, "p_village_209", slot_village_bound_center, "p_town_31"), #Aniquiba - Sheggwe
-(party_set_slot, "p_village_210", slot_village_bound_center, "p_town_31"), #Aniquiba - Nadowesippi
-(party_set_slot, "p_village_211", slot_village_bound_center, "p_town_31"), #Aniquiba - Wawiatenang
+(party_set_slot, "p_village_213", slot_village_bound_center, "p_town_31"), #Aniquiba - Zhegagoynak
+(party_set_slot, "p_village_214", slot_village_bound_center, "p_town_31"), #Aniquiba - Sheggwe
+(party_set_slot, "p_village_215", slot_village_bound_center, "p_town_31"), #Aniquiba - Nadowesippi
+(party_set_slot, "p_village_216", slot_village_bound_center, "p_town_31"), #Aniquiba - Wawiatenang
 
-(party_set_slot, "p_village_206", slot_village_bound_center, "p_castle_82"), #Magnawauk - Kwikwiyak
-(party_set_slot, "p_village_207", slot_village_bound_center, "p_castle_82"), #Magnawauk - Wnaneg-gizs
+(party_set_slot, "p_village_211", slot_village_bound_center, "p_castle_82"), #Magnawauk - Kwikwiyak
+(party_set_slot, "p_village_212", slot_village_bound_center, "p_castle_82"), #Magnawauk - Wnaneg-gizs
 #Choctaw 15------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_212", slot_village_bound_center, "p_castle_84"), #Chickasawhay -Yowannis
-(party_set_slot, "p_village_214", slot_village_bound_center, "p_castle_84"), #Chickasawhay -Oaka Loosa
-(party_set_slot, "p_village_216", slot_village_bound_center, "p_castle_83"), #Schakannapa -Abeka
-(party_set_slot, "p_village_218", slot_village_bound_center, "p_castle_83"), #Schakannapa -Bouctoucoulou
-(party_set_slot, "p_village_219", slot_village_bound_center, "p_castle_85"), #Sapatchito -Cuctachas
+(party_set_slot, "p_village_217", slot_village_bound_center, "p_castle_84"), #Chickasawhay -Yowannis
+(party_set_slot, "p_village_219", slot_village_bound_center, "p_castle_84"), #Chickasawhay -Oaka Loosa
+(party_set_slot, "p_village_221", slot_village_bound_center, "p_castle_83"), #Schakannapa -Abeka
+(party_set_slot, "p_village_223", slot_village_bound_center, "p_castle_83"), #Schakannapa -Bouctoucoulou
+(party_set_slot, "p_village_224", slot_village_bound_center, "p_castle_85"), #Sapatchito -Cuctachas
 
-(party_set_slot, "p_village_220", slot_village_bound_center, "p_town_32"), #Oklahannali -Mongoulacha
-(party_set_slot, "p_village_221", slot_village_bound_center, "p_town_32"), #Oklahannali -Concha
-(party_set_slot, "p_village_222", slot_village_bound_center, "p_town_32"), #Oklahannali -Pante
-(party_set_slot, "p_village_217", slot_village_bound_center, "p_town_32"), #Oklahannali -Ayanabi
-(party_set_slot, "p_village_215", slot_village_bound_center, "p_town_32"), #Oklahannali -Louckata
-(party_set_slot, "p_village_213", slot_village_bound_center, "p_town_32"), #Oklahannali -Yashu Iskitini
+(party_set_slot, "p_village_225", slot_village_bound_center, "p_town_32"), #Oklahannali -Mongoulacha
+(party_set_slot, "p_village_226", slot_village_bound_center, "p_town_32"), #Oklahannali -Concha
+(party_set_slot, "p_village_227", slot_village_bound_center, "p_town_32"), #Oklahannali -Pante
+(party_set_slot, "p_village_222", slot_village_bound_center, "p_town_32"), #Oklahannali -Ayanabi
+(party_set_slot, "p_village_220", slot_village_bound_center, "p_town_32"), #Oklahannali -Louckata
+(party_set_slot, "p_village_218", slot_village_bound_center, "p_town_32"), #Oklahannali -Yashu Iskitini
 #Chickasaw 16------------------------------------------------------------------------------------------
-(party_set_slot, "p_village_223", slot_village_bound_center, "p_castle_86"), #Apeony -Tchokaffala
-(party_set_slot, "p_village_224", slot_village_bound_center, "p_castle_87"), #Chokkilissa -Tchikoulechasto
-(party_set_slot, "p_village_225", slot_village_bound_center, "p_town_33"), #Chokkilissa -Falatchao
-(party_set_slot, "p_village_226", slot_village_bound_center, "p_castle_87"), #Tchichatala -Chatelaw
+(party_set_slot, "p_village_228", slot_village_bound_center, "p_castle_86"), #Apeony -Tchokaffala
+(party_set_slot, "p_village_229", slot_village_bound_center, "p_castle_87"), #Chokkilissa -Tchikoulechasto
+(party_set_slot, "p_village_230", slot_village_bound_center, "p_town_33"), #Chokkilissa -Falatchao
+(party_set_slot, "p_village_231", slot_village_bound_center, "p_castle_87"), #Tchichatala -Chatelaw
 #Creek 17--------------------------------------------------------------------------------------------   
-(party_set_slot, "p_village_227", slot_village_bound_center, "p_castle_88"), #Tukabatchee -Tokepahce
-(party_set_slot, "p_village_228", slot_village_bound_center, "p_castle_89"), #Kashita -Cusseta
-(party_set_slot, "p_village_229", slot_village_bound_center, "p_castle_90"), #Abihika -Talladega
-(party_set_slot, "p_village_230", slot_village_bound_center, "p_castle_91"), #Coosa -Etowah
-(party_set_slot, "p_village_231", slot_village_bound_center, "p_castle_92"), #Tallapoosa -Cahawba
-(party_set_slot, "p_village_232", slot_village_bound_center, "p_town_34"), #Coweta -Okfuskee
+(party_set_slot, "p_village_232", slot_village_bound_center, "p_castle_88"), #Tukabatchee -Tokepahce
+(party_set_slot, "p_village_233", slot_village_bound_center, "p_castle_89"), #Kashita -Cusseta
+(party_set_slot, "p_village_234", slot_village_bound_center, "p_castle_90"), #Abihika -Talladega
+(party_set_slot, "p_village_235", slot_village_bound_center, "p_castle_91"), #Coosa -Etowah
+(party_set_slot, "p_village_236", slot_village_bound_center, "p_castle_92"), #Tallapoosa -Cahawba
+(party_set_slot, "p_village_237", slot_village_bound_center, "p_town_34"), #Coweta -Okfuskee
 #---------------------------------------------------------------------------------------------------
 #Test for castles without villages
 (party_set_slot, "p_village_a", slot_village_bound_center, "p_castle_49"), #Fort Bourbon
@@ -1398,11 +1404,15 @@ scripts = [
 (call_script, "script_give_center_to_faction_aux", "p_castle_70", "fac_kingdom_6"), # Mazipskoik
 (call_script, "script_give_center_to_faction_aux", "p_castle_71", "fac_kingdom_6"), # Sipekni'katik
 (call_script, "script_give_center_to_faction_aux", "p_castle_72", "fac_kingdom_6"), # Wolinak
-#Mohawk 7
-      (call_script, "script_give_center_to_faction_aux", "p_town_23", "fac_kingdom_7"), #Nowdaga-TOWN/TOWN/TOWN
+#7 Nations 7
+      (call_script, "script_give_center_to_faction_aux", "p_town_23", "fac_kingdom_7"), #Kahnawake-TOWN/TOWN/TOWN
       
 (call_script, "script_give_center_to_faction_aux", "p_castle_73", "fac_kingdom_7"), # Canohogo
-(call_script, "script_give_center_to_faction_aux", "p_castle_74", "fac_kingdom_7"), # Kahnawake
+(call_script, "script_give_center_to_faction_aux", "p_castle_74", "fac_kingdom_7"), # Kahnawake (Fortified)
+(call_script, "script_give_center_to_faction_aux", "p_castle_93", "fac_kingdom_7"), # La Presentation
+(call_script, "script_give_center_to_faction_aux", "p_castle_94", "fac_kingdom_7"), # Mississauga
+(call_script, "script_give_center_to_faction_aux", "p_castle_95", "fac_kingdom_7"), # Kanesatake
+(call_script, "script_give_center_to_faction_aux", "p_castle_96", "fac_kingdom_7"), # Ahkwesasne
 #Huron 8
       (call_script, "script_give_center_to_faction_aux", "p_town_24", "fac_kingdom_8"), #Sunyendeand-TOWN/TOWN/TOWN
       
@@ -1570,12 +1580,16 @@ scripts = [
 (call_script, "script_give_center_to_lord", "p_castle_70", "trp_kingdom_6_lord", 0), # Mazipskoik
 (call_script, "script_give_center_to_lord", "p_castle_71", "trp_kingdom_6_lord", 0), # Sipekni'katik
 (call_script, "script_give_center_to_lord", "p_castle_72", "trp_kingdom_6_lord", 0), # Wolinak 
-##   MOHAWK    #############     MOHAWK     ################      MOHAWK       ##################     MOHAWK    #######
-#Mohawk 7
-(call_script, "script_give_center_to_lord", "p_town_23", "trp_kingdom_7_lord", 0), #Nowdaga
-# Mohawk 7
+##   7 NATIONS    #############     7 NATIONS     ################      7 NATIONS       ##################     7 NATIONS    #######
+#7 Nations 7
+(call_script, "script_give_center_to_lord", "p_town_23", "trp_kingdom_7_lord", 0), #Kahnawake
+# 7 Nations 7
 (call_script, "script_give_center_to_lord", "p_castle_73", "trp_kingdom_7_lord", 0), # Canohogo
-(call_script, "script_give_center_to_lord", "p_castle_74", "trp_kingdom_7_lord", 0), # Kahnawake
+(call_script, "script_give_center_to_lord", "p_castle_74", "trp_kingdom_7_lord", 0), # Kahnawake (Fortified)
+(call_script, "script_give_center_to_lord", "p_castle_93", "trp_kingdom_7_lord", 0), # La Presentation
+(call_script, "script_give_center_to_lord", "p_castle_94", "trp_kingdom_7_lord", 0), # Mississauga
+(call_script, "script_give_center_to_lord", "p_castle_95", "trp_kingdom_7_lord", 0), # Kanesatake
+(call_script, "script_give_center_to_lord", "p_castle_96", "trp_kingdom_7_lord", 0), # Ahkwesasne
 ##   HURON    #############     HURON     ################      HURON       ##################     HURON    #######
 #Huron 8
 (call_script, "script_give_center_to_lord", "p_town_24", "trp_kingdom_8_lord", 0), #Sunyendeand
@@ -9175,60 +9189,60 @@ scripts = [
         (this_or_next|eq, ":village_no", "p_village_48"), #Toyama
         (this_or_next|eq, ":village_no", "p_village_50"), #Fukui
         (this_or_next|eq, ":village_no", "p_village_54"), #Shizuoka
-        (this_or_next|eq, ":village_no", "p_village_57"), #Iwakuni
-        (this_or_next|eq, ":village_no", "p_village_59"), #Takehara
-        (this_or_next|eq, ":village_no", "p_village_60"), #Kurashiki
-        (this_or_next|eq, ":village_no", "p_village_61"), #Setouchi
-        (this_or_next|eq, ":village_no", "p_village_62"), #Kasaoka
-        (this_or_next|eq, ":village_no", "p_village_64"), #Yoshiwara
-        (this_or_next|eq, ":village_no", "p_village_65"), #Hamada
-        (this_or_next|eq, ":village_no", "p_village_69"), #Shimonseki
-        (this_or_next|eq, ":village_no", "p_village_70"), #Iwanuma
-        (this_or_next|eq, ":village_no", "p_village_71"), #Matsushima
-        (this_or_next|eq, ":village_no", "p_village_77"), #Katagami
-        (this_or_next|eq, ":village_no", "p_village_78"), #Noshiro
-        (this_or_next|eq, ":village_no", "p_village_79"), #Utou
-        (this_or_next|eq, ":village_no", "p_village_81"), #Hachinohe
-        (this_or_next|eq, ":village_no", "p_village_86"), #Tsuruoka
-        (this_or_next|eq, ":village_no", "p_village_87"), #Iwaki
-        (this_or_next|eq, ":village_no", "p_village_89"), #Fukuoka
-        (this_or_next|eq, ":village_no", "p_village_90"), #Itoshima
-        (this_or_next|eq, ":village_no", "p_village_92"), #Ibusuki
-        (this_or_next|eq, ":village_no", "p_village_93"), #Kirishima
-        (this_or_next|eq, ":village_no", "p_village_94"), #Kanoya
-        (this_or_next|eq, ":village_no", "p_village_95"), #Sasebo
-        (this_or_next|eq, ":village_no", "p_village_96"), #Unzen
-        (this_or_next|eq, ":village_no", "p_village_97"), #Hirado
-        (this_or_next|eq, ":village_no", "p_village_98"), #Kitakyushu
-        (this_or_next|eq, ":village_no", "p_village_100"), #Miyazaki
-        (this_or_next|eq, ":village_no", "p_village_102"), #Sashiki
-        (this_or_next|eq, ":village_no", "p_village_103"), #Yanagawa
-        (this_or_next|eq, ":village_no", "p_village_104"), #Saijo
-        (this_or_next|eq, ":village_no", "p_village_106"), #Iyo
-        (this_or_next|eq, ":village_no", "p_village_107"), #Uwajima
-        (this_or_next|eq, ":village_no", "p_village_108"), #Kochi
+        (this_or_next|eq, ":village_no", "p_village_58"), #Iwakuni
+        (this_or_next|eq, ":village_no", "p_village_60"), #Takehara
+        (this_or_next|eq, ":village_no", "p_village_61"), #Kurashiki
+        (this_or_next|eq, ":village_no", "p_village_62"), #Setouchi
+        (this_or_next|eq, ":village_no", "p_village_63"), #Kasaoka
+        (this_or_next|eq, ":village_no", "p_village_65"), #Yoshiwara
+        (this_or_next|eq, ":village_no", "p_village_66"), #Hamada
+        (this_or_next|eq, ":village_no", "p_village_70"), #Shimonseki
+        (this_or_next|eq, ":village_no", "p_village_71"), #Iwanuma
+        (this_or_next|eq, ":village_no", "p_village_72"), #Matsushima
+        (this_or_next|eq, ":village_no", "p_village_78"), #Katagami
+        (this_or_next|eq, ":village_no", "p_village_79"), #Noshiro
+        (this_or_next|eq, ":village_no", "p_village_80"), #Utou
+        (this_or_next|eq, ":village_no", "p_village_82"), #Hachinohe
+        (this_or_next|eq, ":village_no", "p_village_87"), #Tsuruoka
+        (this_or_next|eq, ":village_no", "p_village_88"), #Iwaki
+        (this_or_next|eq, ":village_no", "p_village_96"), #Fukuoka
+        (this_or_next|eq, ":village_no", "p_village_97"), #Itoshima
+        (this_or_next|eq, ":village_no", "p_village_99"), #Ibusuki
+        (this_or_next|eq, ":village_no", "p_village_100"), #Kirishima
+        (this_or_next|eq, ":village_no", "p_village_101"), #Kanoya
+        (this_or_next|eq, ":village_no", "p_village_102"), #Sasebo
+        (this_or_next|eq, ":village_no", "p_village_103"), #Unzen
+        (this_or_next|eq, ":village_no", "p_village_104"), #Hirado
+        (this_or_next|eq, ":village_no", "p_village_105"), #Kitakyushu
+        (this_or_next|eq, ":village_no", "p_village_107"), #Miyazaki
+        (this_or_next|eq, ":village_no", "p_village_109"), #Sashiki
+        (this_or_next|eq, ":village_no", "p_village_110"), #Yanagawa
+        (this_or_next|eq, ":village_no", "p_village_111"), #Saijo
+        (this_or_next|eq, ":village_no", "p_village_89"), #Iyo
+        (this_or_next|eq, ":village_no", "p_village_90"), #Uwajima
+        (this_or_next|eq, ":village_no", "p_village_91"), #Kochi
         (this_or_next|eq, ":village_no", "p_village_109"), #Tokushima
-        (this_or_next|eq, ":village_no", "p_village_110"), #Takamatsu
-        (this_or_next|eq, ":village_no", "p_village_116"), #Nishi
-        (this_or_next|eq, ":village_no", "p_village_119"), #Echizen
-        (this_or_next|eq, ":village_no", "p_village_121"), #Ube
-        (this_or_next|eq, ":village_no", "p_village_122"), #Hofu
-        (this_or_next|eq, ":village_no", "p_village_123"), #Tokuyama
-        (this_or_next|eq, ":village_no", "p_village_124"), #Mihonoseki
-        (this_or_next|eq, ":village_no", "p_village_125"), #Kurayoshi
-        (this_or_next|eq, ":village_no", "p_village_127"), #Oita
-        (this_or_next|eq, ":village_no", "p_village_130"), #Tamana
-        (this_or_next|eq, ":village_no", "p_village_131"), #Yatsushiro
-        (this_or_next|eq, ":village_no", "p_village_133"), #Nankoku
-        (this_or_next|eq, ":village_no", "p_village_134"), #Aki
-        (this_or_next|eq, ":village_no", "p_village_135"), #Susaki
-        (this_or_next|eq, ":village_no", "p_village_137"), #Konodai
-        (this_or_next|eq, ":village_no", "p_village_140"), #Sunpu
-        (this_or_next|eq, ":village_no", "p_village_148"), #Takahashi
-        (this_or_next|eq, ":village_no", "p_village_150"), #Hitachi
-        (this_or_next|eq, ":village_no", "p_village_153"), #Nakatsu
-        (this_or_next|eq, ":village_no", "p_village_154"), #Muroto
-        (eq, ":village_no", "p_village_157"), #Kurayoshi
+        (this_or_next|eq, ":village_no", "p_village_156"), #Takamatsu
+        (this_or_next|eq, ":village_no", "p_village_114"), #Nishi
+        (this_or_next|eq, ":village_no", "p_village_117"), #Echizen
+        (this_or_next|eq, ":village_no", "p_village_119"), #Ube
+        (this_or_next|eq, ":village_no", "p_village_120"), #Hofu
+        (this_or_next|eq, ":village_no", "p_village_121"), #Tokuyama
+        (this_or_next|eq, ":village_no", "p_village_122"), #Mihonoseki
+        (this_or_next|eq, ":village_no", "p_village_123"), #Kurayoshi
+        (this_or_next|eq, ":village_no", "p_village_125"), #Oita
+        (this_or_next|eq, ":village_no", "p_village_128"), #Tamana
+        (this_or_next|eq, ":village_no", "p_village_129"), #Yatsushiro
+        (this_or_next|eq, ":village_no", "p_village_131"), #Nankoku
+        (this_or_next|eq, ":village_no", "p_village_132"), #Aki
+        (this_or_next|eq, ":village_no", "p_village_133"), #Susaki
+        (this_or_next|eq, ":village_no", "p_village_135"), #Konodai
+        (this_or_next|eq, ":village_no", "p_village_138"), #Sunpu
+        (this_or_next|eq, ":village_no", "p_village_146"), #Takahashi
+        (this_or_next|eq, ":village_no", "p_village_148"), #Hitachi
+        (this_or_next|eq, ":village_no", "p_village_151"), #Nakatsu
+        (this_or_next|eq, ":village_no", "p_village_152"), #Muroto
+        (eq, ":village_no", "p_village_155"), #Kurayoshi
 	  
 	    (store_random_in_range, ":random_value_between_15_and_20", 15, 20),
 	    (party_set_slot, ":village_no", slot_center_fishing_fleet, ":random_value_between_15_and_20"),
@@ -9247,15 +9261,15 @@ scripts = [
         (this_or_next|eq, ":village_no", "p_village_41"), #Tsubame
         (this_or_next|eq, ":village_no", "p_village_44"), #Chuo
         (this_or_next|eq, ":village_no", "p_village_49"), #Nagaoka
-        (this_or_next|eq, ":village_no", "p_village_71"), #Matsushima
-        (this_or_next|eq, ":village_no", "p_village_82"), #Morioka
-        (this_or_next|eq, ":village_no", "p_village_83"), #Ichinoseki
-        (this_or_next|eq, ":village_no", "p_village_91"), #Chikushino
-        (this_or_next|eq, ":village_no", "p_village_103"), #Yanagawa
-        (this_or_next|eq, ":village_no", "p_village_111"), #Kawaguchi
-        (this_or_next|eq, ":village_no", "p_village_112"), #Shiki
-        (this_or_next|eq, ":village_no", "p_village_116"), #Nishi
-        (eq, ":village_no", "p_village_117"), #Kosai
+        (this_or_next|eq, ":village_no", "p_village_72"), #Matsushima
+        (this_or_next|eq, ":village_no", "p_village_83"), #Morioka
+        (this_or_next|eq, ":village_no", "p_village_84"), #Ichinoseki
+        (this_or_next|eq, ":village_no", "p_village_98"), #Chikushino
+        (this_or_next|eq, ":village_no", "p_village_110"), #Yanagawa
+        (this_or_next|eq, ":village_no", "p_village_92"), #Kawaguchi
+        (this_or_next|eq, ":village_no", "p_village_93"), #Shiki
+        (this_or_next|eq, ":village_no", "p_village_114"), #Nishi
+        (eq, ":village_no", "p_village_115"), #Kosai
 	  
 	    (store_random_in_range, ":random_value_between_15_and_20", 15, 20),
 	    (party_set_slot, ":village_no", slot_center_head_sheep, ":random_value_between_15_and_20"),
@@ -9263,17 +9277,17 @@ scripts = [
 	
 	#Frontier (Furs)
 	  (try_begin),
-        (this_or_next|eq, ":village_no", "p_village_72"), #Osaki
-        (this_or_next|eq, ":village_no", "p_village_74"), #Nagai
-        (this_or_next|eq, ":village_no", "p_village_75"), #Nanyo
-        (this_or_next|eq, ":village_no", "p_village_77"), #Katagami
-        (this_or_next|eq, ":village_no", "p_village_78"), #Noshiro
-        (this_or_next|eq, ":village_no", "p_village_79"), #Utou
-        (this_or_next|eq, ":village_no", "p_village_80"), #Hirakawa
-        (this_or_next|eq, ":village_no", "p_village_81"), #Hachinohe
-        (this_or_next|eq, ":village_no", "p_village_84"), #Yamagata
-        (this_or_next|eq, ":village_no", "p_village_88"), #Yokote
-        (eq, ":village_no", "p_village_149"), #Aizu
+        (this_or_next|eq, ":village_no", "p_village_73"), #Osaki
+        (this_or_next|eq, ":village_no", "p_village_75"), #Nagai
+        (this_or_next|eq, ":village_no", "p_village_76"), #Nanyo
+        (this_or_next|eq, ":village_no", "p_village_78"), #Katagami
+        (this_or_next|eq, ":village_no", "p_village_79"), #Noshiro
+        (this_or_next|eq, ":village_no", "p_village_80"), #Utou
+        (this_or_next|eq, ":village_no", "p_village_81"), #Hirakawa
+        (this_or_next|eq, ":village_no", "p_village_82"), #Hachinohe
+        (this_or_next|eq, ":village_no", "p_village_85"), #Yamagata
+        (this_or_next|eq, ":village_no", "p_village_95"), #Yokote
+        (eq, ":village_no", "p_village_147"), #Aizu
 	  
 	    (store_random_in_range, ":random_value_between_1_and_5", 1, 5),
 	    (party_set_slot, ":village_no", slot_center_fur_traps, ":random_value_between_1_and_5"),
@@ -9281,9 +9295,9 @@ scripts = [
 	
 	#Iron (Iron)
 	  (try_begin),
-        (this_or_next|eq, ":village_no", "p_village_82"), #Akitakata
-        (this_or_next|eq, ":village_no", "p_village_58"), #Morioka
-        (eq, ":village_no", "p_village_111"), #Kawaguchi
+        (this_or_next|eq, ":village_no", "p_village_83"), #Akitakata
+        (this_or_next|eq, ":village_no", "p_village_59"), #Morioka
+        (eq, ":village_no", "p_village_92"), #Kawaguchi
 	  
 	    (store_random_in_range, ":random_value_between_10_and_20", 10, 20),
 	    (party_set_slot, ":village_no", slot_center_iron_deposits, ":random_value_between_10_and_20"),
@@ -16495,7 +16509,7 @@ scripts = [
 #If economic changes are disabled, use the Native desert-check logic.
 ##diplomacy end+
 			(this_or_next|is_between, ":center_no", "p_town_19", "p_castle_1"),		
-				(ge, ":center_no", "p_village_91"),
+				(ge, ":center_no", "p_village_98"),
 			(item_slot_ge, ":cur_good", slot_item_desert_demand, 0), #Otherwise use rural or urban
 			(item_get_slot, ":consumer_consumption", ":cur_good", slot_item_desert_demand),
 		(else_try),
@@ -25439,19 +25453,19 @@ scripts = [
 		###NEED TO FIX THIS EVENTUALLY (don't feel like it rn) ------------- saving for later (this_or_next|is_between, ":village_no",  "p_village_X", "p_village_Y"),
        (try_begin), 
        #Native Villages first
-          (is_between, ":village_no", "p_village_105", "p_village_232"),
+          (is_between, ":village_no", "p_village_56", "p_village_237"),
           (assign, ":normal_village_icon", "icon_native_village"),  
           (assign, ":burnt_village_icon", "icon_village_burnt_a"), 
           (assign, ":deserted_village_icon", "icon_village_deserted_a"), 
         (else_try),
        #Spanish 
-          (is_between, ":village_no", "p_village_88", "p_village_104"),
+          (is_between, ":village_no", "p_village_95", "p_village_111"),
           (assign, ":normal_village_icon", "icon_spanish_village"),  
           (assign, ":burnt_village_icon", "icon_village_burnt_a"), 
           (assign, ":deserted_village_icon", "icon_village_deserted_a"),
         (else_try), 
        #French
-          (is_between, ":village_no", "p_village_56", "p_village_87"),
+          (is_between, ":village_no", "p_village_57", "p_village_88"),
           (assign, ":normal_village_icon", "icon_french_village"),  
           (assign, ":burnt_village_icon", "icon_village_burnt_a"), 
           (assign, ":deserted_village_icon", "icon_village_deserted_a"),          
@@ -39135,11 +39149,11 @@ scripts = [
        (spawn_around_party,":spawn_point","pt_shinano_rebels"),
        (try_begin),
          (set_spawn_radius, 25),
-         (spawn_around_party,"p_village_134","pt_shinano_rebels"),  #Tuckaseegee
+         (spawn_around_party,"p_village_132","pt_shinano_rebels"),  #Tuckaseegee
        (try_end),
        (try_begin),
          (set_spawn_radius, 25),
-         (spawn_around_party,"p_village_123","pt_shinano_rebels"),  #Susquehanna
+         (spawn_around_party,"p_village_121","pt_shinano_rebels"),  #Susquehanna
        (try_end),        
        (try_begin),
          (set_spawn_radius, 25),
@@ -39177,11 +39191,11 @@ scripts = [
        (try_end),
        (try_begin),
          (set_spawn_radius, 20),
-         (spawn_around_party,"p_village_70","pt_woku_pirates"),  #Miramichy
+         (spawn_around_party,"p_village_71","pt_woku_pirates"),  #Miramichy
        (try_end),        
        (try_begin),
          (set_spawn_radius, 10),
-         (spawn_around_party,"p_village_69","pt_woku_pirates"),  #Grand Pre
+         (spawn_around_party,"p_village_70","pt_woku_pirates"),  #Grand Pre
        (try_end),         
      (try_end), 
      
@@ -39204,7 +39218,7 @@ scripts = [
        (try_end), 
        (try_begin),
          (set_spawn_radius, 30),
-         (spawn_around_party,"p_village_208","pt_monk_rebels"),  #Zhegagoynak
+         (spawn_around_party,"p_village_213","pt_monk_rebels"),  #Zhegagoynak
        (try_end), 
      (try_end),
  
@@ -40317,7 +40331,7 @@ scripts = [
         (troop_set_slot, "trp_npc22", slot_troop_personalityclash_object, "trp_npc19"), #Isosangemat - George
         (troop_set_slot, "trp_npc22", slot_troop_personalityclash2_object, "trp_npc21"), #Isosangemat - Enrique
         (troop_set_slot, "trp_npc22", slot_troop_personalitymatch_object, "trp_npc17"),  #Isosangemat - Yeosong
-        (troop_set_slot, "trp_npc22", slot_troop_home, "p_village_83"), #Ichinoseki
+        (troop_set_slot, "trp_npc22", slot_troop_home, "p_village_84"), #Ichinoseki
         (troop_set_slot, "trp_npc22", slot_troop_payment_request, 0),
 		(troop_set_slot, "trp_npc22", slot_troop_kingsupport_argument, argument_claim),
 		(troop_set_slot, "trp_npc22", slot_troop_kingsupport_opponent, "trp_npc18"), #Mandukhai
@@ -54671,7 +54685,7 @@ scripts = [
 	##diplomacy start+ Determine whether the center should use "desert" consumption values.
   	#Native uses the following logic:
 	#  (this_or_next|is_between, ":center_no", "p_town_19", "p_castle_1"),
-	#  (ge, ":center_no", "p_village_91"),
+	#  (ge, ":center_no", "p_village_98"),
 	##This is very vulnerable to map changes, though, so I would prefer to check the terrain type.
 	(party_get_current_terrain, ":terrain_type", ":center_no"),
 	(try_begin),
@@ -54684,7 +54698,7 @@ scripts = [
 	   #use the Native desert-determination scheme when economic changes are disabled.
 	   (assign, ":terrain_type", rt_plain),
   	   (this_or_next|is_between, ":center_no", "p_town_19", "p_castle_1"),
-	   (ge, ":center_no", "p_village_91"),
+	   (ge, ":center_no", "p_village_98"),
 	   (assign, ":terrain_type", rt_desert),
 	(try_end),
 	##diplomacy end+

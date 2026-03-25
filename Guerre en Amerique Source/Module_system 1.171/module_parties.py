@@ -32,7 +32,7 @@ from ID_map_icons import *
 #Iroquois 4
 #Cherokee 5
 #Wabanaki 6
-#Mohawk 7
+#7 Nations 7
 #Huron 8
 #Lenape 9
 #Miami 10
@@ -222,7 +222,7 @@ parties = [
   ("castle_70","Mazipskoik",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-120.45,-209.73),[],80),         
   ("castle_71","Sipekni'katik",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-283.94,-216.75),[],260),   
   ("castle_72","Wolinak",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-160.34,-244.55),[],120),            
-#Mohawk 7
+#7 Nations 7
   ("castle_73","Canohogo",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-98.41,-197.67),[],260),
   ("castle_74","Kahnawake",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-92.19,-208.38),[],55),         
 #Huron 8
@@ -254,15 +254,20 @@ parties = [
   ("castle_90","Abihika",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[],115),                #[swycartographr] prev. coords: (110.39, 12.45)
   ("castle_91","Coosa",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[],270),               
   ("castle_92","Tallapoosa",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[],100),
+#7 Nations 7
+  ("castle_93","La Presentation",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-12.21,-189.23),[],43),   #La Presentation mission/fort - 7 Nations
+  ("castle_94","Mississauga",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-9.03,-187.41),[],197),        #Mississauga - 7 Nations
+  ("castle_95","Kanesatake",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-98.41,-212.0),[],200),         #Kanesatake - 7 Nations
+  ("castle_96","Ahkwesasne",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.87,-194.92),[],200),        #Ahkwesasne - 7 Nations
   ###################################################### 
   #        
-  #("castle_95","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(322,14.79),[],120),          
-  #("castle_96","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(303.23,0.78),[],120),            
-  #("castle_97","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(320.76,-10.83),[],120),        
- # ("castle_98","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(304.36,12.32),[],120),          
- # ("castle_99","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(321.49,9.22),[],120),          
- # ("castle_100","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(321.81,11.84),[],120),         
-  #("castle_101","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(321.33,-0.21),[],120),        
+  #("castle_97","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(322,14.79),[],120),          
+  #("castle_98","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(303.23,0.78),[],120),            
+  #("castle_99","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(320.76,-10.83),[],120),        
+ # ("castle_100","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(304.36,12.32),[],120),          
+ # ("castle_101","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(321.49,9.22),[],120),          
+ # ("castle_102","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(321.81,11.84),[],120),         
+  #("castle_103","UNUSED FORT",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(321.33,-0.21),[],120),        
 
 #FACTION ORDER villages
 #British 1
@@ -321,204 +326,220 @@ parties = [
 ("village_53", "Carlisle",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-49.39,-126.64),[], 60),       
 ("village_54", "Aughwick",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.77,-125.03),[], 180),    
 ("village_55", "Bristol",  icon_british_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-85.22,-122.52),[], 120),    
+("village_56", "Gnaddenhutten",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.32,-147.83),[], 100), #Native
 
 #French 2
-("village_56","La Balize",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(162.11,65.5),[], 170),          
-("village_57","Cap Girardeau",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(155.48,-31.45),[], 10),      #[swycartographr] prev. coords: (181.05, -56.84) #[swycartographr] prev. coords: (156.56, -37.99)
-("village_58","Bonne Terre",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(175.94,-43.2),[], 170),        #[swycartographr] prev. coords: (204.8, -52.92)
-("village_59","Tadoussac",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-191.37,-278.04),[], 170),        
-("village_60","Aubigny",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-175.43,-256.11),[], 170),  
-("village_61","Prairie du Pont",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(163.41,-40.36),[], 120),       #[swycartographr] prev. coords: (191.33, -60.64) #[swycartographr] prev. coords: (161.62, -43.75)
-("village_62","St. Philippe",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(154.33,-56.04),[], 130),      #[swycartographr] prev. coords: (183.51, -67.28)
-("village_63","Terre Haute",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(84.85,-113.02),[], 170),   
-("village_64","Cahokia",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(151.55,-51.97),[], 100),            #[swycartographr] prev. coords: (191.23, -69.93) #[swycartographr] prev. coords: (159.35, -51.59)
-("village_65","Pointe Sainte-Anne",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-222.82,-215.91),[], 100),     #[swycartographr] prev. coords: (-216.53, -215.83)
-("village_66","Saint-Jean-sur-Richelieu",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-124.11,-222.04),[], 100), 
-("village_67","Saint-Paul-de-l'Ile-aux-Noix",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-116.1,-215.74),[], 100),
-("village_68","Longueuil",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-101.78,-215.09),[], 100),        
-("village_69","Grand Pre",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-267.31,-207.97),[], 100),       #[swycartographr] prev. coords: (-261.98, -207.23)
-("village_70","Miramichy",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-262.41,-247.03),[], 100),       #[swycartographr] prev. coords: (-257.14, -245.93)
-("village_71","Saint-Hyacinthe",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-113.25,-221.47),[], 100),    
-("village_72","Cobeguit",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-276.54,-216.54),[], 20),        
-("village_73","Trois-Rivières",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-144.39,-243.06),[], 100),   
-("village_74","Basseville",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-111.64,-200.05),[], 15),     
-("village_75","Les Cayes",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-102.97,256.13),[], 15),        
-("village_76","Port-au-Prince",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-122.71,249.02),[], 90),     
-("village_77","Môle-Saint-Nicolas",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-111.84,227.65),[], 180), 
-("village_78","Pointe-a-Pitre",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-318.14, 290.14),[], 180),  
-("village_79","Roseau",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-318.41,305.04),[], 0),         
-("village_80","Beaubassin",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-266.74,-219.47),[], 40),       #[swycartographr] prev. coords: (-262.63, -219.98)
-("village_81","Porte-la-Joye",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-283.7,-230.38),[], 20), 
-("village_82","Niganiche",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-331.19,-236.34),[], 60),    
-("village_83","Port Toulouse",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-322.29,-213.99),[], 80),  
-("village_84","Biloxi",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(154,49.04),[], 110),                
-("village_85","Mobile",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(144.16,40.46),[], 120),               
-("village_86","Baton Rouge",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(195.26,35.93),[], 130),                 
-("village_87","Cote des Allemands",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(185.52,57.92),[], 170),
-#Spanish 3    
-("village_88","Puerto Principe",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31,198),[], 40),             
-("village_89","Santa Rosa",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(278.94,98.83),[], 20),              #[swycartographr] prev. coords: (310.8, 94.79) #[swycartographr] prev. coords: (283.76, 99.01)
-("village_90","Tampico",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(256.09,223.45),[], 60),               #[swycartographr] prev. coords: (310.23, 191.53) #[swycartographr] prev. coords: (250.46, 222.15)
-("village_91","Panuco",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(262.81,237.68),[], 55),                  #[swycartographr] prev. coords: (316.06, 200.5) #[swycartographr] prev. coords: (256.48, 236.52)
-("village_92","Puebla",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(264.71,258.4),[], 15),                 #[swycartographr] prev. coords: (311.92, 251.15)
-("village_93","Oaxaca",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(265.01,272.19),[], 10),            #[swycartographr] prev. coords: (300.97, 273.85)
-("village_94","Ciudad Real",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(235.83,278.61),[], 35),     
-("village_95","Campeche",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(192.53,238.24),[], 160),             
-("village_96","Merida",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.08,202.42),[], 180),           #[swycartographr] prev. coords: (171.97, 204.19)
-("village_97","Puerto Cortes",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(141.66,298.36),[], 40),         
-("village_98","Trujillo",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(164.54,315.07),[], 20),          #[swycartographr] prev. coords: (103.19, 293.98)
-("village_99","Bayamo",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-54.43,217.89),[], 10),            #[swycartographr] prev. coords: (-53, 217)
-("village_100","Trinidad",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.2,214.43),[], 35),            #[swycartographr] prev. coords: (2, 192)
-("village_101","Santiago de Cuba",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-74,224),[], 160),             
-("village_102","Puerto Plata",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-157.17,225.51),[], 90),   
-("village_103","Santiago de los Caballeros",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-161,236),[], 220),
-("village_104","San Juan",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-231.9,247.83),[], 180),        #[swycartographr] prev. coords: (-238.58, 251.53)
-########## BREAK IN FACTION ORDER FOR VILLAGE ASSIGNMENT
-#British 1.1
-("village_105", "Gnaddenhutten",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.32,-147.83),[], 100), #Native
-#French 2.1
-("village_106","Natchitoches",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(160.93,-33.15),[], 170),      #Native #[swycartographr] prev. coords: (221.51, -1.5)
-("village_107","Natchez",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(197.31,2.69),[], 170),           #Native
-("village_108","Kaskaskia",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.38,-46.61),[], 100),       #Native  #[swycartographr] prev. coords: (186.97, -64.71) #[swycartographr] prev. coords: (168.01, -49.33)
-("village_109","La Presentation",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-12.21,-189.23),[], 43), #Native        
-("village_110","Oswegatchie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.16,-202.84),[], 170),    #Native
-("village_111","Mandan",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(69.66,-279.01),[], 170),         #Native #[swycartographr] prev. coords: (256.97, -261.92)
-("village_112","Venango",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1.21,-142.48),[], 100),          #Native
-("village_113","Cataraqui",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-64.12,-202.53),[], 100),      #Native
-#Spanish 3.1
-("village_114","Jinotega",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(158.35,317.93),[], 10),         #Native   #[swycartographr] prev. coords: (113.92, 344.29)
-("village_115","Calusa",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(63.17,101.1),[], 35),            #Native            #[swycartographr] prev. coords: (25.37, 125.42)
-("village_116","Tocobaga",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(51.69,84.96),[], 160),           #Native          #[swycartographr] prev. coords: (49.8, 91.96)
-("village_117","Apalachee",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(68.53,50.76),[], 180),         #Native            
-("village_118","Panzacola",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(124.21,39.52),[], 0),          #Native
+("village_57","La Balize",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(162.11,65.5),[], 170),          
+("village_58","Cap Girardeau",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(155.48,-31.45),[], 10),      #[swycartographr] prev. coords: (181.05, -56.84) #[swycartographr] prev. coords: (156.56, -37.99)
+("village_59","Bonne Terre",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(175.94,-43.2),[], 170),        #[swycartographr] prev. coords: (204.8, -52.92)
+("village_60","Tadoussac",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-191.37,-278.04),[], 170),        
+("village_61","Aubigny",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-175.43,-256.11),[], 170),  
+("village_62","Prairie du Pont",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(163.41,-40.36),[], 120),       #[swycartographr] prev. coords: (191.33, -60.64) #[swycartographr] prev. coords: (161.62, -43.75)
+("village_63","St. Philippe",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(154.33,-56.04),[], 130),      #[swycartographr] prev. coords: (183.51, -67.28)
+("village_64","Terre Haute",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(84.85,-113.02),[], 170),   
+("village_65","Cahokia",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(151.55,-51.97),[], 100),            #[swycartographr] prev. coords: (191.23, -69.93) #[swycartographr] prev. coords: (159.35, -51.59)
+("village_66","Pointe Sainte-Anne",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-222.82,-215.91),[], 100),     #[swycartographr] prev. coords: (-216.53, -215.83)
+("village_67","Saint-Jean-sur-Richelieu",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-124.11,-222.04),[], 100), 
+("village_68","Saint-Paul-de-l'Ile-aux-Noix",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-116.1,-215.74),[], 100),
+("village_69","Longueuil",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-101.78,-215.09),[], 100),        
+("village_70","Grand Pre",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-267.31,-207.97),[], 100),       #[swycartographr] prev. coords: (-261.98, -207.23)
+("village_71","Miramichy",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-262.41,-247.03),[], 100),       #[swycartographr] prev. coords: (-257.14, -245.93)
+("village_72","Saint-Hyacinthe",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-113.25,-221.47),[], 100),    
+("village_73","Cobeguit",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-276.54,-216.54),[], 20),        
+("village_74","Trois-Rivières",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-144.39,-243.06),[], 100),   
+("village_75","Basseville",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-111.64,-200.05),[], 15),     
+("village_76","Les Cayes",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-102.97,256.13),[], 15),        
+("village_77","Port-au-Prince",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-122.71,249.02),[], 90),     
+("village_78","Môle-Saint-Nicolas",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-111.84,227.65),[], 180), 
+("village_79","Pointe-a-Pitre",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-318.14, 290.14),[], 180),  
+("village_80","Roseau",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-318.41,305.04),[], 0),         
+("village_81","Beaubassin",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-266.74,-219.47),[], 40),       #[swycartographr] prev. coords: (-262.63, -219.98)
+("village_82","Porte-la-Joye",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-283.7,-230.38),[], 20), 
+("village_83","Niganiche",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-331.19,-236.34),[], 60),    
+("village_84","Port Toulouse",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-322.29,-213.99),[], 80),  
+("village_85","Biloxi",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(154,49.04),[], 110),                
+("village_86","Mobile",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(144.16,40.46),[], 120),               
+("village_87","Baton Rouge",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(195.26,35.93),[], 130),                 
+("village_88","Cote des Allemands",  icon_french_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(185.52,57.92),[], 170),
+("village_89","Natchitoches",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(160.93,-33.15),[], 170),      #Native #[swycartographr] prev. coords: (221.51, -1.5)
+("village_90","Natchez",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(197.31,2.69),[], 170),           #Native
+("village_91","Kaskaskia",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.38,-46.61),[], 100),       #Native  #[swycartographr] prev. coords: (186.97, -64.71) #[swycartographr] prev. coords: (168.01, -49.33)
+("village_92","Mandan",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(69.66,-279.01),[], 170),         #Native #[swycartographr] prev. coords: (256.97, -261.92)
+("village_93","Venango",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1.21,-142.48),[], 100),          #Native
+("village_94","Cataraqui",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-64.12,-202.53),[], 100),      #Native
+
+#Spanish 3
+("village_95","Puerto Principe",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31,198),[], 40),             
+("village_96","Santa Rosa",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(278.94,98.83),[], 20),              #[swycartographr] prev. coords: (310.8, 94.79) #[swycartographr] prev. coords: (283.76, 99.01)
+("village_97","Tampico",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(256.09,223.45),[], 60),               #[swycartographr] prev. coords: (310.23, 191.53) #[swycartographr] prev. coords: (250.46, 222.15)
+("village_98","Panuco",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(262.81,237.68),[], 55),                  #[swycartographr] prev. coords: (316.06, 200.5) #[swycartographr] prev. coords: (256.48, 236.52)
+("village_99","Puebla",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(264.71,258.4),[], 15),                 #[swycartographr] prev. coords: (311.92, 251.15)
+("village_100","Oaxaca",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(265.01,272.19),[], 10),            #[swycartographr] prev. coords: (300.97, 273.85)
+("village_101","Ciudad Real",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(235.83,278.61),[], 35),     
+("village_102","Campeche",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(192.53,238.24),[], 160),             
+("village_103","Merida",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.08,202.42),[], 180),           #[swycartographr] prev. coords: (171.97, 204.19)
+("village_104","Puerto Cortes",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(141.66,298.36),[], 40),         
+("village_105","Trujillo",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(164.54,315.07),[], 20),          #[swycartographr] prev. coords: (103.19, 293.98)
+("village_106","Bayamo",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-54.43,217.89),[], 10),            #[swycartographr] prev. coords: (-53, 217)
+("village_107","Trinidad",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.2,214.43),[], 35),            #[swycartographr] prev. coords: (2, 192)
+("village_108","Santiago de Cuba",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-74,224),[], 160),             
+("village_109","Puerto Plata",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-157.17,225.51),[], 90),   
+("village_110","Santiago de los Caballeros",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-161,236),[], 220),
+("village_111","San Juan",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-231.9,247.83),[], 180),        #[swycartographr] prev. coords: (-238.58, 251.53)
+("village_112","Jinotega",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(158.35,317.93),[], 10),         #Native   #[swycartographr] prev. coords: (113.92, 344.29)
+("village_113","Calusa",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(63.17,101.1),[], 35),            #Native            #[swycartographr] prev. coords: (25.37, 125.42)
+("village_114","Tocobaga",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(51.69,84.96),[], 160),           #Native          #[swycartographr] prev. coords: (49.8, 91.96)
+("village_115","Apalachee",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(68.53,50.76),[], 180),         #Native            
+("village_116","Panzacola",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(124.21,39.52),[], 0),          #Native
+
 #Iroquois 4
-("village_119","Erie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.85,-162.83),[], 55),                 
-("village_120","Canawaugus",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.15,-169.85),[], 60),           
-("village_121","Ganondagan",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.96,-174.39),[], 55),         
-("village_122","Cayuga",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.61,-175.53),[], 172),       
-("village_123","Susquehanna",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.96,-165.79),[], 150),   
-("village_124","Tuscarora",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-60.7,-170.82),[], 120),   
-("village_125","Oneida",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-77.88,-191.42),[], 100),               
-("village_126","Canadasegy",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.85,-176.13),[], 120), 
-("village_127","Oriskany",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-77.3,-184.75),[], 100), 
-("village_128","Onnontare",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-37,-177),[], 210),
-("village_129","Koshaksink",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-3.73,-132.47),[], 300),       
-("village_130","Ononowaga Cochake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.26,-128.79),[], 10),  
-("village_131","Ononowaga Kuskusky",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-3.59,-139.96),[], 160), 
-("village_132","Oweso'gawenoeh",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(8.27,-123.69),[], 220),   
+("village_117","Erie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.85,-162.83),[], 55),                 
+("village_118","Canawaugus",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.15,-169.85),[], 60),           
+("village_119","Ganondagan",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.96,-174.39),[], 55),         
+("village_120","Cayuga",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.61,-175.53),[], 172),       
+("village_121","Susquehanna",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.96,-165.79),[], 150),   
+("village_122","Tuscarora",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-60.7,-170.82),[], 120),   
+("village_123","Oneida",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-77.88,-191.42),[], 100),               
+("village_124","Canadasegy",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.85,-176.13),[], 120), 
+("village_125","Oriskany",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-77.3,-184.75),[], 100), 
+("village_126","Onnontare",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-37,-177),[], 210),
+("village_127","Koshaksink",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-3.73,-132.47),[], 300),       
+("village_128","Ononowaga Cochake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.26,-128.79),[], 10),  
+("village_129","Ononowaga Kuskusky",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-3.59,-139.96),[], 160), 
+("village_130","Oweso'gawenoeh",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(8.27,-123.69),[], 220),   
+
 #Cherokee 5
-("village_133","Nununyi",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.54, -63.28),[], 15),        
-("village_134","Tuckaseegee",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(53.77, -51.46),[], 10),       
-("village_135","Etchoe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(70.88, -47.12),[], 35),          
-("village_136", "Estatoe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(71.18, -39.19),[], 90),       
-("village_137", "Cattoogachaye",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(78.71, -28.26),[], 150),           #[swycartographr] prev. coords: (87.92, -38.51)
-("village_138", "Aquonatuste",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(79.27, -32.67),[], 200),     #[swycartographr] prev. coords: (87.77, -43.8)
-("village_139", "Little Tellico",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.72, -40.87),[], 200),   #[swycartographr] prev. coords: (86.49, -48.28)
-("village_140", "Mialoquo",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(84.3, -37.09),[], 100),       #[swycartographr] prev. coords: (107.38, -53.5) #[swycartographr] prev. coords: (110.57, -51.26)
-("village_141", "Citico",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.9, -45.22),[], 100),           #[swycartographr] prev. coords: (88.93, -52) #[swycartographr] prev. coords: (90.5, -49.86)
-#Wabanaki 6                           
-("village_142","Woronoke",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-124.46,-162.29),[], 35),         
-("village_143","Nanrantsouak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-204.61,-181.74),[], 160),              #[swycartographr] prev. coords: (-188.21, -206.07)
-("village_144","Aukpaque",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-223.46,-212.04),[], 40),        #[swycartographr] prev. coords: (-212.79, -217.37) #[swycartographr] prev. coords: (-221.26, -211.38)
-("village_145","Shubenacadie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-278.77,-211.63),[], 135),  
-("village_146","Passamaquoddy",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-204.81,-186.83),[], 100),   #[swycartographr] prev. coords: (-213.12, -202.6)
-("village_147","Pijelooeekak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-269.16,-189.82),[], 100),   #[swycartographr] prev. coords: (-263.06, -194.63)
-("village_148","Sokoki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-155.97,-238.39),[], 100),       
-("village_149","Madawaska",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.54,-173.91),[], 100),      #[swycartographr] prev. coords: (-192.25, -224.53)
-("village_150","Alenape Meneha",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.27,-177.83),[], 100),  #[swycartographr] prev. coords: (-202.68, -207.33) #[swycartographr] prev. coords: (-198.9, -217.98)
-#Mohawk 7
-("village_151","Kanien'keha:ka",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-93.6,-199.34),[], 150),
-("village_152","Tarajorees",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.65,-179.6),[], 200),    
-("village_153","Canajoharie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.72,-181.72),[], 40),
-("village_154","Ganienkeh",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-106.65,-201.86),[], 120),    
-("village_155","Ahkwesahsne",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.87,-194.92),[], 200),   
-("village_156","Kanesatake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-89.19,-212.09),[], 200),    
-("village_157","Atheclaghque",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.42,-179.27),[], 200),  
+("village_131","Nununyi",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.54, -63.28),[], 15),        
+("village_132","Tuckaseegee",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(53.77, -51.46),[], 10),       
+("village_133","Etchoe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(70.88, -47.12),[], 35),          
+("village_134", "Estatoe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(71.18, -39.19),[], 90),       
+("village_135", "Cattoogachaye",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(78.71, -28.26),[], 150),           #[swycartographr] prev. coords: (87.92, -38.51)
+("village_136", "Aquonatuste",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(79.27, -32.67),[], 200),     #[swycartographr] prev. coords: (87.77, -43.8)
+("village_137", "Little Tellico",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.72, -40.87),[], 200),   #[swycartographr] prev. coords: (86.49, -48.28)
+("village_138", "Mialoquo",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(84.3, -37.09),[], 100),       #[swycartographr] prev. coords: (107.38, -53.5) #[swycartographr] prev. coords: (110.57, -51.26)
+("village_139", "Citico",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.9, -45.22),[], 100),           #[swycartographr] prev. coords: (88.93, -52) #[swycartographr] prev. coords: (90.5, -49.86)
+
+#Wabanaki 6
+("village_140","Woronoke",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-124.46,-162.29),[], 35),         
+("village_141","Nanrantsouak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-204.61,-181.74),[], 160),              #[swycartographr] prev. coords: (-188.21, -206.07)
+("village_142","Aukpaque",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-223.46,-212.04),[], 40),        #[swycartographr] prev. coords: (-212.79, -217.37) #[swycartographr] prev. coords: (-221.26, -211.38)
+("village_143","Shubenacadie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-278.77,-211.63),[], 135),  
+("village_144","Passamaquoddy",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-204.81,-186.83),[], 100),   #[swycartographr] prev. coords: (-213.12, -202.6)
+("village_145","Pijelooeekak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-269.16,-189.82),[], 100),   #[swycartographr] prev. coords: (-263.06, -194.63)
+("village_146","Sokoki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-155.97,-238.39),[], 100),       
+("village_147","Madawaska",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.54,-173.91),[], 100),      #[swycartographr] prev. coords: (-192.25, -224.53)
+("village_148","Alenape Meneha",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.27,-177.83),[], 100),  #[swycartographr] prev. coords: (-202.68, -207.33) #[swycartographr] prev. coords: (-198.9, -217.98)
+
+#7 Nations 7
+("village_149","Kanien'keha:ka",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-93.6,-199.34),[], 150),
+("village_150","Tarajorees",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.65,-179.6),[], 200),    
+("village_151","Canajoharie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.72,-181.72),[], 40),
+("village_152","Ganienkeh",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-106.65,-201.86),[], 120),    
+("village_153","Ahkwesahsne",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.87,-194.92),[], 200),   
+("village_154","Kanesatake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-89.19,-212.09),[], 200),    
+("village_155","Atheclaghque",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.42,-179.27),[], 200),  
+("village_156","Oswegatchie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.16,-202.84),[], 170),    #Native
+("village_157","Cobechenonk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.23, -184.07),[], 35),        
+("village_158","Tyendinaga",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81.3,-193.5),[], 200),     #7 Nations
+("village_159","Oka",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-89.19,-212.09),[], 200),             #7 Nations (near Kanesatake)
+("village_160","Kanatakon",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-70.2,-205.3),[], 200),          #7 Nations
+("village_161","Becancour",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-144.0,-241.5),[], 200),         #7 Nations
+("village_162","Jeune Lorette",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-162.1,-257.0),[], 200),    #7 Nations
+("village_163","Wendake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-163.5,-255.5),[], 200),           #7 Nations
+
 #Huron 8
-("village_158","Ancienne Lorette",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-161.89,-258.53),[], 200), 
-("village_159","Magagua",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(42.47,-164.57),[], 305),          #[swycartographr] prev. coords: (57.93, -165.17)
-("village_160","Anderdon",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.3,-156.03),[], 200),          #[swycartographr] prev. coords: (55.96, -155.35)
-("village_161","Junundat",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.43,-149.87),[], 200),      
-("village_162","Jejakweyandat",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.18,-131.34),[], 200),  
-("village_163","Jejakwe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.32,-124.04),[], 200),       
-("village_164","Ouadot Muskingum",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(3.4,-129.16),[], 200),  
-("village_165","Conchake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.15,-126.09),[], 100),         
-("village_166","Kuskuskyandat",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,-138.68),[], 50),    
+("village_164","Ancienne Lorette",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-161.89,-258.53),[], 200), 
+("village_165","Magagua",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(42.47,-164.57),[], 305),          #[swycartographr] prev. coords: (57.93, -165.17)
+("village_166","Anderdon",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.3,-156.03),[], 200),          #[swycartographr] prev. coords: (55.96, -155.35)
+("village_167","Junundat",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.43,-149.87),[], 200),      
+("village_168","Jejakweyandat",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.18,-131.34),[], 200),  
+("village_169","Jejakwe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.32,-124.04),[], 200),       
+("village_170","Ouadot Muskingum",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(3.4,-129.16),[], 200),  
+("village_171","Conchake",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.15,-126.09),[], 100),         
+("village_172","Kuskuskyandat",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,-138.68),[], 50),    
+
 #Lenape 9
-("village_167", "Chugnut",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-75.3, -165.65),[], 200),      
-("village_168", "Owego",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-70.02, -166),[], 40),         
-("village_169", "Sheshequenink",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.86, -158.9),[], 90),            
-("village_170", "Indaochaic",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.15, -133),[], 160),     
-("village_171", "Muhheconneokink",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(32.61, -129.69),[], 200),      
-("village_172", "Sawcunk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.08, -123.04),[], 40),        
-("village_173", "Gekelmukpechunk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(18.71, -127.39),[], 90),             
-("village_174", "Wappocomo",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(9.83, -101.74),[], 160),  
-("village_175", "Kuskuskink",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-1.13, -134.75),[], 160),    
+("village_173", "Chugnut",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-75.3, -165.65),[], 200),      
+("village_174", "Owego",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-70.02, -166),[], 40),         
+("village_175", "Sheshequenink",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.86, -158.9),[], 90),            
+("village_176", "Indaochaic",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.15, -133),[], 160),     
+("village_177", "Muhheconneokink",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(32.61, -129.69),[], 200),      
+("village_178", "Sawcunk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.08, -123.04),[], 40),        
+("village_179", "Gekelmukpechunk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(18.71, -127.39),[], 90),             
+("village_180", "Wappocomo",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(9.83, -101.74),[], 160),  
+("village_181", "Kuskuskink",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-1.13, -134.75),[], 160),    
+
 #Miami 10
-("village_176","Saakiiweeyonki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(38.9, -180.73),[], 322),   #[swycartographr] prev. coords: (114.92, -149.09)
-("village_177","Mihsiiwiateehi",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(40.79, -177.09),[], 170),  #[swycartographr] prev. coords: (110.27, -150.75)
-("village_178","Kineepikomeehkwa",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(115.82, -113.32),[], 160),  #[swycartographr] prev. coords: (119.18, -117.89)
-("village_179","Kiteepihkwana",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(123.83, -100.03),[], 173),   #[swycartographr] prev. coords: (129.68, -111.86)
-("village_180","Waayaahtanonki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(132.14, -110.35),[], 223), 
-("village_181","Peeyankihsionki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(129.27, -99.7),[], 335),  #[swycartographr] prev. coords: (140.64, -102.89)
-("village_182","Aciipihkahkionki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(151.81, -83.2),[], 160),  #[swycartographr] prev. coords: (154.94, -85.05)
-("village_183","Pinkwaawilenionki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(89.85, -109.53),[], 160),
-#Shawnee 11 
-("village_184","Kuskusky",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.09,-137.29),[], 120),      
-("village_185","Nonhelemah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.01,-114.58),[], 100),           
-("village_186","Kispoko",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.43,-105.44),[], 110),              
-("village_187","Shannoah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.03,-105.76),[], 120),         
-("village_188","Shinoudaista",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(31.11,-105.3),[], 100),         
-("village_189","Eskippakithiki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.71,-68.39),[], 110),      
-("village_190","Chilliocothe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(41.9,-109.63),[], 120),        
+("village_182","Saakiiweeyonki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(38.9, -180.73),[], 322),   #[swycartographr] prev. coords: (114.92, -149.09)
+("village_183","Mihsiiwiateehi",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(40.79, -177.09),[], 170),  #[swycartographr] prev. coords: (110.27, -150.75)
+("village_184","Kineepikomeehkwa",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(115.82, -113.32),[], 160),  #[swycartographr] prev. coords: (119.18, -117.89)
+("village_185","Kiteepihkwana",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(123.83, -100.03),[], 173),   #[swycartographr] prev. coords: (129.68, -111.86)
+("village_186","Waayaahtanonki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(132.14, -110.35),[], 223), 
+("village_187","Peeyankihsionki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(129.27, -99.7),[], 335),  #[swycartographr] prev. coords: (140.64, -102.89)
+("village_188","Aciipihkahkionki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(151.81, -83.2),[], 160),  #[swycartographr] prev. coords: (154.94, -85.05)
+("village_189","Pinkwaawilenionki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(89.85, -109.53),[], 160),
+
+#Shawnee 11
+("village_190","Kuskusky",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.09,-137.29),[], 120),      
+("village_191","Nonhelemah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.01,-114.58),[], 100),           
+("village_192","Kispoko",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.43,-105.44),[], 110),              
+("village_193","Shannoah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.03,-105.76),[], 120),         
+("village_194","Shinoudaista",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(31.11,-105.3),[], 100),         
+("village_195","Eskippakithiki",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.71,-68.39),[], 110),      
+("village_196","Chilliocothe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(41.9,-109.63),[], 120),        
+
 #Odawa 12
-("village_191","Manidoowaling",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(72.7, -228.37),[], 160),    
-("village_192","Ahnumawautinkumig",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(71.94, -204.14),[], 246), #[swycartographr] prev. coords: (99.1, -213.76) #[swycartographr] prev. coords: (78.54, -196.76)
-("village_193","Ahptunwating",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(72.21, -199.56),[], 166),    #[swycartographr] prev. coords: (102.69, -210.87)
-("village_194","Wabigungweshcupago",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(50.02, -190.65),[], 160),  #[swycartographr] prev. coords: (114.41, -181.93)
-("village_195","Shingobeeng",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(86.94, -170.46),[], 160),    
-("village_196","Owashtanong",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(52.1, -183.11),[], 227),      #[swycartographr] prev. coords: (104.96, -153.8)
-("village_197","Maamii",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(72.51, -143.04),[], 160),         
-("village_198","Ogantz",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(48.94, -150.48),[], 160),      
-#Ojibwe 13 
-("village_199","Gichiziibiwininiwag",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(67.2, -273.78),[], 20),         #[swycartographr] prev. coords: (252.5, -254.7)
-("village_200","Gichigamiing",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(80.7, -257.1),[], 60),        #[swycartographr] prev. coords: (191.24, -256.76)
-("village_201","Baawiting",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(62.89, -224.34),[], 55),        #[swycartographr] prev. coords: (90.13, -235.24)
-("village_202","Zaaga'iganing",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(68, -231.92),[], 15),       #[swycartographr] prev. coords: (196.88, -221.38)
-("village_203","Sagenong",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(65.58, -185.38),[], 10),  
-("village_204","Cobechenonk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.23, -184.07),[], 35),        
-("village_205","Mekisewancenonk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.19, -177.6),[], 160), 
+("village_197","Manidoowaling",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(72.7, -228.37),[], 160),    
+("village_198","Ahnumawautinkumig",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(71.94, -204.14),[], 246), #[swycartographr] prev. coords: (99.1, -213.76) #[swycartographr] prev. coords: (78.54, -196.76)
+("village_199","Ahptunwating",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(72.21, -199.56),[], 166),    #[swycartographr] prev. coords: (102.69, -210.87)
+("village_200","Wabigungweshcupago",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(50.02, -190.65),[], 160),  #[swycartographr] prev. coords: (114.41, -181.93)
+("village_201","Shingobeeng",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(86.94, -170.46),[], 160),    
+("village_202","Owashtanong",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(52.1, -183.11),[], 227),      #[swycartographr] prev. coords: (104.96, -153.8)
+("village_203","Maamii",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(72.51, -143.04),[], 160),         
+("village_204","Ogantz",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(48.94, -150.48),[], 160),      
+
+#Ojibwe 13
+("village_205","Gichiziibiwininiwag",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(67.2, -273.78),[], 20),         #[swycartographr] prev. coords: (252.5, -254.7)
+("village_206","Gichigamiing",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(80.7, -257.1),[], 60),        #[swycartographr] prev. coords: (191.24, -256.76)
+("village_207","Baawiting",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(62.89, -224.34),[], 55),        #[swycartographr] prev. coords: (90.13, -235.24)
+("village_208","Zaaga'iganing",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(68, -231.92),[], 15),       #[swycartographr] prev. coords: (196.88, -221.38)
+("village_209","Sagenong",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(65.58, -185.38),[], 10),  
+("village_210","Mekisewancenonk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.19, -177.6),[], 160), 
+
 #Potawatomi 14
-("village_206","Kwikwiyak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(57.48, -200.11),[], 62),        #[swycartographr] prev. coords: (135.04, -204.52)
-("village_207","Wnaneg-gizs",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.44, -196.24),[], 160),     #[swycartographr] prev. coords: (149.7, -192.42)
-("village_208","Zhegagoynak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(59.6, -175.02),[], 127),     #[swycartographr] prev. coords: (135.51, -155.11) #[swycartographr] prev. coords: (64.48, -175.73)
-("village_209","Sheggwe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(101.84, -144.2),[], 353),         #[swycartographr] prev. coords: (100.96, -147.18)
-("village_210","Nadowesippi",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(90.59, -163.1),[], 160),      #[swycartographr] prev. coords: (91.25, -159.01)
-("village_211","Wawiatenang",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.34, -159.78),[], 64),      #[swycartographr] prev. coords: (62.15, -160.16)
+("village_211","Kwikwiyak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(57.48, -200.11),[], 62),        #[swycartographr] prev. coords: (135.04, -204.52)
+("village_212","Wnaneg-gizs",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.44, -196.24),[], 160),     #[swycartographr] prev. coords: (149.7, -192.42)
+("village_213","Zhegagoynak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(59.6, -175.02),[], 127),     #[swycartographr] prev. coords: (135.51, -155.11) #[swycartographr] prev. coords: (64.48, -175.73)
+("village_214","Sheggwe",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(101.84, -144.2),[], 353),         #[swycartographr] prev. coords: (100.96, -147.18)
+("village_215","Nadowesippi",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(90.59, -163.1),[], 160),      #[swycartographr] prev. coords: (91.25, -159.01)
+("village_216","Wawiatenang",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.34, -159.78),[], 64),      #[swycartographr] prev. coords: (62.15, -160.16)
+
 #Choctaw 15
-("village_212","Yowannis",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(148.22,23.38),[], 135),           
-("village_213","Yashu Iskitini",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(155.09,5.02),[], 180),    
-("village_214","Oaka Loosa",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(105.52,46.36),[], 200), 
-("village_215","Louckata",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(160.58,-0.63),[], 135),           
-("village_216","Abeka",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(151.62,-4.2),[], 120),              
-("village_217","Ayanabi",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(160.59,6.07),[], 40),             
-("village_218","Bouctoucoulou",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(152.12,-0.58),[], 300),     
-("village_219","Cuctachas",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.49,7.05),[], 200),            
-("village_220","Mongoulacha",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(119.52,-334.79),[], 70),          #[swycartographr] prev. coords: (152.08, 3.02)
-("village_221","Concha",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(162.82,12.79),[], 200),           
-("village_222","Pante",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(157.84,12.34),[], 70),           
+("village_217","Yowannis",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(148.22,23.38),[], 135),           
+("village_218","Yashu Iskitini",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(155.09,5.02),[], 180),    
+("village_219","Oaka Loosa",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(105.52,46.36),[], 200), 
+("village_220","Louckata",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(160.58,-0.63),[], 135),           
+("village_221","Abeka",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(151.62,-4.2),[], 120),              
+("village_222","Ayanabi",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(160.59,6.07),[], 40),             
+("village_223","Bouctoucoulou",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(152.12,-0.58),[], 300),     
+("village_224","Cuctachas",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.49,7.05),[], 200),            
+("village_225","Mongoulacha",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(119.52,-334.79),[], 70),          #[swycartographr] prev. coords: (152.08, 3.02)
+("village_226","Concha",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(162.82,12.79),[], 200),           
+("village_227","Pante",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(157.84,12.34),[], 70),           
+
 #Chickasaw 16
-("village_223","Tchokaffala",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(155.66,-16.6),[], 70),       
-("village_224","Tchikoulechasto",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(171.18,-34.57),[], 70),  
-("village_225","Falatchao",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.28,-28.81),[], 70),        
-("village_226","Chatelaw",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(168.26,-21.81),[], 70),         
+("village_228","Tchokaffala",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(155.66,-16.6),[], 70),       
+("village_229","Tchikoulechasto",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(171.18,-34.57),[], 70),  
+("village_230","Falatchao",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.28,-28.81),[], 70),        
+("village_231","Chatelaw",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(168.26,-21.81),[], 70),         
+
 #Creek 17
-("village_227","Tokepahce",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 50),              
-("village_228","Cusseta",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 110),                #[swycartographr] prev. coords: (92.26, 34.28)
-("village_229","Talladega",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 120),         #[swycartographr] prev. coords: (105.83, 8.25)
-("village_230","Etowah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 20),            
-("village_231","Cahawba",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 80), 
-("village_232","Okfuskee",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 135),
+("village_232","Tokepahce",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 50),              
+("village_233","Cusseta",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 110),                #[swycartographr] prev. coords: (92.26, 34.28)
+("village_234","Talladega",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 120),         #[swycartographr] prev. coords: (105.83, 8.25)
+("village_235","Etowah",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 20),            
+("village_236","Cahawba",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 80), 
+("village_237","Okfuskee",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-340,-202),[], 135),
 
 #nonexistant villages
 ("village_a","irrelevant",  icon_native_village|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(94.38,-309.23),[], 135),        #[swycartographr] prev. coords: (233.91, -303.32)
