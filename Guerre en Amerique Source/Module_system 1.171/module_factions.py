@@ -56,27 +56,27 @@ factions = [
 #  ("vaegir_caravans","Vaegir Caravans", 0, 0.5,[("outlaws",-0.8), ("dark_knights",-0.2)], []),
 
   ("player_faction","Player Faction",0, 0.9, [], []),
-  ("player_supporters_faction","Player's Supporters",0, 0.9, [("player_faction",1.00),("outlaws",-0.05),("deserters", -0.02),("woku_pirates", 0.0),("shinano_rebels", -0.02)], [], 0xFF4433), #changed name so that can tell difference if shows up on map
-  ("kingdom_1",   "British America",		0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.50),("shinano_rebels", -0.01)], [], 0x993333), #British America 100
-  ("kingdom_2",   "Nouvelle-France",	    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", +0.50),("shinano_rebels", -0.50)], [], 0x003168), #New France 100
-  ("kingdom_3",   "Nueva España",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xFFD700), #New Spain 100
-  ("kingdom_4",   "Haudenosaunee",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_7", +0.9)], [], 0x8502F7), #Iroquois 85
-  ("kingdom_5",   "Ani-Yvwiya",  	        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xF28305), #Cherokee 75
-  ("kingdom_6",   "Wabana'ki Mawuhkacik",  	0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x28694B), #Wabanaki 85
-  ("kingdom_7",   "Kanien'keha:ka",	        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05),("kingdom_4", +0.9)], [], 0x5e3000), #Mohawk 85
-  ("kingdom_8",   "Wyandot",		        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xa6d5ff), #Huron 75
-  ("kingdom_9",   "Lenapehoking",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xe0ba81), #Lenape 65
-  ("kingdom_10",  "Myaamia",		        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xffff80), #Miami 60
-  ("kingdom_11",  "Shaawana",	            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xff4444), #Shawnee 65
-  ("kingdom_12",  "Nishnaabe",	            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xc5a43d), #Odawa 65
-  ("kingdom_13",  "Anishinaabe",		    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x000000), #Ojibwe 60
-  ("kingdom_14",  "Neshnabek",             	0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x680000), #Potawatomi 60
-  ("kingdom_15",  "Chatah",	                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x2e1891), #Choctaw 60
-  ("kingdom_16",  "Chikasha",	            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xe4af3b), #Chickasaw 60
-  ("kingdom_17",  "Este Mvskokvlke",	    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x60b33b), #Creek 60
-  ("kingdom_18",  "Unused",	                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xffffff),
-  ("kingdom_19",  "Unused",	                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xffffff), 
-  ("kingdom_20",  "Unused",	                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xffffff), 
+  ("player_supporters_faction","Player's Supporters",   0, 0.9, [("player_faction",1.00),("outlaws",-0.05),("deserters", -0.02),("woku_pirates", 0.0),("shinano_rebels", -0.02)], [], 0xFF4433), #changed name so that can tell difference if shows up on map
+  ("kingdom_1",   "British America",		            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.50),("shinano_rebels", -0.01)], [], 0x7C0A02), #British America 100
+  ("kingdom_2",   "Nouvelle-France",	                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", +0.50),("shinano_rebels", -0.50)], [], 0x003168), #New France 100
+  ("kingdom_3",   "Nueva España",		                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xFCDE02), #New Spain 100
+  ("kingdom_4",   "Haudenosaunee",		                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x583CB7), #Iroquois 85
+  ("kingdom_5",   "Ani-Yvwiya",  	                    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xFA7F04), #Cherokee 75
+  ("kingdom_6",   "Wabana'ki Mawuhkacik",  	            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x28694B), #Wabanaki 85
+  ("kingdom_7",   "Tsiata Nihononhwentsiá:ke",	        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x5B3512), #7 Nations 85
+  ("kingdom_8",   "Wyandot",		                    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x7BBEE0), #Huron 75
+  ("kingdom_9",   "Lenapehoking",		                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x987F4A), #Lenape 65
+  ("kingdom_10",  "Myaamia",		                    0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xCFA737), #Miami 60
+  ("kingdom_11",  "Shaawana",	                        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xDC1110), #Shawnee 65
+  ("kingdom_12",  "Nishnaabe",	                        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xF0E48F), #Odawa 65
+  ("kingdom_13",  "Anishinaabe",		                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x000000), #Ojibwe 60
+  ("kingdom_14",  "Neshnabek",                       	0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xA3A3CA), #Potawatomi 60
+  ("kingdom_15",  "Chatah",	                            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x77251D), #Choctaw 60
+  ("kingdom_16",  "Chikasha",	                        0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x732887), #Chickasaw 60
+  ("kingdom_17",  "Este Mvskokvlke",	                0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0x46A332), #Creek 60
+  ("kingdom_18",  "Unused",	                            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xffffff),
+  ("kingdom_19",  "Unused",	                            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xffffff), 
+  ("kingdom_20",  "Unused",	                            0, 0.9, [("outlaws",-0.05),("deserters", -0.02),("woku_pirates", -0.05),("shinano_rebels", -0.05)], [], 0xffffff), 
 
   ("kingdoms_end","{!}kingdoms_end", 0, 0,[], []),
 
