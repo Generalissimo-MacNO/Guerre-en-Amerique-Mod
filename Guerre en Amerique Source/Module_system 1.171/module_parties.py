@@ -225,7 +225,7 @@ parties = [
 #7 Nations 7
   ("castle_73","Canohogo",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-98.41,-197.67),[],260),
   ("castle_74","Kahnawake (Fortified)",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-92.19,-208.38),[],55),         
-#7 Nations (Confederacy)
+#7 Nations 7 (continued - IDs 93-96 placed here to follow 74 sequentially)
   ("castle_93","La Presentation",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-12.21,-189.23),[],43),   #La Presentation mission/fort - 7 Nations
   ("castle_94","Mississauga",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-9.03,-187.41),[],197),        #Mississauga - 7 Nations
   ("castle_95","Kanesatake",icon_native_castle|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-98.41,-212.0),[],200),         #Kanesatake - 7 Nations
@@ -378,18 +378,20 @@ parties = [
 ("village_102","Puerto Plata",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-157.17,225.51),[], 90),   
 ("village_103","Santiago de los Caballeros",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-161,236),[], 220),
 ("village_104","San Juan",  icon_spanish_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-231.9,247.83),[], 180),        #[swycartographr] prev. coords: (-238.58, 251.53)
-########## BREAK IN FACTION ORDER FOR VILLAGE ASSIGNMENT
+########## VILLAGES WITH NUMERIC IDs OUTSIDE STRICT FACTION ORDER
+# (Villages below have IDs that fall outside their faction's numeric block
+#  due to late addition. Faction labels indicate true ownership.)
 #British 1.1
 ("village_105", "Gnaddenhutten",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.32,-147.83),[], 100), #Native
 #French 2.1
 ("village_106","Natchitoches",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(160.93,-33.15),[], 170),      #Native #[swycartographr] prev. coords: (221.51, -1.5)
 ("village_107","Natchez",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(197.31,2.69),[], 170),           #Native
 ("village_108","Kaskaskia",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(170.38,-46.61),[], 100),       #Native  #[swycartographr] prev. coords: (186.97, -64.71) #[swycartographr] prev. coords: (168.01, -49.33)
+#7 Nations 7 (village_110 placed here due to numeric ordering)
 ("village_110","Oswegatachie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.16,-202.84),[], 170),    #7 Nations
 ("village_111","Mandan",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(69.66,-279.01),[], 170),         #Native #[swycartographr] prev. coords: (256.97, -261.92)
 ("village_112","Venango",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1.21,-142.48),[], 100),          #Native
 ("village_113","Cataraqui",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-64.12,-202.53),[], 100),      #Native
-#Note: village_110 Oswegatachie reassigned to 7 Nations
 #Spanish 3.1
 ("village_114","Jinotega",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(158.35,317.93),[], 10),         #Native   #[swycartographr] prev. coords: (113.92, 344.29)
 ("village_115","Calusa",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(63.17,101.1),[], 35),            #Native            #[swycartographr] prev. coords: (25.37, 125.42)
@@ -432,12 +434,13 @@ parties = [
 ("village_149","Madawaska",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.54,-173.91),[], 100),      #[swycartographr] prev. coords: (-192.25, -224.53)
 ("village_150","Alenape Meneha",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.27,-177.83),[], 100),  #[swycartographr] prev. coords: (-202.68, -207.33) #[swycartographr] prev. coords: (-198.9, -217.98)
 #7 Nations 7
+# Note: village_110 (Oswegatachie) also belongs to 7 Nations but
+# appears in the overflow section below due to numeric ID ordering.
 ("village_151","Kanien'keha:ka",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-93.6,-199.34),[], 150),
 ("village_152","Tarajorees",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.65,-179.6),[], 200),    
 ("village_153","Canajoharie",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.72,-181.72),[], 40),
 ("village_154","Ganienkeh",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-106.65,-201.86),[], 120),    
 ("village_157","Atheclaghque",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.42,-179.27),[], 200),  
-#7 Nations villages (new / corrected)
 ("village_233","Tyendinaga",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.0,-199.0),[], 200),      #7 Nations
 ("village_234","Oka",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-89.19,-212.09),[], 200),            #7 Nations (near Kanesatake)
 ("village_235","Kanatakon",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.87,-194.0),[], 200),       #7 Nations
@@ -497,7 +500,6 @@ parties = [
 ("village_201","Baawiting",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(62.89, -224.34),[], 55),        #[swycartographr] prev. coords: (90.13, -235.24)
 ("village_202","Zaaga'iganing",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(68, -231.92),[], 15),       #[swycartographr] prev. coords: (196.88, -221.38)
 ("village_203","Sagenong",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(65.58, -185.38),[], 10),  
-#village_204 Cobechenonk moved to 7 Nations section
 ("village_205","Mekisewancenonk",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.19, -177.6),[], 160), 
 #Potawatomi 14
 ("village_206","Kwikwiyak",  icon_native_village|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(57.48, -200.11),[], 62),        #[swycartographr] prev. coords: (135.04, -204.52)
