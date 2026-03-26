@@ -17557,6 +17557,61 @@ presentations = [
       ]),
 ## Prebattle Orders End
 
+# ===========================================================================
+  # GUERRE EN AMERIQUE: Rename location presentation
+  # Shows a text input box so the player can type a custom name for a settlement.
+  # $g_rename_target_party must be set to the party to rename before starting.
+  # ===========================================================================
+  ("rename_location", 0, mesh_load_window, [
+      (ti_on_presentation_load,
+       [(set_fixed_point_multiplier, 1000),
+        # Prompt label
+        (str_store_party_name, s1, "$g_rename_target_party"),
+        (str_store_string, s2, "@What shall this place be called?"),
+        (create_text_overlay, "$g_presentation_obj_name_kingdom_2", s2, tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, "$g_presentation_obj_name_kingdom_2", pos1),
+        # Text input box - pre-filled with current name
+        (create_simple_text_box_overlay, "$g_presentation_obj_name_kingdom_1"),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 450),
+        (overlay_set_position, "$g_presentation_obj_name_kingdom_1", pos1),
+        (overlay_set_text, "$g_presentation_obj_name_kingdom_1", s1),
+        (str_store_string, s0, s1), # s0 holds current typed text
+        # Confirm button
+        (create_button_overlay, reg1, "@Rename", tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 300),
+        (overlay_set_position, reg1, pos1),
+        (assign, "$g_rename_confirm_btn", reg1), # store button handle
+        # Cancel button
+        (create_button_overlay, reg2, "@Cancel", tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, reg2, pos1),
+        (assign, "$g_rename_cancel_btn", reg2),
+        (presentation_set_duration, 999999),
+        ]),
+      (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+        (try_begin),
+          # Text box changed - update s0
+          (eq, ":object", "$g_presentation_obj_name_kingdom_1"),
+          (str_store_string, s0, s0), # s0 is auto-updated by engine from text box
+        (else_try),
+          # Confirm button clicked
+          (eq, ":object", "$g_rename_confirm_btn"),
+          (neg|str_is_empty, s0),
+          (party_set_name, "$g_rename_target_party", s0),
+          (presentation_set_duration, 0),
+        (else_try),
+          # Cancel button clicked
+          (eq, ":object", "$g_rename_cancel_btn"),
+          (presentation_set_duration, 0),
+        (try_end),
+        ]),
+      ]),
   ]
 # modmerger_start version=201 type=2
 try:

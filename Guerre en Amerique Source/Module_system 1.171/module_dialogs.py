@@ -5874,6 +5874,52 @@ Please, take this as some small repayment for your noble deed.", "rescue_prisone
 []],
 ##zerilius changes end
 
+
+  #===========================================================================
+  # GUERRE EN AMERIQUE: Rename a settlement via Chancellor
+  # Player can rename any fief they personally hold (slot_town_lord == trp_player)
+  #===========================================================================
+
+  [anyone|plyr, "dplmc_chancellor_talk",
+   [
+     ## Check player owns at least one settlement personally
+     (assign, ":has_fief", 0),
+     (try_for_range, ":center", centers_begin, centers_end),
+       (party_slot_eq, ":center", slot_town_lord, "trp_player"),
+       (assign, ":has_fief", 1),
+     (try_end),
+     (eq, ":has_fief", 1),
+   ],
+   "I wish to rename one of our settlements.", "gwea_chancellor_rename_select",
+   []],
+
+  [anyone, "gwea_chancellor_rename_select",
+   [],
+   "Of course, {my lord/my lady}. Which settlement shall be renamed?", "gwea_chancellor_rename_pick",
+   []],
+
+  [anyone|plyr|repeat_for_parties, "gwea_chancellor_rename_pick",
+   [
+     (store_repeat_object, ":center"),
+     (is_between, ":center", centers_begin, centers_end),
+     (party_slot_eq, ":center", slot_town_lord, "trp_player"),
+     (str_store_party_name, s11, ":center"),
+   ],
+   "{s11}.", "dplmc_chancellor_pretalk",
+   [
+     (store_repeat_object, "$g_rename_target_party"),
+     (start_presentation, "prsnt_rename_location"),
+   ]],
+
+  [anyone|plyr, "gwea_chancellor_rename_pick",
+   [],
+   "Never mind.", "dplmc_chancellor_pretalk",
+   []],
+
+  #===========================================================================
+  # End of GUERRE EN AMERIQUE: Rename a settlement via Chancellor
+  #===========================================================================
+
 [anyone|plyr, "dplmc_chancellor_talk",
 [],
 "Farewell!", "close_window",
@@ -32552,6 +32598,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    "Open the door. I'll go in.", "close_window",[(call_script, "script_enter_court", "$current_town")]],
   [anyone|plyr,"castle_guard_players", [],
    "Never mind.", "close_window",[]],
+
+
 
 
   [anyone,"start", [(eq, "$talk_context", 0),(faction_slot_eq, "$g_encountered_party_faction", slot_faction_castle_guard_troop, "$g_talk_troop"),(eq, "$sneaked_into_town",1),
