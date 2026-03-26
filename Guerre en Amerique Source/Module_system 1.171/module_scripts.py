@@ -4143,148 +4143,260 @@ scripts = [
 			   (try_end),
 			   (call_script, "script_faction_inflict_war_damage_on_faction", ":winner_faction", ":fortress_faction", ":damage"),
 			   
-			   #Guerre en Amerique: faction-based location renaming start
+			   			   #Guerre en Amerique: faction-based location renaming start
 			   #Locations are renamed when captured by a specific faction,
 			   #and renamed back when recaptured by the original faction.
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_16"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Anne -> Port-Royal
-				   (party_set_name, "p_castle_16", "@Port-Royal"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Port-Royal -> Fort Anne
-				   (party_set_name, "p_castle_16", "@Fort Anne"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Anne
+			       (party_set_name, "p_castle_16", "@Fort Anne"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Port-Royal
+			       (party_set_name, "p_castle_16", "@Port-Royal"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_6"), #Menahkwesk
+			       (party_set_name, "p_castle_16", "@Menahkwesk"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_7"), #Port-Royal
+			       (party_set_name, "p_castle_16", "@Port-Royal"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_18"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Gaspareaux -> Fort Monckton
-				   (party_set_name, "p_castle_18", "@Fort Monckton"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Monckton -> Fort Gaspareaux
-				   (party_set_name, "p_castle_18", "@Fort Gaspareaux"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Monckton
+			       (party_set_name, "p_castle_18", "@Fort Monckton"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Gaspareaux
+			       (party_set_name, "p_castle_18", "@Fort Gaspareaux"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_6"), #Peskotomuhkati
+			       (party_set_name, "p_castle_18", "@Peskotomuhkati"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_19"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Beausejour -> Fort Cumberland
-				   (party_set_name, "p_castle_19", "@Fort Cumberland"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Cumberland -> Fort Beausejour
-				   (party_set_name, "p_castle_19", "@Fort Beausejour"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Cumberland
+			       (party_set_name, "p_castle_19", "@Fort Cumberland"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Beausejour
+			       (party_set_name, "p_castle_19", "@Fort Beausejour"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_6"), #Siknikt
+			       (party_set_name, "p_castle_19", "@Siknikt"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_7"), #Fort Beausejour
+			       (party_set_name, "p_castle_19", "@Fort Beausejour"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_20"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Rosalie -> Fort Panmure
-				   (party_set_name, "p_castle_20", "@Fort Panmure"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Panmure -> Fort Rosalie
-				   (party_set_name, "p_castle_20", "@Fort Rosalie"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Panmure
+			       (party_set_name, "p_castle_20", "@Fort Panmure"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Rosalie
+			       (party_set_name, "p_castle_20", "@Fort Rosalie"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_15"), #Natchez
+			       (party_set_name, "p_castle_20", "@Natchez"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_16"), #Natchez
+			       (party_set_name, "p_castle_20", "@Natchez"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_17"), #Natchez
+			       (party_set_name, "p_castle_20", "@Natchez"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_25"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Pontchartrain -> Fort Detroit
-				   (party_set_name, "p_castle_25", "@Fort Detroit"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Detroit -> Fort Pontchartrain
-				   (party_set_name, "p_castle_25", "@Fort Pontchartrain"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Detroit
+			       (party_set_name, "p_castle_25", "@Fort Detroit"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Pontchartrain
+			       (party_set_name, "p_castle_25", "@Fort Pontchartrain"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_8"), #Waawiyaatanong
+			       (party_set_name, "p_castle_25", "@Waawiyaatanong"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_12"), #Waawiyaatanong
+			       (party_set_name, "p_castle_25", "@Waawiyaatanong"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_13"), #Waawiyaatanong
+			       (party_set_name, "p_castle_25", "@Waawiyaatanong"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_14"), #Waawiyaatanong
+			       (party_set_name, "p_castle_25", "@Waawiyaatanong"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_26"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Duquesne -> Fort Pitt
-				   (party_set_name, "p_castle_26", "@Fort Pitt"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Pitt -> Fort Duquesne
-				   (party_set_name, "p_castle_26", "@Fort Duquesne"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Pitt
+			       (party_set_name, "p_castle_26", "@Fort Pitt"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Duquesne
+			       (party_set_name, "p_castle_26", "@Fort Duquesne"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_4"), #Dionde:ga
+			       (party_set_name, "p_castle_26", "@Dionde:ga"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_9"), #Welhik Hane
+			       (party_set_name, "p_castle_26", "@Welhik Hane"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_11"), #Chartier's Town
+			       (party_set_name, "p_castle_26", "@Chartier's Town"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_30"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Frontenac -> Fort Cataraqui
-				   (party_set_name, "p_castle_30", "@Fort Cataraqui"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Cataraqui -> Fort Frontenac
-				   (party_set_name, "p_castle_30", "@Fort Frontenac"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Cataraqui
+			       (party_set_name, "p_castle_30", "@Fort Cataraqui"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Frontenac
+			       (party_set_name, "p_castle_30", "@Fort Frontenac"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_4"), #Cataraqui
+			       (party_set_name, "p_castle_30", "@Cataraqui"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_7"), #Fort Frontenac
+			       (party_set_name, "p_castle_30", "@Fort Frontenac"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_8"), #Cataraqui
+			       (party_set_name, "p_castle_30", "@Cataraqui"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_32"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Carillon -> Fort Ticonderoga
-				   (party_set_name, "p_castle_32", "@Fort Ticonderoga"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Ticonderoga -> Fort Carillon
-				   (party_set_name, "p_castle_32", "@Fort Carillon"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Ticonderoga
+			       (party_set_name, "p_castle_32", "@Fort Ticonderoga"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Carillon
+			       (party_set_name, "p_castle_32", "@Fort Carillon"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_4"), #Tekontaróken
+			       (party_set_name, "p_castle_32", "@Tekontaróken"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_7"), #Tekontaróken
+			       (party_set_name, "p_castle_32", "@Tekontaróken"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_35"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Menagoueche -> Fort Frederick
-				   (party_set_name, "p_castle_35", "@Fort Frederick"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Frederick -> Fort Menagoueche
-				   (party_set_name, "p_castle_35", "@Fort Menagoueche"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Frederick
+			       (party_set_name, "p_castle_35", "@Fort Frederick"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Menagoueche
+			       (party_set_name, "p_castle_35", "@Fort Menagoueche"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_6"), #Menahkwesk
+			       (party_set_name, "p_castle_35", "@Menahkwesk"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_36"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Louisbourg -> Fortress of Louisbourg
-				   (party_set_name, "p_castle_36", "@Fortress of Louisbourg"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fortress of Louisbourg -> Fort Louisbourg
-				   (party_set_name, "p_castle_36", "@Fort Louisbourg"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fortress of Louisbourg
+			       (party_set_name, "p_castle_36", "@Fortress of Louisbourg"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Louisbourg
+			       (party_set_name, "p_castle_36", "@Fort Louisbourg"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_6"), #Unama'kik
+			       (party_set_name, "p_castle_36", "@Unama'kik"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_7"), #Fort Louisbourg
+			       (party_set_name, "p_castle_36", "@Fort Louisbourg"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_37"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Condé -> Fort Charlotte
-				   (party_set_name, "p_castle_37", "@Fort Charlotte"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Charlotte -> Fort Condé
-				   (party_set_name, "p_castle_37", "@Fort Condé"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Charlotte
+			       (party_set_name, "p_castle_37", "@Fort Charlotte"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Conde
+			       (party_set_name, "p_castle_37", "@Fort Conde"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_15"), #Maubila
+			       (party_set_name, "p_castle_37", "@Maubila"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_17"), #Maubila
+			       (party_set_name, "p_castle_37", "@Maubila"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_39"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Saint-Frederic -> Crown Point
-				   (party_set_name, "p_castle_39", "@Crown Point"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Crown Point -> Fort Saint-Frederic
-				   (party_set_name, "p_castle_39", "@Fort Saint-Frederic"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Crown Point
+			       (party_set_name, "p_castle_39", "@Crown Point"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Saint-Frederic
+			       (party_set_name, "p_castle_39", "@Fort Saint-Frederic"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_4"), #Caniaderi Guarunte
+			       (party_set_name, "p_castle_39", "@Caniaderi Guarunte"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_7"), #Fort Saint-Frederic
+			       (party_set_name, "p_castle_39", "@Fort Saint-Frederic"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_46"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #Fort Toronto -> Fort Rouillé
-				   (party_set_name, "p_castle_46", "@Fort Rouillé"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_2"), #Fort Rouillé -> Fort Toronto
-				   (party_set_name, "p_castle_46", "@Fort Toronto"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort Toronto
+			       (party_set_name, "p_castle_46", "@Fort Toronto"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Rouille
+			       (party_set_name, "p_castle_46", "@Fort Rouille"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_4"), #Tkaronto
+			       (party_set_name, "p_castle_46", "@Tkaronto"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_8"), #Tkaronto
+			       (party_set_name, "p_castle_46", "@Tkaronto"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_13"), #Tkaronto
+			       (party_set_name, "p_castle_46", "@Tkaronto"),
+			     (try_end),
 			   (try_end),
 			   (try_begin),
 			     (eq, ":root_defeated_party", "p_castle_52"),
-				 (try_begin),
-				   (eq, ":winner_faction", "fac_kingdom_1"), #San Marcos -> Fort St. Mark
-				   (party_set_name, "p_castle_52", "@Fort St. Mark"),
-				 (else_try),
-				   (eq, ":winner_faction", "fac_kingdom_3"), #Fort St. Mark -> San Marcos
-				   (party_set_name, "p_castle_52", "@San Marcos"),
-				 (try_end),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Fort St. Mark
+			       (party_set_name, "p_castle_52", "@Fort St. Mark"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Fort Conde
+			       (party_set_name, "p_castle_52", "@Fort Conde"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_3"), #Castillo de San Marcos
+			       (party_set_name, "p_castle_52", "@Castillo de San Marcos"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_17"), #Ivitachuco
+			       (party_set_name, "p_castle_52", "@Ivitachuco"),
+			     (try_end),
+			   (try_end),
+			   (try_begin),
+			     (eq, ":root_defeated_party", "p_town_1"),
+			     (try_begin),
+			       (eq, ":winner_faction", "fac_kingdom_1"), #Quebec
+			       (party_set_name, "p_town_1", "@Quebec"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_2"), #Quebec City
+			       (party_set_name, "p_town_1", "@Quebec City"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_7"), #Kebec
+			       (party_set_name, "p_town_1", "@Kebec"),
+			     (else_try),
+			       (eq, ":winner_faction", "fac_kingdom_8"), #Stadacona
+			       (party_set_name, "p_town_1", "@Stadacona"),
+			     (try_end),
 			   (try_end),
 			   #Guerre en Amerique: faction-based location renaming end
 			   
