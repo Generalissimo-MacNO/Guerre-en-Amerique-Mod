@@ -1,3 +1,4 @@
+# Coordinates formatted for Swyter's Cartographer compatibility (no trailing zeros)
 # -*- coding: utf-8 -*-
 from header_common import *
 from header_parties import *
