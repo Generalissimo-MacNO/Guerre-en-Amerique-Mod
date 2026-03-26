@@ -32554,6 +32554,216 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    "Never mind.", "close_window",[]],
 
 
+  #===========================================================================
+  # GUERRE EN AMERIQUE: Player-controlled location renaming
+  # Player can rename any location they own from a list of historical names
+  #===========================================================================
+
+  [anyone|plyr,"castle_guard_players",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player")],
+   "Rename this location.", "player_rename_location_start",[]],
+
+  [anyone,"player_rename_location_start", [],
+   "What name shall this place bear, {Lord/Lady}?", "player_rename_location_options",[]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_26")],
+   "Call it Fort Duquesne. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Duquesne")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_26")],
+   "Call it Fort Pitt. (British name, after William Pitt)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Pitt")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_26")],
+   "Call it Pittsburgh. (Later settlement name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Pittsburgh")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_26")],
+   "Call it Fort Prince George. (Earlier British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Prince George")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_32")],
+   "Call it Fort Carillon. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Carillon")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_32")],
+   "Call it Fort Ticonderoga. (British/Mohawk name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Ticonderoga")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_39")],
+   "Call it Fort Saint-Frederic. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Saint-Frederic")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_39")],
+   "Call it Crown Point. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Crown Point")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_19")],
+   "Call it Fort Beausejour. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Beausejour")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_19")],
+   "Call it Fort Cumberland. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Cumberland")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_36")],
+   "Call it Fort Louisbourg. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Louisbourg")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_36")],
+   "Call it Fortress of Louisbourg. (British name after capture)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fortress of Louisbourg")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_25")],
+   "Call it Fort Pontchartrain. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Pontchartrain")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_25")],
+   "Call it Fort Detroit. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Detroit")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_30")],
+   "Call it Fort Frontenac. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Frontenac")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_30")],
+   "Call it Fort Cataraqui. (British/original name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Cataraqui")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_35")],
+   "Call it Fort Menagoueche. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Menagoueche")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_35")],
+   "Call it Fort Frederick. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Frederick")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_16")],
+   "Call it Fort Anne. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Anne")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_16")],
+   "Call it Port-Royal. (French/Acadian name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Port-Royal")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_18")],
+   "Call it Fort Gaspareaux. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Gaspareaux")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_18")],
+   "Call it Fort Monckton. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Monckton")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_20")],
+   "Call it Fort Rosalie. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Rosalie")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_20")],
+   "Call it Fort Panmure. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Panmure")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_37")],
+   "Call it Fort Condé. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Condé")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_37")],
+   "Call it Fort Charlotte. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Charlotte")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_46")],
+   "Call it Fort Toronto. (French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Toronto")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_46")],
+   "Call it Fort Rouillé. (Alternative French name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort Rouillé")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_52")],
+   "Call it San Marcos. (Spanish name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@San Marcos")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_52")],
+   "Call it Fort St. Mark. (British name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Fort St. Mark")]],
+
+  [anyone|plyr,"player_rename_location_options",
+   [(party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
+    (eq, "$current_town", "p_castle_52")],
+   "Call it Castillo de San Marcos. (Full Spanish name)", "player_rename_location_confirm",
+   [(str_store_string, s20, "@Castillo de San Marcos")]],
+
+  [anyone|plyr,"player_rename_location_options", [],
+   "Never mind, keep the current name.", "close_window",[]],
+
+  [anyone,"player_rename_location_confirm", [],
+   "It shall be known as {s20}, {Lord/Lady}.", "close_window",
+   [(party_set_name, "$current_town", "str_s20")]],
+
+  #===========================================================================
+  # End of player rename dialog
+  #===========================================================================
+
+
   [anyone,"start", [(eq, "$talk_context", 0),(faction_slot_eq, "$g_encountered_party_faction", slot_faction_castle_guard_troop, "$g_talk_troop"),(eq, "$sneaked_into_town",1),
                     (gt,"$g_time_since_last_talk",0)],
    "Get out of my sight, beggar! You stink!", "castle_guard_sneaked_intro_1",[]],
