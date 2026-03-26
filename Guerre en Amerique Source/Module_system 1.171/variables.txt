@@ -1209,3 +1209,4 @@ g_advantegous_faction
 g_give_advantage_to_original_faction
 g_rename_target_party
 g_rename_cancel_btn
+g_rename_confirm_btn

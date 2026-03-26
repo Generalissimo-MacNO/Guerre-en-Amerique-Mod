@@ -17584,7 +17584,7 @@ presentations = [
         (position_set_x, pos1, 500),
         (position_set_y, pos1, 300),
         (overlay_set_position, reg1, pos1),
-        (assign, "$g_presentation_input", reg1), # store button handle
+        (assign, "$g_rename_confirm_btn", reg1), # store button handle
         # Cancel button
         (create_button_overlay, reg2, "@Cancel", tf_center_justify),
         (position_set_x, pos1, 500),
@@ -17601,7 +17601,7 @@ presentations = [
           (str_store_string, s0, s0), # s0 is auto-updated by engine from text box
         (else_try),
           # Confirm button clicked
-          (eq, ":object", "$g_presentation_input"),
+          (eq, ":object", "$g_rename_confirm_btn"),
           (neg|str_is_empty, s0),
           (party_set_name, "$g_rename_target_party", s0),
           (presentation_set_duration, 0),
